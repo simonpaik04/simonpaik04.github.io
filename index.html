@@ -176,9 +176,20 @@ article{break-inside:avoid}article+article{margin-top:.55rem;padding-top:.55rem}
 <li>Filtered ground vibration data with a Butterworth low-pass filter and fit modal parameters with nonlinear least squares.</li>
 <li>Compared linear and nonlinear gust responses and used eigenvalue analysis of a coupled bending–torsion model to estimate flutter speed.</li>
 </ul>
+<p>The design study varied the center of gravity (CG) and elastic axis (EA) as fractions of the wing chord. The selected configuration shifted the CG from 40% to 44% chord and the EA from 35% to 45% chord.</p>
 <figure class="project-demo">
-<img loading="lazy" src="./flutter-comparison.jpg" alt="V-g plot showing the predicted flutter threshold rising from 19.32 to 31.76 m/s after optimization, above the modeled maximum speed of 25 m/s">
-<figcaption>Predicted flutter threshold for the baseline and optimized RC-scale wing designs.</figcaption>
+<img loading="lazy" decoding="async" src="./flutter-design-map.png" alt="Design map comparing flutter safety factors across center-of-gravity and elastic-axis positions">
+<figcaption>The white circle marks the baseline. The red star marks the selected design. The white contour marks where predicted flutter speed equals the modeled maximum flight speed.</figcaption>
+</figure>
+<figure class="project-demo">
+<img loading="lazy" decoding="async" src="./flutter-speed-comparison.png" alt="Growth-rate curves cross zero at 19.32 m/s for the baseline and 31.76 m/s for the optimized design">
+<figcaption>The zero-growth crossings show the predicted flutter threshold rising from 19.32 to 31.76 m/s, above the modeled maximum of 25 m/s.</figcaption>
+</figure>
+<figure class="project-demo">
+<video controls playsinline preload="none" aria-label="Simulated wing response to a discrete vertical gust">
+<source src="./wing-gust-response.mp4" type="video/mp4">
+</video>
+<figcaption>Separate gust simulation showing wing deformation and comparing linear and nonlinear predictions of tip displacement and root bending moment.</figcaption>
 </figure>
 </details>
 </article>
