@@ -36,7 +36,7 @@ footer{padding:1.5rem 0;color:var(--muted)}
 .project-details{margin-top:.55rem}
 .project-details summary{width:fit-content;color:var(--accent);font-weight:650;cursor:pointer}
 .project-demo{margin:.9rem 0 .25rem}
-.project-demo img{display:block;width:100%;height:auto;border-radius:.35rem}
+.project-demo img,.project-demo video{display:block;width:100%;height:auto;border-radius:.35rem}
 .project-demo figcaption{margin-top:.35rem;color:var(--muted);font-size:.85rem}
 @media print{
 .project-details{display:none}
@@ -89,6 +89,12 @@ article{break-inside:avoid}article+article{margin-top:.55rem;padding-top:.55rem}
 <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Team-Stier/.github/main/assets/MORAI2026.gif" alt="MORAI simulation driving through the K-City roundabout and tunnel alongside RViz">
 <figcaption>Competition footage from Team-Stier</figcaption>
 </figure>
+<figure class="project-demo">
+<video controls playsinline preload="none" aria-label="KATRI competition recording">
+<source src="./katri-competition.mp4" type="video/mp4">
+</video>
+<figcaption>KATRI competition recording</figcaption>
+</figure>
 </details>
 </article>
 <article><p class="period">Jul – Sep 2026</p><h3>HL-FMA 2026 Competition</h3>
@@ -134,6 +140,12 @@ article{break-inside:avoid}article+article{margin-top:.55rem;padding-top:.55rem}
 <li>Built the controller in stages, starting with motor PWM and attitude estimation before comparing P, PD, and PID control.</li>
 <li>The 6–16–16–3 network used six inputs and two hidden layers to estimate three correction values.</li>
 </ul>
+<figure class="project-demo">
+<video controls playsinline preload="none" aria-label="Embedded drone control demo">
+<source src="./drone-demo.mp4" type="video/mp4">
+</video>
+<figcaption>Embedded drone control demonstration</figcaption>
+</figure>
 </details>
 </article>
 <article><p class="period">Apr – Jun 2026 · Team Leader</p><h3>AI-Edge Challenge Autonomous Competition</h3>
@@ -164,6 +176,10 @@ article{break-inside:avoid}article+article{margin-top:.55rem;padding-top:.55rem}
 <li>Filtered ground vibration data with a Butterworth low-pass filter and fit modal parameters with nonlinear least squares.</li>
 <li>Compared linear and nonlinear gust responses and used eigenvalue analysis of a coupled bending–torsion model to estimate flutter speed.</li>
 </ul>
+<figure class="project-demo">
+<img loading="lazy" src="./flutter-comparison.jpg" alt="V-g plot showing the predicted flutter threshold rising from 19.32 to 31.76 m/s after optimization, above the modeled maximum speed of 25 m/s">
+<figcaption>Predicted flutter threshold for the baseline and optimized RC-scale wing designs.</figcaption>
+</figure>
 </details>
 </article>
 <article><p class="period">Jan – Mar 2026 · Team Leader</p><h3>5th International EV Autonomous Driving Competition</h3>
