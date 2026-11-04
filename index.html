@@ -33,7 +33,10 @@ ul{margin:.5rem 0;padding-left:1.25rem}
 li+li{margin-top:.25rem}
 footer{padding:1.5rem 0;color:var(--muted)}
 @media(max-width:650px){section{grid-template-columns:1fr;gap:1rem;padding:1.7rem 0}}
+.project-details{margin-top:.55rem}
+.project-details summary{width:fit-content;color:var(--accent);font-weight:650;cursor:pointer}
 @media print{
+.project-details{display:none}
 @page{margin:15mm}
 body,header{background:white;color:black;font-size:10pt}
 .wrap{width:100%}header{border:0;padding:0 0 .75rem}h1{font-size:34pt}
@@ -72,36 +75,91 @@ article{break-inside:avoid}article+article{margin-top:.55rem;padding-top:.55rem}
 <li>Led a modular ROS 1 autonomous driving project and integrated node interfaces, TF frames, and timestamp conventions.</li>
 <li>Developed LiDAR ground filtering and roll and pitch correction using IMU orientation, and fused LiDAR and camera data with PIDNet and PointPainting.</li>
 <li>Converted MGeo maps to Lanelet2 and implemented Frenet path generation and smoothing for RDDF routes.</li>
-</ul></article>
+</ul>
+<details class="project-details">
+<summary aria-label="Technical details for 2026 KATRI AI/SW Mobility Competition">Technical details</summary>
+<ul>
+<li>Extracted and connected RDDF routes, and managed active and pending paths during replanning.</li>
+<li>Used RViz, rosbag analysis, and regression tests to verify system integration.</li>
+</ul>
+</details>
+</article>
 <article><p class="period">Jul – Sep 2026</p><h3>HL-FMA 2026 Competition</h3>
 <ul>
 <li>Configured local and global EKFs to fuse IMU, wheel encoder, and GNSS measurements for vehicle localization.</li>
 <li>Implemented timestamp-aware GNSS quality checks and recovery after prolonged signal outages.</li>
-</ul></article>
+</ul>
+<details class="project-details">
+<summary aria-label="Technical details for HL-FMA 2026 Competition">Technical details</summary>
+<ul>
+<li>Used robot_localization with sensor preprocessing and coordinated initialization.</li>
+<li>Added continuous RDDF route tracking, localization status and output validity checks, and an RViz viewer.</li>
+</ul>
+</details>
+</article>
 <article><p class="period">Aug 2026</p><h3>AMET 2026 Autonomous Hackathon</h3>
 <ul>
 <li>Aligned LiDAR odometry with the RDDF map in ROS 2 and published the corrected vehicle pose for path planning and RViz visualization.</li>
-</ul></article>
+</ul>
+<details class="project-details">
+<summary aria-label="Technical details for AMET 2026 Autonomous Hackathon">Technical details</summary>
+<ul>
+<li>Applied a 90° yaw correction and an offset from the RDDF route origin. Published the aligned pose and matching map-to-LiDAR transform.</li>
+</ul>
+</details>
+</article>
 <article><p class="period">Aug 2026</p><h3>Embedded Drone Control</h3>
 <ul>
 <li>Implemented ESP32/Arduino motor PWM, MPU6050 attitude estimation, and P, PD, and PID control.</li>
 <li>Developed FreeRTOS throttle sequences and sensor and PID logging. Ran inference with a trained 6–16–16–3 neural network to estimate motor corrections.</li>
-</ul></article>
+</ul>
+<details class="project-details">
+<summary aria-label="Technical details for Embedded Drone Control">Technical details</summary>
+<ul>
+<li>Built the controller in stages, starting with motor PWM and attitude estimation before comparing P, PD, and PID control.</li>
+<li>The 6–16–16–3 network used six inputs and two hidden layers to estimate three correction values.</li>
+</ul>
+</details>
+</article>
 <article><p class="period">Apr – Jun 2026 · Team Leader</p><h3>AI-Edge Challenge Autonomous Competition</h3>
 <ul>
 <li>Built an OpenCV bird’s-eye-view pipeline to detect lanes and road markings and convert detections to vehicle coordinates.</li>
 <li>Integrated a fine-tuned YOLO11n traffic-light detector with color classification and published signal states, stop-line distance, and school-zone status through ROS 2.</li>
-</ul></article>
+</ul>
+<details class="project-details">
+<summary aria-label="Technical details for AI-Edge Challenge Autonomous Competition">Technical details</summary>
+<ul>
+<li>Used a bird’s-eye-view image to convert road markings into vehicle-frame detections.</li>
+<li>Classified the color within detected traffic-light regions and published signal state, stop-line distance, and school-zone status on ROS 2 topics.</li>
+</ul>
+</details>
+</article>
 <article><p class="period">Apr – Jun 2026</p><h3>Flexible Wing Aeroelasticity and Flutter Analysis</h3>
 <ul>
 <li>Estimated wing bending parameters from ground vibration test data and modeled the response of a 0.8 m RC-scale wing to resonance and gusts.</li>
 <li>Identified a center-of-gravity and elastic-axis configuration that raised the predicted flutter speed above the modeled maximum flight speed.</li>
-</ul></article>
+</ul>
+<details class="project-details">
+<summary aria-label="Technical details for Flexible Wing Aeroelasticity and Flutter Analysis">Technical details</summary>
+<ul>
+<li>Filtered ground vibration data with a Butterworth low-pass filter and fit modal parameters with nonlinear least squares.</li>
+<li>Compared linear and nonlinear gust responses and used eigenvalue analysis of a coupled bending–torsion model to estimate flutter speed.</li>
+</ul>
+</details>
+</article>
 <article><p class="period">Jan – Mar 2026 · Team Leader</p><h3>5th International EV Autonomous Driving Competition</h3>
 <ul>
 <li>Built a ROS 1 and OpenCV lane-perception pipeline with lens distortion correction, Canny edge detection, inverse perspective mapping, and sliding-window tracking.</li>
 <li>Generated center paths from one or two lane boundaries, converted pixels to vehicle-frame metric coordinates, and published nav_msgs/Path for control.</li>
-</ul></article>
+</ul>
+<details class="project-details">
+<summary aria-label="Technical details for 5th International EV Autonomous Driving Competition">Technical details</summary>
+<ul>
+<li>Corrected lens distortion and used Canny edges, inverse perspective mapping, and sliding-window tracking to detect lane boundaries.</li>
+<li>Converted center paths from image pixels to metric vehicle coordinates and published them as nav_msgs/Path.</li>
+</ul>
+</details>
+</article>
 </div></section>
 <section id="scholarship"><h2>Scholarship</h2><div>
 <article><p class="period">2023 – 2026</p><h3>Academic Excellence Scholarship</h3><p>Hongik University · Six consecutive semesters · ₩14,384,000 total</p></article>
