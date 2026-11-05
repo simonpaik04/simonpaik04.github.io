@@ -126,7 +126,7 @@
   ],
   "plot_semantics": {
     "trajectory": "Recorded Global EKF position in ENU map frame",
-    "arrow": "Recorded pose orientation: yaw=0 east, positive toward north",
+    "arrow": "Display-only trajectory direction: centered +/-0.6s position difference; yaw=0 east, positive toward north. Held when speed <0.15 m/s or displacement <0.20m. Reverse motion follows travel direction, not body heading. Original EKF yaw retained in yaw_rad.",
     "ellipse": "Recorded XY covariance, Gaussian 95% 2D contour (chi-square=5.991464547)",
     "speed": "Global Odometry twist.linear.x, base_link frame",
     "yaw_rate": "Global Odometry twist.angular.z, converted from rad/s to deg/s",
@@ -140,7 +140,7 @@
     "DEAD_RECKONING": 9,
     "TRACKING": 10146
   },
-  "video_sha256": "153a213e31bc7b363363ec94868f37f125ff1ebcc710d59155efab09c1e67748",
+  "video_sha256": "e3726a259193098f997b651664f19fd74ca7ae5e000955cce6695025421cfe9e",
   "samples": [
     {
       "source_elapsed_sec": 4.0,
@@ -148,6 +148,7 @@
       "map_x_m": 37.96211736181436,
       "map_y_m": 25.507761850646542,
       "yaw_rad": 2.8181834192145336,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.014999747844356539,
       "yaw_rate_radps": 1.916159329202432e-17,
       "xy_covariance_m2": [
@@ -171,6 +172,7 @@
       "map_x_m": 38.069657550867305,
       "map_y_m": 25.3734313067778,
       "yaw_rad": 2.818183765148456,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.002490241648662828,
       "yaw_rate_radps": 2.7302840635193915e-19,
       "xy_covariance_m2": [
@@ -194,6 +196,7 @@
       "map_x_m": 38.07263949931971,
       "map_y_m": 25.366610291124207,
       "yaw_rad": 2.8181837754018844,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0018027755263238293,
       "yaw_rate_radps": -1.748784605966677e-20,
       "xy_covariance_m2": [
@@ -217,6 +220,7 @@
       "map_x_m": 38.07564753493144,
       "map_y_m": 25.364613025303267,
       "yaw_rad": 2.8181837749426215,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0003123737729044985,
       "yaw_rate_radps": 1.0065676777550466e-20,
       "xy_covariance_m2": [
@@ -240,6 +244,7 @@
       "map_x_m": 38.061542024796964,
       "map_y_m": 25.36215870262295,
       "yaw_rad": 2.8181837764986,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.002552341470744445,
       "yaw_rate_radps": -1.1540711198435875e-19,
       "xy_covariance_m2": [
@@ -263,6 +268,7 @@
       "map_x_m": 38.028109996158854,
       "map_y_m": 25.365135877136442,
       "yaw_rad": 2.818183776551944,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.008462446984323793,
       "yaw_rate_radps": -3.371234074965594e-19,
       "xy_covariance_m2": [
@@ -286,6 +292,7 @@
       "map_x_m": 38.09502737663706,
       "map_y_m": 25.344317244358322,
       "yaw_rad": 2.818316615258624,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.002039331907019034,
       "yaw_rate_radps": 3.5000155771596736e-19,
       "xy_covariance_m2": [
@@ -309,6 +316,7 @@
       "map_x_m": 38.12046749106987,
       "map_y_m": 25.3395267596088,
       "yaw_rad": 2.818330163505733,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.029677314999250515,
       "yaw_rate_radps": -7.116396010435496e-16,
       "xy_covariance_m2": [
@@ -332,6 +340,7 @@
       "map_x_m": 38.14724451892443,
       "map_y_m": 25.327192263923013,
       "yaw_rad": 2.817065564361835,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.005889315979380147,
       "yaw_rate_radps": -2.431589817254981e-16,
       "xy_covariance_m2": [
@@ -355,6 +364,7 @@
       "map_x_m": 38.14260929112123,
       "map_y_m": 25.321913094712315,
       "yaw_rad": 2.817064243642826,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.002896750509569311,
       "yaw_rate_radps": -3.645682497756252e-19,
       "xy_covariance_m2": [
@@ -378,6 +388,7 @@
       "map_x_m": 38.135854843904944,
       "map_y_m": 25.316191605960835,
       "yaw_rad": 2.817064240564985,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0014508939135689546,
       "yaw_rate_radps": -2.0564427400214976e-19,
       "xy_covariance_m2": [
@@ -401,6 +412,7 @@
       "map_x_m": 38.11271453093297,
       "map_y_m": 25.308668865727213,
       "yaw_rad": 2.8170642451104957,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0026753761482323528,
       "yaw_rate_radps": -2.0087980415898904e-18,
       "xy_covariance_m2": [
@@ -424,6 +436,7 @@
       "map_x_m": 38.11544908678556,
       "map_y_m": 25.30588448256843,
       "yaw_rad": 2.817064233875289,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.001801865793417679,
       "yaw_rate_radps": -1.274361499154676e-16,
       "xy_covariance_m2": [
@@ -447,6 +460,7 @@
       "map_x_m": 38.133463313531706,
       "map_y_m": 25.300372957865,
       "yaw_rad": 2.8170642402242496,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0012040592730001873,
       "yaw_rate_radps": -6.703641040748856e-20,
       "xy_covariance_m2": [
@@ -470,6 +484,7 @@
       "map_x_m": 38.15137123353298,
       "map_y_m": 25.297329374203734,
       "yaw_rad": 2.8170642381541455,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.00019611574255622564,
       "yaw_rate_radps": 6.322199362183868e-21,
       "xy_covariance_m2": [
@@ -493,6 +508,7 @@
       "map_x_m": 38.15386965285049,
       "map_y_m": 25.29801341340158,
       "yaw_rad": 2.8170642380908415,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0001031224944692353,
       "yaw_rate_radps": 1.0536718208229225e-20,
       "xy_covariance_m2": [
@@ -516,6 +532,7 @@
       "map_x_m": 38.163328749884656,
       "map_y_m": 25.296647927708698,
       "yaw_rad": 2.8170642384217377,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.000345702533794974,
       "yaw_rate_radps": -7.592151860413541e-21,
       "xy_covariance_m2": [
@@ -539,6 +556,7 @@
       "map_x_m": 38.16298834716078,
       "map_y_m": 25.296671745318594,
       "yaw_rad": 2.8170642383172595,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0003312935088924857,
       "yaw_rate_radps": -9.753555773859673e-23,
       "xy_covariance_m2": [
@@ -562,6 +580,7 @@
       "map_x_m": 38.15689211363014,
       "map_y_m": 25.293784759161465,
       "yaw_rad": 2.81706423921095,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.00015134482096882198,
       "yaw_rate_radps": -7.307614246585593e-20,
       "xy_covariance_m2": [
@@ -585,6 +604,7 @@
       "map_x_m": 38.16021250507028,
       "map_y_m": 25.303108147696882,
       "yaw_rad": 2.817064238328575,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.00011019746319633243,
       "yaw_rate_radps": -3.3363508266222465e-21,
       "xy_covariance_m2": [
@@ -608,6 +628,7 @@
       "map_x_m": 38.14320664920484,
       "map_y_m": 25.302155105272284,
       "yaw_rad": 2.817064241955187,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0004148172969335396,
       "yaw_rate_radps": -2.1432854761912867e-19,
       "xy_covariance_m2": [
@@ -631,6 +652,7 @@
       "map_x_m": 38.14362347600325,
       "map_y_m": 25.30439158952976,
       "yaw_rad": 2.8170642382503255,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.00016220307758688126,
       "yaw_rate_radps": 2.1615833112387156e-21,
       "xy_covariance_m2": [
@@ -654,6 +676,7 @@
       "map_x_m": 38.13507901516906,
       "map_y_m": 25.30287263439499,
       "yaw_rad": 2.8170642384780376,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -5.21170237215077e-05,
       "yaw_rate_radps": -6.839554195487865e-21,
       "xy_covariance_m2": [
@@ -677,6 +700,7 @@
       "map_x_m": 38.130070414877544,
       "map_y_m": 25.299912572662738,
       "yaw_rad": 2.8170642383710227,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.00011701997588717662,
       "yaw_rate_radps": -2.6960583383914945e-20,
       "xy_covariance_m2": [
@@ -700,6 +724,7 @@
       "map_x_m": 38.13212637312288,
       "map_y_m": 25.29680825912983,
       "yaw_rad": 2.8170642382084825,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 5.4419096813452114e-05,
       "yaw_rate_radps": 1.0971858071041276e-20,
       "xy_covariance_m2": [
@@ -723,6 +748,7 @@
       "map_x_m": 38.13392540641668,
       "map_y_m": 25.30305316026559,
       "yaw_rad": 2.8170642386764104,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -1.7006272617275078e-05,
       "yaw_rate_radps": -3.058369832858424e-20,
       "xy_covariance_m2": [
@@ -746,6 +772,7 @@
       "map_x_m": 38.13711671466396,
       "map_y_m": 25.296919944052153,
       "yaw_rad": 2.8170642380311026,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.000214291431924398,
       "yaw_rate_radps": 9.56690621928236e-21,
       "xy_covariance_m2": [
@@ -769,6 +796,7 @@
       "map_x_m": 38.13439881423203,
       "map_y_m": 25.289814736527955,
       "yaw_rad": 2.8170642384075304,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -3.8895471372498115e-05,
       "yaw_rate_radps": -7.789828050218061e-21,
       "xy_covariance_m2": [
@@ -792,6 +820,7 @@
       "map_x_m": 38.147640371221115,
       "map_y_m": 25.281578834527593,
       "yaw_rad": 2.817064237279845,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0006374247684443206,
       "yaw_rate_radps": 5.774378449595313e-20,
       "xy_covariance_m2": [
@@ -815,6 +844,7 @@
       "map_x_m": 38.1547755897864,
       "map_y_m": 25.27564796461064,
       "yaw_rad": 2.8170642381834776,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.00038080355778051647,
       "yaw_rate_radps": 1.3041643785469883e-20,
       "xy_covariance_m2": [
@@ -838,6 +868,7 @@
       "map_x_m": 38.16533534148487,
       "map_y_m": 25.268829349502596,
       "yaw_rad": 2.817620139594709,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.010859779835282291,
       "yaw_rate_radps": 0.005081632683456782,
       "xy_covariance_m2": [
@@ -861,6 +892,7 @@
       "map_x_m": 38.16985787218362,
       "map_y_m": 25.2633299536292,
       "yaw_rad": 2.817431799390506,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0027284403780400753,
       "yaw_rate_radps": 1.4818376041326696e-16,
       "xy_covariance_m2": [
@@ -884,6 +916,7 @@
       "map_x_m": 38.17653757023857,
       "map_y_m": 25.261107251274343,
       "yaw_rad": 2.8174405238869937,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.029557484942386924,
       "yaw_rate_radps": -0.007899378521457133,
       "xy_covariance_m2": [
@@ -907,6 +940,7 @@
       "map_x_m": 38.21244025298516,
       "map_y_m": 25.25321637304435,
       "yaw_rad": 2.8182939256984483,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.012068317054581999,
       "yaw_rate_radps": 1.963704341829233e-16,
       "xy_covariance_m2": [
@@ -930,6 +964,7 @@
       "map_x_m": 38.205529295372784,
       "map_y_m": 25.24440794851673,
       "yaw_rad": 2.8182965886358033,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.002483408367892602,
       "yaw_rate_radps": 4.0004045890758656e-16,
       "xy_covariance_m2": [
@@ -953,6 +988,7 @@
       "map_x_m": 38.205036826772144,
       "map_y_m": 25.242613870378307,
       "yaw_rad": 2.818296575728013,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.001217435257415852,
       "yaw_rate_radps": -1.0959663825919864e-19,
       "xy_covariance_m2": [
@@ -976,6 +1012,7 @@
       "map_x_m": 38.19373510740918,
       "map_y_m": 25.23334944042389,
       "yaw_rad": 2.818296576074447,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0007424326628513936,
       "yaw_rate_radps": -5.248752356681471e-20,
       "xy_covariance_m2": [
@@ -999,6 +1036,7 @@
       "map_x_m": 38.17455043234853,
       "map_y_m": 25.234395334939382,
       "yaw_rad": 2.818296576712344,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0008391283162686738,
       "yaw_rate_radps": -1.7403496421861937e-19,
       "xy_covariance_m2": [
@@ -1022,6 +1060,7 @@
       "map_x_m": 38.1721132864318,
       "map_y_m": 25.231028519009378,
       "yaw_rad": 2.8182965752958786,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.00026579219738741093,
       "yaw_rate_radps": -8.287817653028713e-21,
       "xy_covariance_m2": [
@@ -1045,6 +1084,7 @@
       "map_x_m": 38.17078594744871,
       "map_y_m": 25.230832163790133,
       "yaw_rad": 2.8182965751402786,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 3.558013279376779e-06,
       "yaw_rate_radps": 3.818129272653429e-21,
       "xy_covariance_m2": [
@@ -1068,6 +1108,7 @@
       "map_x_m": 38.17192499732259,
       "map_y_m": 25.236933938258524,
       "yaw_rad": 2.8182965754072153,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.00033650940364136927,
       "yaw_rate_radps": -3.011104270380435e-20,
       "xy_covariance_m2": [
@@ -1091,6 +1132,7 @@
       "map_x_m": 38.17015911368352,
       "map_y_m": 25.248260637354846,
       "yaw_rad": 2.818296571688605,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0008770271347715262,
       "yaw_rate_radps": 5.852680852386618e-19,
       "xy_covariance_m2": [
@@ -1114,6 +1156,7 @@
       "map_x_m": 38.16608855040673,
       "map_y_m": 25.24403661693954,
       "yaw_rad": 2.8182965752188505,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0003128356347693463,
       "yaw_rate_radps": -8.330547087451503e-21,
       "xy_covariance_m2": [
@@ -1137,6 +1180,7 @@
       "map_x_m": 38.17481957381415,
       "map_y_m": 25.242415838020037,
       "yaw_rad": 2.818296575132921,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0005039066347977771,
       "yaw_rate_radps": 3.4393384026238995e-21,
       "xy_covariance_m2": [
@@ -1160,6 +1204,7 @@
       "map_x_m": 38.163608623167185,
       "map_y_m": 25.247506409137745,
       "yaw_rad": 2.819807374607894,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.038446918004735584,
       "yaw_rate_radps": 0.017379886622043532,
       "xy_covariance_m2": [
@@ -1183,6 +1228,7 @@
       "map_x_m": 38.01380921385105,
       "map_y_m": 25.294584268307894,
       "yaw_rad": 2.8233662042395906,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.113279601463238,
       "yaw_rate_radps": -0.006261411412590047,
       "xy_covariance_m2": [
@@ -1206,6 +1252,7 @@
       "map_x_m": 37.922726110864936,
       "map_y_m": 25.32148004543388,
       "yaw_rad": 2.8263854680790104,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.08482350167646405,
       "yaw_rate_radps": 0.0033878297531394408,
       "xy_covariance_m2": [
@@ -1229,6 +1276,7 @@
       "map_x_m": 37.90285191497448,
       "map_y_m": 25.318886978789177,
       "yaw_rad": 2.825760964237607,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.007468596898699716,
       "yaw_rate_radps": -1.6663782798147532e-17,
       "xy_covariance_m2": [
@@ -1252,6 +1300,7 @@
       "map_x_m": 37.918008762788176,
       "map_y_m": 25.314199767756165,
       "yaw_rad": 2.825760908888565,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.006167692279709972,
       "yaw_rate_radps": 1.9058783428404178e-16,
       "xy_covariance_m2": [
@@ -1275,6 +1324,7 @@
       "map_x_m": 37.92326597132001,
       "map_y_m": 25.30370254050966,
       "yaw_rad": 2.8257609070532093,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0025142240937150364,
       "yaw_rate_radps": 5.350130031710892e-19,
       "xy_covariance_m2": [
@@ -1298,6 +1348,7 @@
       "map_x_m": 37.92446611681297,
       "map_y_m": 25.300448728063945,
       "yaw_rad": 2.8257609119831457,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0008008288365205838,
       "yaw_rate_radps": -5.461248078184366e-20,
       "xy_covariance_m2": [
@@ -1321,6 +1372,7 @@
       "map_x_m": 37.931236168607946,
       "map_y_m": 25.291197515991453,
       "yaw_rad": 2.8257609113756494,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0006546985126475239,
       "yaw_rate_radps": 1.3626127085220417e-19,
       "xy_covariance_m2": [
@@ -1344,6 +1396,7 @@
       "map_x_m": 37.931841066656,
       "map_y_m": 25.290925487329826,
       "yaw_rad": 2.8257609115075226,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -3.928452316188667e-05,
       "yaw_rate_radps": 3.037421411012423e-23,
       "xy_covariance_m2": [
@@ -1367,6 +1420,7 @@
       "map_x_m": 37.93187628548269,
       "map_y_m": 25.28829941419338,
       "yaw_rad": 2.8257609116488283,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -2.9989200373360638e-05,
       "yaw_rate_radps": -2.0276665414664995e-20,
       "xy_covariance_m2": [
@@ -1390,6 +1444,7 @@
       "map_x_m": 37.86661419275551,
       "map_y_m": 25.306601667479544,
       "yaw_rad": 2.827725875951036,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.13257526980108858,
       "yaw_rate_radps": 0.006104128337601407,
       "xy_covariance_m2": [
@@ -1413,6 +1468,7 @@
       "map_x_m": 37.73889787960464,
       "map_y_m": 25.350136011131823,
       "yaw_rad": 2.83015420159471,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.1292511890524246,
       "yaw_rate_radps": -0.0001157111761904715,
       "xy_covariance_m2": [
@@ -1436,6 +1492,7 @@
       "map_x_m": 37.67627328044063,
       "map_y_m": 25.369604721497826,
       "yaw_rad": 2.8309671784072243,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.0058591319526953185,
       "yaw_rate_radps": -3.3373672347749626e-16,
       "xy_covariance_m2": [
@@ -1459,6 +1516,7 @@
       "map_x_m": 37.70060732446046,
       "map_y_m": 25.36140534139516,
       "yaw_rad": 2.8309589420128862,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.009125564887772138,
       "yaw_rate_radps": 6.000531442686537e-20,
       "xy_covariance_m2": [
@@ -1482,6 +1540,7 @@
       "map_x_m": 37.702890633379546,
       "map_y_m": 25.367279418133776,
       "yaw_rad": 2.830958956444829,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.003189635437355026,
       "yaw_rate_radps": -8.617349743827081e-19,
       "xy_covariance_m2": [
@@ -1505,6 +1564,7 @@
       "map_x_m": 37.70254595889461,
       "map_y_m": 25.37444986026141,
       "yaw_rad": 2.8309589490379556,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": -0.0010516256601728947,
       "yaw_rate_radps": -1.1540524288582511e-18,
       "xy_covariance_m2": [
@@ -1528,6 +1588,7 @@
       "map_x_m": 37.69987988587801,
       "map_y_m": 25.38919935006143,
       "yaw_rad": 2.830958944337972,
+      "display_motion_yaw_rad": 2.818183775068139,
       "forward_speed_mps": 0.00017785975794954847,
       "yaw_rate_radps": -2.3374618623689526e-19,
       "xy_covariance_m2": [
@@ -1551,6 +1612,7 @@
       "map_x_m": 37.48653448966929,
       "map_y_m": 25.460368247368987,
       "yaw_rad": 2.837844515933222,
+      "display_motion_yaw_rad": 2.837932621307205,
       "forward_speed_mps": 0.45801757975662216,
       "yaw_rate_radps": 0.03416937486163982,
       "xy_covariance_m2": [
@@ -1574,6 +1636,7 @@
       "map_x_m": 37.174799629331964,
       "map_y_m": 25.553241960285593,
       "yaw_rad": 2.8436767480780887,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 0.10550029951892094,
       "yaw_rate_radps": 0.001021452858160886,
       "xy_covariance_m2": [
@@ -1597,6 +1660,7 @@
       "map_x_m": 37.12292210847508,
       "map_y_m": 25.57732712703904,
       "yaw_rad": 2.8435408624818637,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.03402260754146964,
       "yaw_rate_radps": -5.438290344129922e-18,
       "xy_covariance_m2": [
@@ -1620,6 +1684,7 @@
       "map_x_m": 37.124532764946004,
       "map_y_m": 25.58413843175951,
       "yaw_rad": 2.843540838178507,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.015844615165282988,
       "yaw_rate_radps": -3.1374131854483596e-18,
       "xy_covariance_m2": [
@@ -1643,6 +1708,7 @@
       "map_x_m": 37.12223525664565,
       "map_y_m": 25.594512156019995,
       "yaw_rad": 2.843540875460347,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.0059020140998902616,
       "yaw_rate_radps": 3.047035422582377e-15,
       "xy_covariance_m2": [
@@ -1666,6 +1732,7 @@
       "map_x_m": 37.11451216884452,
       "map_y_m": 25.6004621207743,
       "yaw_rad": 2.843540791384048,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.0013668216977611618,
       "yaw_rate_radps": -3.902981711051179e-21,
       "xy_covariance_m2": [
@@ -1689,6 +1756,7 @@
       "map_x_m": 37.11903736085908,
       "map_y_m": 25.601460142094673,
       "yaw_rad": 2.8435407915099224,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.0010600408668536758,
       "yaw_rate_radps": -2.0670781772573623e-20,
       "xy_covariance_m2": [
@@ -1712,6 +1780,7 @@
       "map_x_m": 37.113318796195294,
       "map_y_m": 25.60830452478843,
       "yaw_rad": 2.843540788491868,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 0.000708848174137505,
       "yaw_rate_radps": 1.5723194374717688e-19,
       "xy_covariance_m2": [
@@ -1735,6 +1804,7 @@
       "map_x_m": 37.11145935834825,
       "map_y_m": 25.61161563043243,
       "yaw_rad": 2.8435407911864843,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 8.808907930112256e-05,
       "yaw_rate_radps": 5.305139149986431e-21,
       "xy_covariance_m2": [
@@ -1758,6 +1828,7 @@
       "map_x_m": 37.09726458855632,
       "map_y_m": 25.59274692660666,
       "yaw_rad": 2.843540802826107,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 1.7067090618241905e-05,
       "yaw_rate_radps": -6.056303757220128e-19,
       "xy_covariance_m2": [
@@ -1781,6 +1852,7 @@
       "map_x_m": 37.09862913864266,
       "map_y_m": 25.576188340446873,
       "yaw_rad": 2.843540789032721,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.0005740783966612379,
       "yaw_rate_radps": 5.088995625649617e-19,
       "xy_covariance_m2": [
@@ -1804,6 +1876,7 @@
       "map_x_m": 37.10172294877346,
       "map_y_m": 25.571265778499654,
       "yaw_rad": 2.8435407913843544,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -4.466717005074642e-05,
       "yaw_rate_radps": -7.619731696734762e-21,
       "xy_covariance_m2": [
@@ -1827,6 +1900,7 @@
       "map_x_m": 37.109326230811796,
       "map_y_m": 25.568368264541427,
       "yaw_rad": 2.843540791393485,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.0004039957977114076,
       "yaw_rate_radps": -5.38558428571126e-21,
       "xy_covariance_m2": [
@@ -1850,6 +1924,7 @@
       "map_x_m": 37.108511341382865,
       "map_y_m": 25.567941263060423,
       "yaw_rad": 2.8435407909225336,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.00011490469448625272,
       "yaw_rate_radps": 1.364184320546279e-20,
       "xy_covariance_m2": [
@@ -1873,6 +1948,7 @@
       "map_x_m": 37.109751047402916,
       "map_y_m": 25.5616008328404,
       "yaw_rad": 2.843540791125733,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.0002988803300477597,
       "yaw_rate_radps": 8.28462537437064e-21,
       "xy_covariance_m2": [
@@ -1896,6 +1972,7 @@
       "map_x_m": 37.111079608596164,
       "map_y_m": 25.565893493839123,
       "yaw_rad": 2.8435407910192616,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 0.0002761656035156133,
       "yaw_rate_radps": 6.453976392184821e-21,
       "xy_covariance_m2": [
@@ -1919,6 +1996,7 @@
       "map_x_m": 37.11344355970107,
       "map_y_m": 25.558969148075885,
       "yaw_rad": 2.843540793577052,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.0001282289215376091,
       "yaw_rate_radps": -2.6363250363319086e-20,
       "xy_covariance_m2": [
@@ -1942,6 +2020,7 @@
       "map_x_m": 37.114062692594544,
       "map_y_m": 25.55728327590293,
       "yaw_rad": 2.8435407909718142,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 0.00017280422525542898,
       "yaw_rate_radps": 6.0295718884808436e-18,
       "xy_covariance_m2": [
@@ -1965,6 +2044,7 @@
       "map_x_m": 37.118085693337385,
       "map_y_m": 25.55363662152024,
       "yaw_rad": 2.843540791822348,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.00011087652277263363,
       "yaw_rate_radps": -1.6609302334835163e-20,
       "xy_covariance_m2": [
@@ -1988,6 +2068,7 @@
       "map_x_m": 37.11827803498333,
       "map_y_m": 25.556380365430027,
       "yaw_rad": 2.84354079109227,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -4.3961936403510926e-05,
       "yaw_rate_radps": 5.168193984287045e-21,
       "xy_covariance_m2": [
@@ -2011,6 +2092,7 @@
       "map_x_m": 37.1194909448036,
       "map_y_m": 25.55680523115723,
       "yaw_rad": 2.843540791241759,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 2.3908846769710135e-05,
       "yaw_rate_radps": -1.5518137666724458e-22,
       "xy_covariance_m2": [
@@ -2034,6 +2116,7 @@
       "map_x_m": 37.11954403423907,
       "map_y_m": 25.557174450380256,
       "yaw_rad": 2.8435407912383495,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 1.1571121602687977e-05,
       "yaw_rate_radps": 1.4143228221328064e-23,
       "xy_covariance_m2": [
@@ -2057,6 +2140,7 @@
       "map_x_m": 37.11954583736205,
       "map_y_m": 25.558361388765274,
       "yaw_rad": 2.843540791343605,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -8.584665868247369e-06,
       "yaw_rate_radps": -3.778558231242797e-21,
       "xy_covariance_m2": [
@@ -2080,6 +2164,7 @@
       "map_x_m": 37.11948436613549,
       "map_y_m": 25.566765729799155,
       "yaw_rad": 2.8435407908638695,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 0.00013874577500158037,
       "yaw_rate_radps": 1.0480162622991017e-20,
       "xy_covariance_m2": [
@@ -2103,6 +2188,7 @@
       "map_x_m": 37.119502682598814,
       "map_y_m": 25.571967074260016,
       "yaw_rad": 2.843540791517385,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 7.758745587017666e-05,
       "yaw_rate_radps": -1.5692850705480894e-20,
       "xy_covariance_m2": [
@@ -2126,6 +2212,7 @@
       "map_x_m": 37.11771099933806,
       "map_y_m": 25.578630146283725,
       "yaw_rad": 2.843540790899307,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 0.0002659871884382043,
       "yaw_rate_radps": 5.178608860936556e-21,
       "xy_covariance_m2": [
@@ -2149,6 +2236,7 @@
       "map_x_m": 37.119060776063215,
       "map_y_m": 25.578158341000652,
       "yaw_rad": 2.843540791876366,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.00022532081202758836,
       "yaw_rate_radps": -2.5721564863724496e-20,
       "xy_covariance_m2": [
@@ -2172,6 +2260,7 @@
       "map_x_m": 37.12197933058601,
       "map_y_m": 25.579705031322508,
       "yaw_rad": 2.843540791324287,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.00044718578774286883,
       "yaw_rate_radps": -8.418147873538411e-21,
       "xy_covariance_m2": [
@@ -2195,6 +2284,7 @@
       "map_x_m": 37.14729876001399,
       "map_y_m": 25.52940828403619,
       "yaw_rad": 2.8435407847616636,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.0002817750537866512,
       "yaw_rate_radps": 5.207024666237167e-19,
       "xy_covariance_m2": [
@@ -2218,6 +2308,7 @@
       "map_x_m": 37.15293826764099,
       "map_y_m": 25.524065006896834,
       "yaw_rad": 2.8435407910851405,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.00011542146275153535,
       "yaw_rate_radps": 6.510385301462941e-21,
       "xy_covariance_m2": [
@@ -2241,6 +2332,7 @@
       "map_x_m": 37.15495397961514,
       "map_y_m": 25.517723723782495,
       "yaw_rad": 2.8435407912561192,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -5.553172919731498e-05,
       "yaw_rate_radps": -4.1799573050093526e-22,
       "xy_covariance_m2": [
@@ -2264,6 +2356,7 @@
       "map_x_m": 37.14861712121893,
       "map_y_m": 25.515876605964646,
       "yaw_rad": 2.843540791774168,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 0.0001380605573192136,
       "yaw_rate_radps": -1.9759361439825603e-20,
       "xy_covariance_m2": [
@@ -2287,6 +2380,7 @@
       "map_x_m": 37.146364362716774,
       "map_y_m": 25.515381967055397,
       "yaw_rad": 2.84354079086543,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.00043088621806860924,
       "yaw_rate_radps": 1.6937940930526674e-20,
       "xy_covariance_m2": [
@@ -2310,6 +2404,7 @@
       "map_x_m": 37.14875000101355,
       "map_y_m": 25.51288764182448,
       "yaw_rad": 2.8435407912016295,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.00036337766679249764,
       "yaw_rate_radps": 1.895969231210555e-21,
       "xy_covariance_m2": [
@@ -2333,6 +2428,7 @@
       "map_x_m": 37.15476645297394,
       "map_y_m": 25.510142374310103,
       "yaw_rad": 2.8435407927822096,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -0.0001255379020370165,
       "yaw_rate_radps": -2.7417820418425437e-19,
       "xy_covariance_m2": [
@@ -2356,6 +2452,7 @@
       "map_x_m": 37.15181029300336,
       "map_y_m": 25.507448522412275,
       "yaw_rad": 2.8435407927966363,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 4.471662088683058e-05,
       "yaw_rate_radps": -6.311305626123561e-20,
       "xy_covariance_m2": [
@@ -2379,6 +2476,7 @@
       "map_x_m": 37.154911980624426,
       "map_y_m": 25.503547116227196,
       "yaw_rad": 2.843540791326001,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": -5.796151507773734e-05,
       "yaw_rate_radps": -3.830828462073875e-21,
       "xy_covariance_m2": [
@@ -2402,6 +2500,7 @@
       "map_x_m": 37.15086027957633,
       "map_y_m": 25.502278504130512,
       "yaw_rad": 2.8435407909692856,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 0.00013016327667752096,
       "yaw_rate_radps": 3.7405614908529924e-21,
       "xy_covariance_m2": [
@@ -2425,6 +2524,7 @@
       "map_x_m": 37.12444731594845,
       "map_y_m": 25.564882658810017,
       "yaw_rad": 2.8466174754372773,
+      "display_motion_yaw_rad": 2.843285454244312,
       "forward_speed_mps": 0.1070095585816559,
       "yaw_rate_radps": -0.006671800661163186,
       "xy_covariance_m2": [
@@ -2448,6 +2548,7 @@
       "map_x_m": 36.995502322232156,
       "map_y_m": 25.622136138421375,
       "yaw_rad": 2.8224045519426273,
+      "display_motion_yaw_rad": 2.745517770414629,
       "forward_speed_mps": 0.19053845755929535,
       "yaw_rate_radps": -0.02040129391314096,
       "xy_covariance_m2": [
@@ -2471,6 +2572,7 @@
       "map_x_m": 36.75407599786595,
       "map_y_m": 25.72209702100286,
       "yaw_rad": 2.849890958348369,
+      "display_motion_yaw_rad": 2.778856347366397,
       "forward_speed_mps": 0.3949319445376441,
       "yaw_rate_radps": -0.0023963645353934078,
       "xy_covariance_m2": [
@@ -2494,6 +2596,7 @@
       "map_x_m": 36.280189493966674,
       "map_y_m": 25.8889566004777,
       "yaw_rad": 2.889227122108462,
+      "display_motion_yaw_rad": 2.815655098612782,
       "forward_speed_mps": 0.6228778419373087,
       "yaw_rate_radps": -0.014427074991793831,
       "xy_covariance_m2": [
@@ -2517,6 +2620,7 @@
       "map_x_m": 35.701287803791956,
       "map_y_m": 26.08872412551546,
       "yaw_rad": 2.838668281386555,
+      "display_motion_yaw_rad": 2.761137078962912,
       "forward_speed_mps": 0.6716272024444937,
       "yaw_rate_radps": 0.021824423871779287,
       "xy_covariance_m2": [
@@ -2540,6 +2644,7 @@
       "map_x_m": 35.009376046334545,
       "map_y_m": 26.37955542219352,
       "yaw_rad": 2.87572119187758,
+      "display_motion_yaw_rad": 2.7723999229087144,
       "forward_speed_mps": 0.8494465495908816,
       "yaw_rate_radps": -0.023459646158350604,
       "xy_covariance_m2": [
@@ -2563,6 +2668,7 @@
       "map_x_m": 34.132045475764045,
       "map_y_m": 26.71398140432239,
       "yaw_rad": 2.8968754704331907,
+      "display_motion_yaw_rad": 2.7772748512315926,
       "forward_speed_mps": 1.113228798983814,
       "yaw_rate_radps": 0.025200071303242682,
       "xy_covariance_m2": [
@@ -2586,6 +2692,7 @@
       "map_x_m": 32.99810799069446,
       "map_y_m": 27.154827012082865,
       "yaw_rad": 2.916397612146726,
+      "display_motion_yaw_rad": 2.7573641596273535,
       "forward_speed_mps": 1.309727828327082,
       "yaw_rate_radps": 0.031001524558534506,
       "xy_covariance_m2": [
@@ -2609,6 +2716,7 @@
       "map_x_m": 31.87576100646585,
       "map_y_m": 27.614751190144837,
       "yaw_rad": 2.932896937867273,
+      "display_motion_yaw_rad": 2.7604215377959314,
       "forward_speed_mps": 1.1277260950694372,
       "yaw_rate_radps": -0.012906649550070223,
       "xy_covariance_m2": [
@@ -2632,6 +2740,7 @@
       "map_x_m": 30.85194241252169,
       "map_y_m": 28.025640241601703,
       "yaw_rad": 2.93136607870699,
+      "display_motion_yaw_rad": 2.7641730020633037,
       "forward_speed_mps": 1.0477991449144903,
       "yaw_rate_radps": 0.021692001442488684,
       "xy_covariance_m2": [
@@ -2655,6 +2764,7 @@
       "map_x_m": 29.851313722524598,
       "map_y_m": 28.420767129346242,
       "yaw_rad": 2.9465036198826695,
+      "display_motion_yaw_rad": 2.7647250339565055,
       "forward_speed_mps": 1.0444552376656127,
       "yaw_rate_radps": 0.0020242739937585447,
       "xy_covariance_m2": [
@@ -2678,6 +2788,7 @@
       "map_x_m": 28.838916238782257,
       "map_y_m": 28.78301608507134,
       "yaw_rad": 3.0075884807260547,
+      "display_motion_yaw_rad": 2.8364501982172596,
       "forward_speed_mps": 1.0351127488487073,
       "yaw_rate_radps": -0.0864762038788894,
       "xy_covariance_m2": [
@@ -2701,6 +2812,7 @@
       "map_x_m": 27.80595111686495,
       "map_y_m": 29.091294898276498,
       "yaw_rad": 3.035334808439285,
+      "display_motion_yaw_rad": 2.8413158631778335,
       "forward_speed_mps": 1.0301471928983001,
       "yaw_rate_radps": 0.0695925486806368,
       "xy_covariance_m2": [
@@ -2724,6 +2836,7 @@
       "map_x_m": 26.809194640977157,
       "map_y_m": 29.411814550110666,
       "yaw_rad": 2.9754087859712977,
+      "display_motion_yaw_rad": 2.797562290508071,
       "forward_speed_mps": 1.027534671780695,
       "yaw_rate_radps": 0.025677346214775347,
       "xy_covariance_m2": [
@@ -2747,6 +2860,7 @@
       "map_x_m": 25.813515258303667,
       "map_y_m": 29.8073688275742,
       "yaw_rad": 3.0000409979821816,
+      "display_motion_yaw_rad": 2.7740449420119853,
       "forward_speed_mps": 1.040194136815046,
       "yaw_rate_radps": 0.018142957114755345,
       "xy_covariance_m2": [
@@ -2770,6 +2884,7 @@
       "map_x_m": 24.831535055271267,
       "map_y_m": 30.177818817993078,
       "yaw_rad": 3.0194201212817333,
+      "display_motion_yaw_rad": 2.7912137791409988,
       "forward_speed_mps": 1.0252550904246274,
       "yaw_rate_radps": -0.0007883493897336636,
       "xy_covariance_m2": [
@@ -2793,6 +2908,7 @@
       "map_x_m": 23.798340212989373,
       "map_y_m": 30.580679169312077,
       "yaw_rad": 3.0342717251501092,
+      "display_motion_yaw_rad": 2.794267711255768,
       "forward_speed_mps": 1.1651333457730688,
       "yaw_rate_radps": -0.01569748318060411,
       "xy_covariance_m2": [
@@ -2816,6 +2932,7 @@
       "map_x_m": 22.611484456642668,
       "map_y_m": 30.97623260973059,
       "yaw_rad": 3.046875254601286,
+      "display_motion_yaw_rad": 2.7971890491086717,
       "forward_speed_mps": 1.3119026985940867,
       "yaw_rate_radps": -0.0119030657570586,
       "xy_covariance_m2": [
@@ -2839,6 +2956,7 @@
       "map_x_m": 21.345772268841163,
       "map_y_m": 31.42736272229601,
       "yaw_rad": 3.0625730218054734,
+      "display_motion_yaw_rad": 2.804756578405532,
       "forward_speed_mps": 1.3589231827526338,
       "yaw_rate_radps": 0.0091000216088106,
       "xy_covariance_m2": [
@@ -2862,6 +2980,7 @@
       "map_x_m": 20.06415298710894,
       "map_y_m": 31.87367534740354,
       "yaw_rad": 3.0788996704794993,
+      "display_motion_yaw_rad": 2.812132498410002,
       "forward_speed_mps": 1.3459864219117421,
       "yaw_rate_radps": 0.013770252412391694,
       "xy_covariance_m2": [
@@ -2885,6 +3004,7 @@
       "map_x_m": 18.747024268917215,
       "map_y_m": 32.338499038389195,
       "yaw_rad": 3.062353411277969,
+      "display_motion_yaw_rad": 2.774280631889713,
       "forward_speed_mps": 1.3599131429102667,
       "yaw_rate_radps": -0.022275830467649128,
       "xy_covariance_m2": [
@@ -2908,6 +3028,7 @@
       "map_x_m": 17.472440019307953,
       "map_y_m": 32.84117789441807,
       "yaw_rad": 3.0662614953253335,
+      "display_motion_yaw_rad": 2.7779851656812258,
       "forward_speed_mps": 1.367767605650915,
       "yaw_rate_radps": 0.00015871046721313835,
       "xy_covariance_m2": [
@@ -2931,6 +3052,7 @@
       "map_x_m": 16.163040674375072,
       "map_y_m": 33.32369234387618,
       "yaw_rad": 3.06915479731445,
+      "display_motion_yaw_rad": 2.7776338340132263,
       "forward_speed_mps": 1.3750463716892922,
       "yaw_rate_radps": -0.0217185442624877,
       "xy_covariance_m2": [
@@ -2954,6 +3076,7 @@
       "map_x_m": 14.952716459012564,
       "map_y_m": 33.81443798249525,
       "yaw_rad": -3.1058029262818727,
+      "display_motion_yaw_rad": 2.7932860660499412,
       "forward_speed_mps": 1.2243597826431192,
       "yaw_rate_radps": 0.009062931127644615,
       "xy_covariance_m2": [
@@ -2977,6 +3100,7 @@
       "map_x_m": 13.871412929787503,
       "map_y_m": 34.132252319898804,
       "yaw_rad": -3.0753899154033135,
+      "display_motion_yaw_rad": 2.875950766114893,
       "forward_speed_mps": 1.1179785409209635,
       "yaw_rate_radps": 0.03349096594005516,
       "xy_covariance_m2": [
@@ -3000,6 +3124,7 @@
       "map_x_m": 12.816481765272824,
       "map_y_m": 34.40980249561854,
       "yaw_rad": -3.0472720305560714,
+      "display_motion_yaw_rad": 2.8914894294375197,
       "forward_speed_mps": 1.076227479342805,
       "yaw_rate_radps": -0.08796185262824584,
       "xy_covariance_m2": [
@@ -3023,6 +3148,7 @@
       "map_x_m": 11.751181982013568,
       "map_y_m": 34.64996451436033,
       "yaw_rad": -3.110991174924202,
+      "display_motion_yaw_rad": 2.8968079188342784,
       "forward_speed_mps": 1.0748989605436001,
       "yaw_rate_radps": -0.3307892373461912,
       "xy_covariance_m2": [
@@ -3046,6 +3172,7 @@
       "map_x_m": 10.752268916367495,
       "map_y_m": 34.99572721818794,
       "yaw_rad": -3.1372744236180385,
+      "display_motion_yaw_rad": 2.7609584354589107,
       "forward_speed_mps": 1.0698369951688917,
       "yaw_rate_radps": 0.05348842326350691,
       "xy_covariance_m2": [
@@ -3069,6 +3196,7 @@
       "map_x_m": 9.72013514133758,
       "map_y_m": 35.37195407014637,
       "yaw_rad": -3.127062019189269,
+      "display_motion_yaw_rad": 2.784258307673385,
       "forward_speed_mps": 1.085253940696649,
       "yaw_rate_radps": -0.04217854081480375,
       "xy_covariance_m2": [
@@ -3092,6 +3220,7 @@
       "map_x_m": 8.754104335304682,
       "map_y_m": 35.76398317343039,
       "yaw_rad": -3.0476615758599004,
+      "display_motion_yaw_rad": 2.7739205830613716,
       "forward_speed_mps": 1.0425208089621616,
       "yaw_rate_radps": 0.05964083693535596,
       "xy_covariance_m2": [
@@ -3115,6 +3244,7 @@
       "map_x_m": 7.766252952713237,
       "map_y_m": 36.09738781298101,
       "yaw_rad": -3.0190012186337385,
+      "display_motion_yaw_rad": 2.8172275340159874,
       "forward_speed_mps": 1.0365359584958844,
       "yaw_rate_radps": 0.027369633390367184,
       "xy_covariance_m2": [
@@ -3138,6 +3268,7 @@
       "map_x_m": 6.7714820192441305,
       "map_y_m": 36.43558042639908,
       "yaw_rad": -2.9845989416945953,
+      "display_motion_yaw_rad": 2.8386117740706807,
       "forward_speed_mps": 1.041541070574549,
       "yaw_rate_radps": 0.028514227237054313,
       "xy_covariance_m2": [
@@ -3161,6 +3292,7 @@
       "map_x_m": 5.754465881493501,
       "map_y_m": 36.73531135480007,
       "yaw_rad": -2.9497062938116034,
+      "display_motion_yaw_rad": 2.856103066229307,
       "forward_speed_mps": 1.0726792375050611,
       "yaw_rate_radps": -0.004357284444419654,
       "xy_covariance_m2": [
@@ -3184,6 +3316,7 @@
       "map_x_m": 4.713553215364321,
       "map_y_m": 37.04608773941127,
       "yaw_rad": -2.900961803315974,
+      "display_motion_yaw_rad": 2.872768333757822,
       "forward_speed_mps": 1.0693799962667063,
       "yaw_rate_radps": 0.02465773686992969,
       "xy_covariance_m2": [
@@ -3207,6 +3340,7 @@
       "map_x_m": 3.7250218078527104,
       "map_y_m": 37.34055476303817,
       "yaw_rad": -2.9412013182113084,
+      "display_motion_yaw_rad": 2.823424300816922,
       "forward_speed_mps": 1.0465594121563448,
       "yaw_rate_radps": 0.03147507295142205,
       "xy_covariance_m2": [
@@ -3230,6 +3364,7 @@
       "map_x_m": 2.7299608976100256,
       "map_y_m": 37.68002302598827,
       "yaw_rad": -2.941448729378989,
+      "display_motion_yaw_rad": 2.8147689079333973,
       "forward_speed_mps": 1.0397276501219883,
       "yaw_rate_radps": 0.025742492598207944,
       "xy_covariance_m2": [
@@ -3253,6 +3388,7 @@
       "map_x_m": 1.671966025701573,
       "map_y_m": 38.01791725359554,
       "yaw_rad": -2.926033601125598,
+      "display_motion_yaw_rad": 2.8395157879682156,
       "forward_speed_mps": 1.1261513865883956,
       "yaw_rate_radps": 0.07521109839476786,
       "xy_covariance_m2": [
@@ -3276,6 +3412,7 @@
       "map_x_m": 0.3901809753925126,
       "map_y_m": 38.405238003761255,
       "yaw_rad": -2.909570925468856,
+      "display_motion_yaw_rad": 2.790894736433688,
       "forward_speed_mps": 1.332153187341144,
       "yaw_rate_radps": -0.07196380791237623,
       "xy_covariance_m2": [
@@ -3299,6 +3436,7 @@
       "map_x_m": -0.6985968559631576,
       "map_y_m": 38.92949435014179,
       "yaw_rad": -2.9414734036234274,
+      "display_motion_yaw_rad": 2.67125263143149,
       "forward_speed_mps": 0.5913740226880224,
       "yaw_rate_radps": -0.07809419772298194,
       "xy_covariance_m2": [
@@ -3322,6 +3460,7 @@
       "map_x_m": -1.33435580449356,
       "map_y_m": 39.1909669325198,
       "yaw_rad": -2.9771263495225098,
+      "display_motion_yaw_rad": 2.80859247157361,
       "forward_speed_mps": 0.7342433743849809,
       "yaw_rate_radps": -0.03332585592594697,
       "xy_covariance_m2": [
@@ -3345,6 +3484,7 @@
       "map_x_m": -2.165866322357086,
       "map_y_m": 39.5224605934913,
       "yaw_rad": -2.912859073156842,
+      "display_motion_yaw_rad": 2.7844855393542316,
       "forward_speed_mps": 0.8580112189369109,
       "yaw_rate_radps": 0.1455277415961647,
       "xy_covariance_m2": [
@@ -3368,6 +3508,7 @@
       "map_x_m": -3.0419793901741423,
       "map_y_m": 39.81083541641928,
       "yaw_rad": -2.892813005929959,
+      "display_motion_yaw_rad": 2.8378650246610544,
       "forward_speed_mps": 0.8907048232990084,
       "yaw_rate_radps": -0.012365801265953841,
       "xy_covariance_m2": [
@@ -3391,6 +3532,7 @@
       "map_x_m": -3.8982757225104474,
       "map_y_m": 40.09846456057582,
       "yaw_rad": -2.8937559898914973,
+      "display_motion_yaw_rad": 2.815757811430931,
       "forward_speed_mps": 0.8991141673404772,
       "yaw_rate_radps": -0.004861237092110925,
       "xy_covariance_m2": [
@@ -3414,6 +3556,7 @@
       "map_x_m": -4.779140599458161,
       "map_y_m": 40.38826012340667,
       "yaw_rad": -2.895276947703967,
+      "display_motion_yaw_rad": 2.7844757277739123,
       "forward_speed_mps": 0.9373886606857886,
       "yaw_rate_radps": 0.03049501116198612,
       "xy_covariance_m2": [
@@ -3437,6 +3580,7 @@
       "map_x_m": -5.725117515418523,
       "map_y_m": 40.68442504922212,
       "yaw_rad": -2.8915926322659606,
+      "display_motion_yaw_rad": 2.855626667869216,
       "forward_speed_mps": 1.0555179246131425,
       "yaw_rate_radps": -0.015592341377777064,
       "xy_covariance_m2": [
@@ -3460,6 +3604,7 @@
       "map_x_m": -6.782651352714478,
       "map_y_m": 41.01419319731126,
       "yaw_rad": -2.9148075024158544,
+      "display_motion_yaw_rad": 2.8251650466307505,
       "forward_speed_mps": 1.1116581093324998,
       "yaw_rate_radps": 0.007241565800768948,
       "xy_covariance_m2": [
@@ -3483,6 +3628,7 @@
       "map_x_m": -7.865223133818239,
       "map_y_m": 41.37219231357276,
       "yaw_rad": -2.93470937515027,
+      "display_motion_yaw_rad": 2.833054974405324,
       "forward_speed_mps": 1.10214761160438,
       "yaw_rate_radps": -0.016159441443787458,
       "xy_covariance_m2": [
@@ -3506,6 +3652,7 @@
       "map_x_m": -8.97011517651762,
       "map_y_m": 41.77798183162946,
       "yaw_rad": -2.9408844549907185,
+      "display_motion_yaw_rad": 2.802303186493212,
       "forward_speed_mps": 1.2071464057542782,
       "yaw_rate_radps": 0.029948020679020138,
       "xy_covariance_m2": [
@@ -3529,6 +3676,7 @@
       "map_x_m": -10.150592197092118,
       "map_y_m": 42.09019814441084,
       "yaw_rad": -2.9609071195813437,
+      "display_motion_yaw_rad": 2.838596978435497,
       "forward_speed_mps": 1.26928860998068,
       "yaw_rate_radps": -0.061257441864382874,
       "xy_covariance_m2": [
@@ -3552,6 +3700,7 @@
       "map_x_m": -11.377274645921778,
       "map_y_m": 42.48020924143973,
       "yaw_rad": -2.9796975213968464,
+      "display_motion_yaw_rad": 2.8298224022830194,
       "forward_speed_mps": 1.248366550601097,
       "yaw_rate_radps": -0.004111589438731088,
       "xy_covariance_m2": [
@@ -3575,6 +3724,7 @@
       "map_x_m": -12.598561619838321,
       "map_y_m": 42.88217603586453,
       "yaw_rad": -2.9818506743336837,
+      "display_motion_yaw_rad": 2.8315948225902776,
       "forward_speed_mps": 1.245210528391805,
       "yaw_rate_radps": 0.022332727638254286,
       "xy_covariance_m2": [
@@ -3598,6 +3748,7 @@
       "map_x_m": -13.822231939617309,
       "map_y_m": 43.251991773272685,
       "yaw_rad": -2.991783414206263,
+      "display_motion_yaw_rad": 2.8252675535909657,
       "forward_speed_mps": 1.2294416248262698,
       "yaw_rate_radps": 0.00015644769168998403,
       "xy_covariance_m2": [
@@ -3621,6 +3772,7 @@
       "map_x_m": -15.00142773416173,
       "map_y_m": 43.59224980178362,
       "yaw_rad": -3.014937250914562,
+      "display_motion_yaw_rad": 2.8782009248127207,
       "forward_speed_mps": 1.2143656896948996,
       "yaw_rate_radps": 0.025074627003746346,
       "xy_covariance_m2": [
@@ -3644,6 +3796,7 @@
       "map_x_m": -16.19653402597623,
       "map_y_m": 43.90327500077235,
       "yaw_rad": -3.0777862821511417,
+      "display_motion_yaw_rad": 2.893766887762004,
       "forward_speed_mps": 1.2132374897896252,
       "yaw_rate_radps": 0.012515774765758905,
       "xy_covariance_m2": [
@@ -3667,6 +3820,7 @@
       "map_x_m": -17.37254146595316,
       "map_y_m": 44.20061485834259,
       "yaw_rad": -3.0826503328747803,
+      "display_motion_yaw_rad": 2.899324665034892,
       "forward_speed_mps": 1.2007747635631343,
       "yaw_rate_radps": 0.01305300114205003,
       "xy_covariance_m2": [
@@ -3690,6 +3844,7 @@
       "map_x_m": -18.53540961666701,
       "map_y_m": 44.46846459903381,
       "yaw_rad": -2.95664630504849,
+      "display_motion_yaw_rad": 2.9789602265630597,
       "forward_speed_mps": 1.246017933903406,
       "yaw_rate_radps": 0.2228162731090326,
       "xy_covariance_m2": [
@@ -3713,6 +3868,7 @@
       "map_x_m": -19.776667034502353,
       "map_y_m": 44.52985205405923,
       "yaw_rad": -2.7737020673417643,
+      "display_motion_yaw_rad": -3.0828442524593944,
       "forward_speed_mps": 1.2417884081674768,
       "yaw_rate_radps": -0.0034972602951749373,
       "xy_covariance_m2": [
@@ -3736,6 +3892,7 @@
       "map_x_m": -20.90726525563403,
       "map_y_m": 44.40119503298485,
       "yaw_rad": -2.716325146680841,
+      "display_motion_yaw_rad": -3.00845364788907,
       "forward_speed_mps": 1.1911016696282488,
       "yaw_rate_radps": 0.03293985303644963,
       "xy_covariance_m2": [
@@ -3759,6 +3916,7 @@
       "map_x_m": -22.091055651401543,
       "map_y_m": 44.232776920719864,
       "yaw_rad": -2.6798190709262206,
+      "display_motion_yaw_rad": -2.9309735048163605,
       "forward_speed_mps": 1.1980475920949247,
       "yaw_rate_radps": 0.0454320205953129,
       "xy_covariance_m2": [
@@ -3782,6 +3940,7 @@
       "map_x_m": -23.246880723184603,
       "map_y_m": 43.88819206691625,
       "yaw_rad": -2.5485245620622656,
+      "display_motion_yaw_rad": -2.80941906866225,
       "forward_speed_mps": 1.2375964187791597,
       "yaw_rate_radps": 0.2365529531534703,
       "xy_covariance_m2": [
@@ -3805,6 +3964,7 @@
       "map_x_m": -24.364652089622968,
       "map_y_m": 43.335220791191986,
       "yaw_rad": -2.2810424299108916,
+      "display_motion_yaw_rad": -2.5338236815862176,
       "forward_speed_mps": 1.2362618424107463,
       "yaw_rate_radps": 0.006996121068408303,
       "xy_covariance_m2": [
@@ -3828,6 +3988,7 @@
       "map_x_m": -25.323906875782363,
       "map_y_m": 42.51527288204417,
       "yaw_rad": -2.1509067750821576,
+      "display_motion_yaw_rad": -2.3862777289973813,
       "forward_speed_mps": 1.2724427612419755,
       "yaw_rate_radps": 0.22081272628931073,
       "xy_covariance_m2": [
@@ -3851,6 +4012,7 @@
       "map_x_m": -26.23654080234365,
       "map_y_m": 41.55223828743369,
       "yaw_rad": -1.9771917057340915,
+      "display_motion_yaw_rad": -2.2332736347733,
       "forward_speed_mps": 1.313650686362852,
       "yaw_rate_radps": 0.22802871359863494,
       "xy_covariance_m2": [
@@ -3874,6 +4036,7 @@
       "map_x_m": -26.964698997891617,
       "map_y_m": 40.45942787382581,
       "yaw_rad": -1.913530096724983,
+      "display_motion_yaw_rad": -2.130092788745655,
       "forward_speed_mps": 1.304276075342231,
       "yaw_rate_radps": 0.15609491180455204,
       "xy_covariance_m2": [
@@ -3897,6 +4060,7 @@
       "map_x_m": -27.60458247364763,
       "map_y_m": 39.30643984876266,
       "yaw_rad": -1.8738281912567039,
+      "display_motion_yaw_rad": -2.0297962980744444,
       "forward_speed_mps": 1.2891521224883447,
       "yaw_rate_radps": 0.06394767732838345,
       "xy_covariance_m2": [
@@ -3920,6 +4084,7 @@
       "map_x_m": -28.18435006701368,
       "map_y_m": 38.120651885352956,
       "yaw_rad": -1.8488313788221864,
+      "display_motion_yaw_rad": -2.0058868687834774,
       "forward_speed_mps": 1.3039413113271616,
       "yaw_rate_radps": 0.017183027214710846,
       "xy_covariance_m2": [
@@ -3943,6 +4108,7 @@
       "map_x_m": -28.74112199930437,
       "map_y_m": 36.91835612484393,
       "yaw_rad": -1.8509103811248224,
+      "display_motion_yaw_rad": -1.9971386924684207,
       "forward_speed_mps": 1.3075881280867532,
       "yaw_rate_radps": 0.022786015918791,
       "xy_covariance_m2": [
@@ -3966,6 +4132,7 @@
       "map_x_m": -29.288074847657715,
       "map_y_m": 35.69588985827155,
       "yaw_rad": -1.871002060319309,
+      "display_motion_yaw_rad": -1.9958470190329949,
       "forward_speed_mps": 1.2904620905691653,
       "yaw_rate_radps": -0.008640723592874851,
       "xy_covariance_m2": [
@@ -3989,6 +4156,7 @@
       "map_x_m": -29.84807116320716,
       "map_y_m": 34.504369450900946,
       "yaw_rad": -1.889306462048392,
+      "display_motion_yaw_rad": -2.0163869470069176,
       "forward_speed_mps": 1.3033698503861788,
       "yaw_rate_radps": 0.0346283727985004,
       "xy_covariance_m2": [
@@ -4012,6 +4180,7 @@
       "map_x_m": -30.43285914577885,
       "map_y_m": 33.286590430892915,
       "yaw_rad": -1.812876108013114,
+      "display_motion_yaw_rad": -1.9670789149200307,
       "forward_speed_mps": 1.3220068081010026,
       "yaw_rate_radps": 0.020104265199174118,
       "xy_covariance_m2": [
@@ -4035,6 +4204,7 @@
       "map_x_m": -30.88738412532154,
       "map_y_m": 32.005466588337256,
       "yaw_rad": -1.652326721599846,
+      "display_motion_yaw_rad": -1.8354901167550348,
       "forward_speed_mps": 1.3324498937158509,
       "yaw_rate_radps": 0.0529919032955094,
       "xy_covariance_m2": [
@@ -4058,6 +4228,7 @@
       "map_x_m": -31.127768795848972,
       "map_y_m": 30.700778774093784,
       "yaw_rad": -1.3861612490768345,
+      "display_motion_yaw_rad": -1.6204634692981184,
       "forward_speed_mps": 1.3085720912677425,
       "yaw_rate_radps": 0.47609383307734393,
       "xy_covariance_m2": [
@@ -4081,6 +4252,7 @@
       "map_x_m": -30.987445319425643,
       "map_y_m": 29.382372742056944,
       "yaw_rad": -1.2393372131931204,
+      "display_motion_yaw_rad": -1.37564139389016,
       "forward_speed_mps": 1.3144758020667027,
       "yaw_rate_radps": 0.2926049241730819,
       "xy_covariance_m2": [
@@ -4104,6 +4276,7 @@
       "map_x_m": -30.679006358416558,
       "map_y_m": 28.088486669273593,
       "yaw_rad": -1.1243640359319969,
+      "display_motion_yaw_rad": -1.2546136644850967,
       "forward_speed_mps": 1.3047775446224894,
       "yaw_rate_radps": 0.013699937095287265,
       "xy_covariance_m2": [
@@ -4127,6 +4300,7 @@
       "map_x_m": -30.201740701440727,
       "map_y_m": 26.862964255140113,
       "yaw_rad": -1.0248319311452625,
+      "display_motion_yaw_rad": -1.167527967557259,
       "forward_speed_mps": 1.301269010148478,
       "yaw_rate_radps": 0.010211500374046785,
       "xy_covariance_m2": [
@@ -4150,6 +4324,7 @@
       "map_x_m": -29.64172105099087,
       "map_y_m": 25.64819149978926,
       "yaw_rad": -0.8892256720094354,
+      "display_motion_yaw_rad": -1.0845095960002737,
       "forward_speed_mps": 1.2874023507580803,
       "yaw_rate_radps": 0.03238505478416021,
       "xy_covariance_m2": [
@@ -4173,6 +4348,7 @@
       "map_x_m": -28.95246563746222,
       "map_y_m": 24.535175354366068,
       "yaw_rad": -0.621957651970563,
+      "display_motion_yaw_rad": -0.9013766911266089,
       "forward_speed_mps": 1.296572942128755,
       "yaw_rate_radps": 0.5194370939246489,
       "xy_covariance_m2": [
@@ -4196,6 +4372,7 @@
       "map_x_m": -27.98658238494286,
       "map_y_m": 23.65400434668837,
       "yaw_rad": -0.43433517684506295,
+      "display_motion_yaw_rad": -0.635319946320276,
       "forward_speed_mps": 1.3060292208326207,
       "yaw_rate_radps": 0.23764503699500078,
       "xy_covariance_m2": [
@@ -4219,6 +4396,7 @@
       "map_x_m": -26.86382415298258,
       "map_y_m": 22.903550250812724,
       "yaw_rad": -0.3300645407631553,
+      "display_motion_yaw_rad": -0.5247503731474553,
       "forward_speed_mps": 1.3269934740398508,
       "yaw_rate_radps": 0.03168313624882552,
       "xy_covariance_m2": [
@@ -4242,6 +4420,7 @@
       "map_x_m": -25.65295629904054,
       "map_y_m": 22.251156172252852,
       "yaw_rad": -0.2546620425278178,
+      "display_motion_yaw_rad": -0.46710366121697,
       "forward_speed_mps": 1.318826930162209,
       "yaw_rate_radps": -0.03529283516750924,
       "xy_covariance_m2": [
@@ -4265,6 +4444,7 @@
       "map_x_m": -24.4680650620973,
       "map_y_m": 21.71879463016104,
       "yaw_rad": -0.2037586062753758,
+      "display_motion_yaw_rad": -0.40603383039637303,
       "forward_speed_mps": 1.2912607311099402,
       "yaw_rate_radps": 0.015633866999844852,
       "xy_covariance_m2": [
@@ -4288,6 +4468,7 @@
       "map_x_m": -23.249823184664006,
       "map_y_m": 21.2051925737033,
       "yaw_rad": -0.18039328002633637,
+      "display_motion_yaw_rad": -0.401934645183969,
       "forward_speed_mps": 1.2664060186184858,
       "yaw_rate_radps": 0.08092880227571585,
       "xy_covariance_m2": [
@@ -4311,6 +4492,7 @@
       "map_x_m": -22.050388693696906,
       "map_y_m": 20.70336221875486,
       "yaw_rad": -0.18449902489185277,
+      "display_motion_yaw_rad": -0.39358377977434084,
       "forward_speed_mps": 1.280004805781419,
       "yaw_rate_radps": -0.015797497788559763,
       "xy_covariance_m2": [
@@ -4334,6 +4516,7 @@
       "map_x_m": -20.817023893395735,
       "map_y_m": 20.176587028350454,
       "yaw_rad": 0.004643201114456819,
+      "display_motion_yaw_rad": -0.3361622655180541,
       "forward_speed_mps": 1.2854225282293041,
       "yaw_rate_radps": 0.5055632895891973,
       "xy_covariance_m2": [
@@ -4357,6 +4540,7 @@
       "map_x_m": -19.58293572853306,
       "map_y_m": 19.96697214009793,
       "yaw_rad": 0.3018653607580877,
+      "display_motion_yaw_rad": -0.01826503602991169,
       "forward_speed_mps": 1.2457584691921733,
       "yaw_rate_radps": 0.4045952034450517,
       "xy_covariance_m2": [
@@ -4380,6 +4564,7 @@
       "map_x_m": -18.318546092647953,
       "map_y_m": 20.0975330717586,
       "yaw_rad": 0.7267723294477944,
+      "display_motion_yaw_rad": 0.31322556268385543,
       "forward_speed_mps": 1.2615072216973267,
       "yaw_rate_radps": 0.38289800722185247,
       "xy_covariance_m2": [
@@ -4403,6 +4588,7 @@
       "map_x_m": -17.25014070346207,
       "map_y_m": 20.78599274820244,
       "yaw_rad": 1.1056806634203298,
+      "display_motion_yaw_rad": 0.7722158924991308,
       "forward_speed_mps": 1.2657278128858678,
       "yaw_rate_radps": 0.020388513577087364,
       "xy_covariance_m2": [
@@ -4426,6 +4612,7 @@
       "map_x_m": -16.461859416260094,
       "map_y_m": 21.77466428278377,
       "yaw_rad": 1.3150761792018688,
+      "display_motion_yaw_rad": 0.9371148281076327,
       "forward_speed_mps": 1.271083225004389,
       "yaw_rate_radps": 0.010279298611816036,
       "xy_covariance_m2": [
@@ -4449,6 +4636,7 @@
       "map_x_m": -15.797674491347662,
       "map_y_m": 22.812988023217937,
       "yaw_rad": 1.4437389115315362,
+      "display_motion_yaw_rad": 1.100498575582373,
       "forward_speed_mps": 1.2668595284793756,
       "yaw_rate_radps": 0.07492753613794322,
       "xy_covariance_m2": [
@@ -4472,6 +4660,7 @@
       "map_x_m": -15.283422579781872,
       "map_y_m": 23.995688603578156,
       "yaw_rad": 1.5331353702196697,
+      "display_motion_yaw_rad": 1.1376957812274153,
       "forward_speed_mps": 1.2899755027954292,
       "yaw_rate_radps": 0.06756957527810277,
       "xy_covariance_m2": [
@@ -4495,6 +4684,7 @@
       "map_x_m": -14.725872494361663,
       "map_y_m": 25.19896488394016,
       "yaw_rad": 1.573857797294714,
+      "display_motion_yaw_rad": 1.1373335824877475,
       "forward_speed_mps": 1.2808091226499834,
       "yaw_rate_radps": 0.030898850534187932,
       "xy_covariance_m2": [
@@ -4518,6 +4708,7 @@
       "map_x_m": -14.177517959896583,
       "map_y_m": 26.401963745969226,
       "yaw_rad": 1.5939148469982933,
+      "display_motion_yaw_rad": 1.138311891612526,
       "forward_speed_mps": 1.2785425598819264,
       "yaw_rate_radps": 0.003585239660977974,
       "xy_covariance_m2": [
@@ -4541,6 +4732,7 @@
       "map_x_m": -13.619098454084567,
       "map_y_m": 27.54230106451379,
       "yaw_rad": 1.3439622897426042,
+      "display_motion_yaw_rad": 0.9860970859336871,
       "forward_speed_mps": 1.2275193526789558,
       "yaw_rate_radps": -0.3412994528874002,
       "xy_covariance_m2": [
@@ -4564,6 +4756,7 @@
       "map_x_m": -12.782476658953641,
       "map_y_m": 28.48702755100084,
       "yaw_rad": 1.2595781712806096,
+      "display_motion_yaw_rad": 0.7831456912848375,
       "forward_speed_mps": 1.2739785087952697,
       "yaw_rate_radps": -0.3434672108596816,
       "xy_covariance_m2": [
@@ -4587,6 +4780,7 @@
       "map_x_m": -11.79531868025574,
       "map_y_m": 29.37014750731151,
       "yaw_rad": 1.0730538670997476,
+      "display_motion_yaw_rad": 0.6368157355278777,
       "forward_speed_mps": 1.3016012362441889,
       "yaw_rate_radps": -0.3324559017994871,
       "xy_covariance_m2": [
@@ -4610,6 +4804,7 @@
       "map_x_m": -10.671819710270627,
       "map_y_m": 29.997397720167854,
       "yaw_rad": 0.7859835974147495,
+      "display_motion_yaw_rad": 0.36522037310094285,
       "forward_speed_mps": 1.296300809993685,
       "yaw_rate_radps": -0.32007809117106906,
       "xy_covariance_m2": [
@@ -4633,6 +4828,7 @@
       "map_x_m": -9.448553246488814,
       "map_y_m": 30.222040226073464,
       "yaw_rad": 0.3034958041306872,
+      "display_motion_yaw_rad": -0.060118940604823846,
       "forward_speed_mps": 1.2812918605524395,
       "yaw_rate_radps": -0.3510062777290974,
       "xy_covariance_m2": [
@@ -4656,6 +4852,7 @@
       "map_x_m": -8.211152177044443,
       "map_y_m": 29.92686153499417,
       "yaw_rad": 0.28771298491416347,
+      "display_motion_yaw_rad": -0.2523624409869587,
       "forward_speed_mps": 1.2948056557075813,
       "yaw_rate_radps": -0.13948523842409663,
       "xy_covariance_m2": [
@@ -4679,6 +4876,7 @@
       "map_x_m": -6.894692077430251,
       "map_y_m": 29.60144986903366,
       "yaw_rad": 0.2816837736920062,
+      "display_motion_yaw_rad": -0.2469753557014234,
       "forward_speed_mps": 1.31412913794608,
       "yaw_rate_radps": -0.16556546840049788,
       "xy_covariance_m2": [
@@ -4702,6 +4900,7 @@
       "map_x_m": -5.6300732571071945,
       "map_y_m": 29.237664686341038,
       "yaw_rad": 0.18692461776042443,
+      "display_motion_yaw_rad": -0.31338202911442636,
       "forward_speed_mps": 1.2932995950916297,
       "yaw_rate_radps": 0.030112949404957446,
       "xy_covariance_m2": [
@@ -4725,6 +4924,7 @@
       "map_x_m": -4.3824621087212,
       "map_y_m": 28.770611931135576,
       "yaw_rad": 0.17604671027716368,
+      "display_motion_yaw_rad": -0.3698105626541368,
       "forward_speed_mps": 1.2801235479973478,
       "yaw_rate_radps": 0.06982704881456753,
       "xy_covariance_m2": [
@@ -4748,6 +4948,7 @@
       "map_x_m": -3.1862066622703864,
       "map_y_m": 28.281229087328857,
       "yaw_rad": 0.2047790978999711,
+      "display_motion_yaw_rad": -0.36929990514713107,
       "forward_speed_mps": 1.253428153762595,
       "yaw_rate_radps": -0.031424876079545465,
       "xy_covariance_m2": [
@@ -4771,6 +4972,7 @@
       "map_x_m": -1.926258742012886,
       "map_y_m": 27.809950441517827,
       "yaw_rad": 0.15201439272443992,
+      "display_motion_yaw_rad": -0.38826627472456743,
       "forward_speed_mps": 1.3020906596211568,
       "yaw_rate_radps": -0.1621651798770601,
       "xy_covariance_m2": [
@@ -4794,6 +4996,7 @@
       "map_x_m": -0.7156654562111283,
       "map_y_m": 27.258044722107122,
       "yaw_rad": 0.15459299172192065,
+      "display_motion_yaw_rad": -0.4273923794928634,
       "forward_speed_mps": 1.3088113521136202,
       "yaw_rate_radps": -0.013798118100463322,
       "xy_covariance_m2": [
@@ -4817,6 +5020,7 @@
       "map_x_m": 0.4909966184036679,
       "map_y_m": 26.671203106380187,
       "yaw_rad": 0.11205260124608073,
+      "display_motion_yaw_rad": -0.47715945548999433,
       "forward_speed_mps": 1.301969449710722,
       "yaw_rate_radps": -0.15934265403362652,
       "xy_covariance_m2": [
@@ -4840,6 +5044,7 @@
       "map_x_m": 1.6422160669376125,
       "map_y_m": 26.008764857067874,
       "yaw_rad": -0.15520862518257728,
+      "display_motion_yaw_rad": -0.6577517924774936,
       "forward_speed_mps": 1.2896710100144404,
       "yaw_rate_radps": -0.3479488225824319,
       "xy_covariance_m2": [
@@ -4863,6 +5068,7 @@
       "map_x_m": 2.5571743557358957,
       "map_y_m": 25.076581166167653,
       "yaw_rad": -0.23885977659916732,
+      "display_motion_yaw_rad": -0.8536164133949865,
       "forward_speed_mps": 1.3032770003586478,
       "yaw_rate_radps": -0.17421968578433988,
       "xy_covariance_m2": [
@@ -4886,6 +5092,7 @@
       "map_x_m": 3.397847298465609,
       "map_y_m": 24.063878295191884,
       "yaw_rad": -0.43546901387425807,
+      "display_motion_yaw_rad": -0.9737836841711248,
       "forward_speed_mps": 1.2740669081710696,
       "yaw_rate_radps": -0.4079380164085567,
       "xy_covariance_m2": [
@@ -4909,6 +5116,7 @@
       "map_x_m": 3.929885311861511,
       "map_y_m": 22.9116489094028,
       "yaw_rad": -0.6802191150528469,
+      "display_motion_yaw_rad": -1.2807900778267887,
       "forward_speed_mps": 1.2789091302719247,
       "yaw_rate_radps": -0.13714289661432863,
       "xy_covariance_m2": [
@@ -4932,6 +5140,7 @@
       "map_x_m": 4.201791419311697,
       "map_y_m": 21.617157436501675,
       "yaw_rad": -0.8938058601827819,
+      "display_motion_yaw_rad": -1.4558722594097933,
       "forward_speed_mps": 1.288529847277819,
       "yaw_rate_radps": -0.258926609278218,
       "xy_covariance_m2": [
@@ -4955,6 +5164,7 @@
       "map_x_m": 4.18723462058422,
       "map_y_m": 20.28989559179558,
       "yaw_rad": -1.1672304051025224,
+      "display_motion_yaw_rad": -1.7302207171338493,
       "forward_speed_mps": 1.3018084079117151,
       "yaw_rate_radps": -0.14904489607977053,
       "xy_covariance_m2": [
@@ -4978,6 +5188,7 @@
       "map_x_m": 3.8899737121347613,
       "map_y_m": 18.97196320801303,
       "yaw_rad": -1.1644413781373677,
+      "display_motion_yaw_rad": -1.8302289447083813,
       "forward_speed_mps": 1.331362459043166,
       "yaw_rate_radps": 0.04960307778931375,
       "xy_covariance_m2": [
@@ -5001,6 +5212,7 @@
       "map_x_m": 3.5653059248973573,
       "map_y_m": 17.649571371478018,
       "yaw_rad": -1.165800922656675,
+      "display_motion_yaw_rad": -1.8465186146877601,
       "forward_speed_mps": 1.3145225420545057,
       "yaw_rate_radps": 0.058318879731452646,
       "xy_covariance_m2": [
@@ -5024,6 +5236,7 @@
       "map_x_m": 3.1963588221531882,
       "map_y_m": 16.31837990563545,
       "yaw_rad": -1.27684272167012,
+      "display_motion_yaw_rad": -1.8934495710244956,
       "forward_speed_mps": 1.3131867973614573,
       "yaw_rate_radps": -0.24136377849171986,
       "xy_covariance_m2": [
@@ -5047,6 +5260,7 @@
       "map_x_m": 2.726631684098621,
       "map_y_m": 15.061816170025692,
       "yaw_rad": -1.2675280501091644,
+      "display_motion_yaw_rad": -1.9329963641446635,
       "forward_speed_mps": 1.2978134213065156,
       "yaw_rate_radps": 0.012051775420264053,
       "xy_covariance_m2": [
@@ -5070,6 +5284,7 @@
       "map_x_m": 2.2621577031527083,
       "map_y_m": 13.799723212838806,
       "yaw_rad": -1.25470853911728,
+      "display_motion_yaw_rad": -1.9103185556606503,
       "forward_speed_mps": 1.2892007387988222,
       "yaw_rate_radps": -0.0995384929916085,
       "xy_covariance_m2": [
@@ -5093,6 +5308,7 @@
       "map_x_m": 1.8002171620369314,
       "map_y_m": 12.506755605775133,
       "yaw_rad": -1.3075209832552372,
+      "display_motion_yaw_rad": -1.960725930664757,
       "forward_speed_mps": 1.3009124178827352,
       "yaw_rate_radps": -0.06766829906887252,
       "xy_covariance_m2": [
@@ -5116,6 +5332,7 @@
       "map_x_m": 1.2760815213442975,
       "map_y_m": 11.274127943326258,
       "yaw_rad": -1.2727967381035337,
+      "display_motion_yaw_rad": -2.0159328310136875,
       "forward_speed_mps": 1.2848179318933322,
       "yaw_rate_radps": -0.0732051439508633,
       "xy_covariance_m2": [
@@ -5139,6 +5356,7 @@
       "map_x_m": 0.7653958424914998,
       "map_y_m": 10.147596762795304,
       "yaw_rad": -1.2453245931354877,
+      "display_motion_yaw_rad": -2.0490544509322492,
       "forward_speed_mps": 0.915493797851036,
       "yaw_rate_radps": 0.0015681109186181088,
       "xy_covariance_m2": [
@@ -5162,6 +5380,7 @@
       "map_x_m": 0.3546848222922592,
       "map_y_m": 9.490736914427686,
       "yaw_rad": -1.236896445495127,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": 0.11399839242337063,
       "yaw_rate_radps": -0.00026916307520283983,
       "xy_covariance_m2": [
@@ -5185,6 +5404,7 @@
       "map_x_m": 0.236968339745812,
       "map_y_m": 9.403605526461037,
       "yaw_rad": -1.2347335752221393,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -0.09544164402158807,
       "yaw_rate_radps": 9.052146218824145e-17,
       "xy_covariance_m2": [
@@ -5208,6 +5428,7 @@
       "map_x_m": 0.24059226704761325,
       "map_y_m": 9.400458954341532,
       "yaw_rad": -1.2347270010867415,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -0.04349888619561835,
       "yaw_rate_radps": -1.323660192324825e-18,
       "xy_covariance_m2": [
@@ -5231,6 +5452,7 @@
       "map_x_m": 0.2413328624980904,
       "map_y_m": 9.391181344556253,
       "yaw_rad": -1.2347267052719288,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -0.014601608702624452,
       "yaw_rate_radps": 7.0744266017160406e-15,
       "xy_covariance_m2": [
@@ -5254,6 +5476,7 @@
       "map_x_m": 0.23789083254335416,
       "map_y_m": 9.382659109309337,
       "yaw_rad": -1.234727442502104,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -0.005491475093835381,
       "yaw_rate_radps": -4.30097207506308e-20,
       "xy_covariance_m2": [
@@ -5277,6 +5500,7 @@
       "map_x_m": 0.2377968483692207,
       "map_y_m": 9.37652789950688,
       "yaw_rad": -1.2347275079642437,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -0.001881647779628766,
       "yaw_rate_radps": -5.670188157015675e-20,
       "xy_covariance_m2": [
@@ -5300,6 +5524,7 @@
       "map_x_m": 0.24044754817171626,
       "map_y_m": 9.371222748026671,
       "yaw_rad": -1.2347275310347965,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -0.0003924070555966887,
       "yaw_rate_radps": 1.4854712322576778e-20,
       "xy_covariance_m2": [
@@ -5323,6 +5548,7 @@
       "map_x_m": 0.24141697724809433,
       "map_y_m": 9.368602340217588,
       "yaw_rad": -1.234727520277427,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -0.00022272776768027786,
       "yaw_rate_radps": 4.272784944471233e-20,
       "xy_covariance_m2": [
@@ -5346,6 +5572,7 @@
       "map_x_m": 0.2419286907929177,
       "map_y_m": 9.359469010807127,
       "yaw_rad": -1.2347275242015774,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": 2.004662713480241e-05,
       "yaw_rate_radps": 1.79282430678858e-20,
       "xy_covariance_m2": [
@@ -5369,6 +5596,7 @@
       "map_x_m": 0.2406554951903926,
       "map_y_m": 9.359128136717676,
       "yaw_rad": -1.2347275197277723,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -8.961242009036994e-05,
       "yaw_rate_radps": 1.9336585423915968e-21,
       "xy_covariance_m2": [
@@ -5392,6 +5620,7 @@
       "map_x_m": 0.23995242704805952,
       "map_y_m": 9.35067829064729,
       "yaw_rad": -1.2347275303499492,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": 0.00043894286638580284,
       "yaw_rate_radps": 1.107405260801838e-20,
       "xy_covariance_m2": [
@@ -5415,6 +5644,7 @@
       "map_x_m": 0.23937238160276572,
       "map_y_m": 9.348073907969106,
       "yaw_rad": -1.2347275202678722,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -4.211882563719208e-05,
       "yaw_rate_radps": 1.979974347276452e-21,
       "xy_covariance_m2": [
@@ -5438,6 +5668,7 @@
       "map_x_m": 0.24424957057549812,
       "map_y_m": 9.347954904259582,
       "yaw_rad": -1.234727518775721,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": 0.00011551742324052941,
       "yaw_rate_radps": -7.369807076772024e-22,
       "xy_covariance_m2": [
@@ -5461,6 +5692,7 @@
       "map_x_m": 0.2428359478951839,
       "map_y_m": 9.344240893478354,
       "yaw_rad": -1.234727525003876,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -1.7338366559891895e-05,
       "yaw_rate_radps": 2.957773243333176e-21,
       "xy_covariance_m2": [
@@ -5484,6 +5716,7 @@
       "map_x_m": 0.2391802781661354,
       "map_y_m": 9.341907004199127,
       "yaw_rad": -1.2347275189816178,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": 5.846967940137275e-06,
       "yaw_rate_radps": 2.5688565767825426e-21,
       "xy_covariance_m2": [
@@ -5507,6 +5740,7 @@
       "map_x_m": 0.24161150272618928,
       "map_y_m": 9.342296842194505,
       "yaw_rad": -1.2347275182427557,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -0.0005008643520761398,
       "yaw_rate_radps": -2.130986845567855e-21,
       "xy_covariance_m2": [
@@ -5530,6 +5764,7 @@
       "map_x_m": 0.24615990060768475,
       "map_y_m": 9.337120892890564,
       "yaw_rad": -1.2347275154372779,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": 0.00024217785366588423,
       "yaw_rate_radps": -2.5075283640808612e-21,
       "xy_covariance_m2": [
@@ -5553,6 +5788,7 @@
       "map_x_m": 0.246728756258335,
       "map_y_m": 9.336913636183548,
       "yaw_rad": -1.2347275188443365,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": -3.9290480889096466e-05,
       "yaw_rate_radps": -4.4289768035316626e-23,
       "xy_covariance_m2": [
@@ -5576,6 +5812,7 @@
       "map_x_m": 0.2514982019538573,
       "map_y_m": 9.331223851042184,
       "yaw_rad": -1.2344888138047767,
+      "display_motion_yaw_rad": -2.238020100446169,
       "forward_speed_mps": 0.0328493742373799,
       "yaw_rate_radps": 0.0014659904957978421,
       "xy_covariance_m2": [
@@ -5599,6 +5836,7 @@
       "map_x_m": 0.2905750946145069,
       "map_y_m": 9.145283690165888,
       "yaw_rad": -1.2211411142823059,
+      "display_motion_yaw_rad": -1.6822146026100484,
       "forward_speed_mps": 0.5755986793365823,
       "yaw_rate_radps": 0.03342712738521799,
       "xy_covariance_m2": [
@@ -5622,6 +5860,7 @@
       "map_x_m": 0.1484819057696474,
       "map_y_m": 8.55137594615864,
       "yaw_rad": -1.2102810605462975,
+      "display_motion_yaw_rad": -1.8237886283188502,
       "forward_speed_mps": 0.8912119121504917,
       "yaw_rate_radps": -0.054863772019780405,
       "xy_covariance_m2": [
@@ -5645,6 +5884,7 @@
       "map_x_m": -0.1215658611235425,
       "map_y_m": 7.724954507276388,
       "yaw_rad": -1.2779090994002054,
+      "display_motion_yaw_rad": -1.9380631984201995,
       "forward_speed_mps": 0.9979079622859884,
       "yaw_rate_radps": 0.01923793368737107,
       "xy_covariance_m2": [
@@ -5668,6 +5908,7 @@
       "map_x_m": -0.5013598787853644,
       "map_y_m": 6.704512197015658,
       "yaw_rad": -1.25596897430155,
+      "display_motion_yaw_rad": -1.9217483886338629,
       "forward_speed_mps": 1.322304880749342,
       "yaw_rate_radps": -0.01171006653466908,
       "xy_covariance_m2": [
@@ -5691,6 +5932,7 @@
       "map_x_m": -0.9987251611873157,
       "map_y_m": 5.505138021372664,
       "yaw_rad": -1.275801913007269,
+      "display_motion_yaw_rad": -1.9857569610933032,
       "forward_speed_mps": 1.3360394238067244,
       "yaw_rate_radps": -0.00439423399479712,
       "xy_covariance_m2": [
@@ -5714,6 +5956,7 @@
       "map_x_m": -1.5462708751927436,
       "map_y_m": 4.276516986398548,
       "yaw_rad": -1.2632858868454873,
+      "display_motion_yaw_rad": -1.988511066047438,
       "forward_speed_mps": 1.320445066317122,
       "yaw_rate_radps": -2.3589778751582785e-05,
       "xy_covariance_m2": [
@@ -5737,6 +5980,7 @@
       "map_x_m": -2.0851515425477705,
       "map_y_m": 3.0448023918402143,
       "yaw_rad": -1.2554435372655017,
+      "display_motion_yaw_rad": -1.982888926969031,
       "forward_speed_mps": 1.3255913298717459,
       "yaw_rate_radps": -0.010073351796967446,
       "xy_covariance_m2": [
@@ -5760,6 +6004,7 @@
       "map_x_m": -2.626585849799673,
       "map_y_m": 1.783375480033941,
       "yaw_rad": -1.2527996511106585,
+      "display_motion_yaw_rad": -1.9867862033575996,
       "forward_speed_mps": 1.3268153666876576,
       "yaw_rate_radps": -0.02368418721464694,
       "xy_covariance_m2": [
@@ -5783,6 +6028,7 @@
       "map_x_m": -3.1803671575856804,
       "map_y_m": 0.5427766567970016,
       "yaw_rad": -1.2480317560147887,
+      "display_motion_yaw_rad": -1.9804607609760154,
       "forward_speed_mps": 1.3265089439513185,
       "yaw_rate_radps": 0.016982435377475704,
       "xy_covariance_m2": [
@@ -5806,6 +6052,7 @@
       "map_x_m": -3.7382558238986197,
       "map_y_m": -0.7387501628891375,
       "yaw_rad": -1.2420377936058928,
+      "display_motion_yaw_rad": -1.9790486740040867,
       "forward_speed_mps": 1.3555017519734425,
       "yaw_rate_radps": 0.050434921565348734,
       "xy_covariance_m2": [
@@ -5829,6 +6076,7 @@
       "map_x_m": -4.292300828115839,
       "map_y_m": -2.019792052550792,
       "yaw_rad": -1.2331519185267543,
+      "display_motion_yaw_rad": -1.937908405446499,
       "forward_speed_mps": 1.3551377798865771,
       "yaw_rate_radps": -0.016728536270291475,
       "xy_covariance_m2": [
@@ -5852,6 +6100,7 @@
       "map_x_m": -4.85575912258881,
       "map_y_m": -3.2925926226102487,
       "yaw_rad": -1.1837655546814159,
+      "display_motion_yaw_rad": -1.9669403405039885,
       "forward_speed_mps": 1.3443151091291061,
       "yaw_rate_radps": 0.08689877980729796,
       "xy_covariance_m2": [
@@ -5875,6 +6124,7 @@
       "map_x_m": -5.37796251260261,
       "map_y_m": -4.565869023565447,
       "yaw_rad": -1.1669836294481555,
+      "display_motion_yaw_rad": -1.9014679988284087,
       "forward_speed_mps": 1.31899737066078,
       "yaw_rate_radps": -0.028618156106982515,
       "xy_covariance_m2": [
@@ -5898,6 +6148,7 @@
       "map_x_m": -5.873338013362636,
       "map_y_m": -5.824873853958479,
       "yaw_rad": -1.1414322911123485,
+      "display_motion_yaw_rad": -1.8900322156359042,
       "forward_speed_mps": 1.3229384765585166,
       "yaw_rate_radps": 0.004484235151092614,
       "xy_covariance_m2": [
@@ -5921,6 +6172,7 @@
       "map_x_m": -6.349489636340042,
       "map_y_m": -7.0907403145864425,
       "yaw_rad": -1.116677207099002,
+      "display_motion_yaw_rad": -1.9226603987053525,
       "forward_speed_mps": 1.339371178304821,
       "yaw_rate_radps": 0.0173980766545188,
       "xy_covariance_m2": [
@@ -5944,6 +6196,7 @@
       "map_x_m": -6.897588526168503,
       "map_y_m": -8.36262968470984,
       "yaw_rad": -1.101578772895456,
+      "display_motion_yaw_rad": -1.909658663546004,
       "forward_speed_mps": 1.3129259865613698,
       "yaw_rate_radps": -0.02101747771157572,
       "xy_covariance_m2": [
@@ -5967,6 +6220,7 @@
       "map_x_m": -7.243026607702954,
       "map_y_m": -9.628525408834768,
       "yaw_rad": -1.0367508642630074,
+      "display_motion_yaw_rad": -1.8853726733808234,
       "forward_speed_mps": 1.3330216314744638,
       "yaw_rate_radps": 0.16608276382929926,
       "xy_covariance_m2": [
@@ -5990,6 +6244,7 @@
       "map_x_m": -7.618732524760884,
       "map_y_m": -10.925723411607011,
       "yaw_rad": -1.1975126201250454,
+      "display_motion_yaw_rad": -1.9093065827130618,
       "forward_speed_mps": 1.3192590254483143,
       "yaw_rate_radps": -0.10960626574747782,
       "xy_covariance_m2": [
@@ -6013,6 +6268,7 @@
       "map_x_m": -8.177365002057993,
       "map_y_m": -12.169357492192262,
       "yaw_rad": -1.1837953935868741,
+      "display_motion_yaw_rad": -2.0106218014143735,
       "forward_speed_mps": 1.3473309697958582,
       "yaw_rate_radps": 0.00041829465463720457,
       "xy_covariance_m2": [
@@ -6036,6 +6292,7 @@
       "map_x_m": -8.759843471072134,
       "map_y_m": -13.399671394277153,
       "yaw_rad": -1.181513443200038,
+      "display_motion_yaw_rad": -2.008419141347444,
       "forward_speed_mps": 1.3410108037587791,
       "yaw_rate_radps": -0.008026328753698821,
       "xy_covariance_m2": [
@@ -6059,6 +6316,7 @@
       "map_x_m": -9.338711443301921,
       "map_y_m": -14.652884378041382,
       "yaw_rad": -1.1662360814124602,
+      "display_motion_yaw_rad": -1.9997736823129368,
       "forward_speed_mps": 1.3453406796089962,
       "yaw_rate_radps": -0.006422891282946279,
       "xy_covariance_m2": [
@@ -6082,6 +6340,7 @@
       "map_x_m": -9.91260874353758,
       "map_y_m": -15.929926546651716,
       "yaw_rad": -1.173774194697271,
+      "display_motion_yaw_rad": -2.0142603553502707,
       "forward_speed_mps": 1.350772003601054,
       "yaw_rate_radps": -0.020271072273613137,
       "xy_covariance_m2": [
@@ -6105,6 +6364,7 @@
       "map_x_m": -10.556758672256406,
       "map_y_m": -17.17638449834632,
       "yaw_rad": -1.9960144578160326,
+      "display_motion_yaw_rad": -1.96221628613732,
       "forward_speed_mps": 1.3538924576375184,
       "yaw_rate_radps": -0.03999604850542108,
       "xy_covariance_m2": [
@@ -6128,6 +6388,7 @@
       "map_x_m": -10.997378537399719,
       "map_y_m": -18.429609116603526,
       "yaw_rad": -2.015166439002942,
+      "display_motion_yaw_rad": -2.0079590330335635,
       "forward_speed_mps": 1.3651518054760357,
       "yaw_rate_radps": 0.0313365145050024,
       "xy_covariance_m2": [
@@ -6151,6 +6412,7 @@
       "map_x_m": -11.613141743050925,
       "map_y_m": -19.66858854644069,
       "yaw_rad": -2.006262481910133,
+      "display_motion_yaw_rad": -2.027217697341918,
       "forward_speed_mps": 1.3659076898803744,
       "yaw_rate_radps": -0.014534626406014791,
       "xy_covariance_m2": [
@@ -6174,6 +6436,7 @@
       "map_x_m": -12.202336597346289,
       "map_y_m": -20.904620506663097,
       "yaw_rad": -2.1487830751654515,
+      "display_motion_yaw_rad": -2.0673759510805176,
       "forward_speed_mps": 1.3463617325327792,
       "yaw_rate_radps": -0.3904660717258098,
       "xy_covariance_m2": [
@@ -6197,6 +6460,7 @@
       "map_x_m": -12.992062006903097,
       "map_y_m": -21.963800163999583,
       "yaw_rad": -2.574372488293601,
+      "display_motion_yaw_rad": -2.432145654588025,
       "forward_speed_mps": 1.3007903646767034,
       "yaw_rate_radps": -0.40180661961105113,
       "xy_covariance_m2": [
@@ -6220,6 +6484,7 @@
       "map_x_m": -14.141039653542546,
       "map_y_m": -22.59753304441797,
       "yaw_rad": -2.896495645367153,
+      "display_motion_yaw_rad": -2.8095215328003342,
       "forward_speed_mps": 1.3079743007561055,
       "yaw_rate_radps": -0.42957995986435493,
       "xy_covariance_m2": [
@@ -6243,6 +6508,7 @@
       "map_x_m": -15.462672979928254,
       "map_y_m": -22.83366384309869,
       "yaw_rad": -3.0821348285147554,
+      "display_motion_yaw_rad": -3.0650187046416195,
       "forward_speed_mps": 1.3474464660545302,
       "yaw_rate_radps": -0.23071279766556588,
       "xy_covariance_m2": [
@@ -6266,6 +6532,7 @@
       "map_x_m": -16.853293130685326,
       "map_y_m": -22.831672948100667,
       "yaw_rad": 2.95023432290807,
+      "display_motion_yaw_rad": 3.0019315367673665,
       "forward_speed_mps": 1.351211482384697,
       "yaw_rate_radps": -0.09982016846129951,
       "xy_covariance_m2": [
@@ -6289,6 +6556,7 @@
       "map_x_m": -18.17862161729308,
       "map_y_m": -22.522256702844256,
       "yaw_rad": 2.709871242809169,
+      "display_motion_yaw_rad": 2.812101328830108,
       "forward_speed_mps": 1.3350549528339393,
       "yaw_rate_radps": -0.5042783012814379,
       "xy_covariance_m2": [
@@ -6312,6 +6580,7 @@
       "map_x_m": -19.338072378208718,
       "map_y_m": -21.83439735394045,
       "yaw_rad": 2.486434499006112,
+      "display_motion_yaw_rad": 2.474881115542776,
       "forward_speed_mps": 1.3429988967796405,
       "yaw_rate_radps": -0.1861309431496409,
       "xy_covariance_m2": [
@@ -6335,6 +6604,7 @@
       "map_x_m": -20.366813594986784,
       "map_y_m": -20.941423513044633,
       "yaw_rad": 2.391438137117481,
+      "display_motion_yaw_rad": 2.3815584076870775,
       "forward_speed_mps": 1.353762314129314,
       "yaw_rate_radps": -0.18825543383864277,
       "xy_covariance_m2": [
@@ -6358,6 +6628,7 @@
       "map_x_m": -21.157971189415438,
       "map_y_m": -20.11117918737521,
       "yaw_rad": 2.0997581456697088,
+      "display_motion_yaw_rad": 2.123290228161307,
       "forward_speed_mps": 0.5080439562774025,
       "yaw_rate_radps": -0.0977186021718015,
       "xy_covariance_m2": [
@@ -6381,6 +6652,7 @@
       "map_x_m": -21.269367886357507,
       "map_y_m": -19.72813554579028,
       "yaw_rad": 2.0977259787116935,
+      "display_motion_yaw_rad": 2.0114209122460887,
       "forward_speed_mps": -0.12795196483013582,
       "yaw_rate_radps": -2.2522687767510785e-18,
       "xy_covariance_m2": [
@@ -6404,6 +6676,7 @@
       "map_x_m": -21.26774848885714,
       "map_y_m": -19.71779994409786,
       "yaw_rad": 2.0977255205335172,
+      "display_motion_yaw_rad": 2.0114209122460887,
       "forward_speed_mps": -0.06712654506408737,
       "yaw_rate_radps": -4.449475007711772e-19,
       "xy_covariance_m2": [
@@ -6427,6 +6700,7 @@
       "map_x_m": -21.271455398204406,
       "map_y_m": -19.710982877221994,
       "yaw_rad": 2.0977255091594795,
+      "display_motion_yaw_rad": 2.0114209122460887,
       "forward_speed_mps": -0.025377085742745224,
       "yaw_rate_radps": -1.4035397665650572e-20,
       "xy_covariance_m2": [
@@ -6450,6 +6724,7 @@
       "map_x_m": -21.26603270597399,
       "map_y_m": -19.70821892074408,
       "yaw_rad": 2.0977255214306005,
+      "display_motion_yaw_rad": 2.0114209122460887,
       "forward_speed_mps": -0.00967225715942483,
       "yaw_rate_radps": -5.668785034403454e-20,
       "xy_covariance_m2": [
@@ -6473,6 +6748,7 @@
       "map_x_m": -21.30804806910633,
       "map_y_m": -19.63347474411768,
       "yaw_rad": 2.0680057058970185,
+      "display_motion_yaw_rad": 2.072327711181082,
       "forward_speed_mps": 0.35000942390859185,
       "yaw_rate_radps": -0.2406305426989392,
       "xy_covariance_m2": [
@@ -6496,6 +6772,7 @@
       "map_x_m": -21.59107930208077,
       "map_y_m": -18.976411542934887,
       "yaw_rad": 1.8884951925012423,
+      "display_motion_yaw_rad": 1.8914593395216588,
       "forward_speed_mps": 1.3833328813775958,
       "yaw_rate_radps": -0.3772630380647555,
       "xy_covariance_m2": [
@@ -6519,6 +6796,7 @@
       "map_x_m": -21.85219710476267,
       "map_y_m": -17.745719229076787,
       "yaw_rad": 1.5606452458959605,
+      "display_motion_yaw_rad": 1.6055277989531997,
       "forward_speed_mps": 1.394505745066643,
       "yaw_rate_radps": -0.32310577566124293,
       "xy_covariance_m2": [
@@ -6542,6 +6820,7 @@
       "map_x_m": -21.741763949921793,
       "map_y_m": -16.42944224931792,
       "yaw_rad": 1.5430886804391364,
+      "display_motion_yaw_rad": 1.472503952294943,
       "forward_speed_mps": 1.3745955927000366,
       "yaw_rate_radps": -0.0636840218468237,
       "xy_covariance_m2": [
@@ -6565,6 +6844,7 @@
       "map_x_m": -21.62912213177712,
       "map_y_m": -15.118296108653974,
       "yaw_rad": 1.5552964833569787,
+      "display_motion_yaw_rad": 1.4884695658801756,
       "forward_speed_mps": 1.3098633505900394,
       "yaw_rate_radps": 0.028131338163297437,
       "xy_covariance_m2": [
@@ -6588,6 +6868,7 @@
       "map_x_m": -21.534920531606016,
       "map_y_m": -13.80031589107948,
       "yaw_rad": 1.5869880045496039,
+      "display_motion_yaw_rad": 1.5336662258018048,
       "forward_speed_mps": 1.2802181960900438,
       "yaw_rate_radps": -0.018393351678964172,
       "xy_covariance_m2": [
@@ -6611,6 +6892,7 @@
       "map_x_m": -21.55208320354255,
       "map_y_m": -12.449550558927024,
       "yaw_rad": 1.5745073916336034,
+      "display_motion_yaw_rad": 1.590434303617805,
       "forward_speed_mps": 1.3130626977615287,
       "yaw_rate_radps": 0.009137326809099252,
       "xy_covariance_m2": [
@@ -6634,6 +6916,7 @@
       "map_x_m": -21.5337259300436,
       "map_y_m": -11.174160716378216,
       "yaw_rad": 1.6311375339208867,
+      "display_motion_yaw_rad": 1.5487475419647734,
       "forward_speed_mps": 1.2909344935124554,
       "yaw_rate_radps": 0.07398724518805969,
       "xy_covariance_m2": [
@@ -6657,6 +6940,7 @@
       "map_x_m": -21.545120194107614,
       "map_y_m": -9.833163442184778,
       "yaw_rad": 1.8110313688259838,
+      "display_motion_yaw_rad": 1.6655055282127635,
       "forward_speed_mps": 1.3149140088859816,
       "yaw_rate_radps": 0.22141291632492696,
       "xy_covariance_m2": [
@@ -6680,6 +6964,7 @@
       "map_x_m": -21.824584520629752,
       "map_y_m": -8.535427364416723,
       "yaw_rad": 2.0714212558900744,
+      "display_motion_yaw_rad": 1.9059952970251755,
       "forward_speed_mps": 1.2979773003761332,
       "yaw_rate_radps": 0.3199791500346538,
       "xy_covariance_m2": [
@@ -6703,6 +6988,7 @@
       "map_x_m": -22.461936968778964,
       "map_y_m": -7.421940136854533,
       "yaw_rad": 2.3352194508419215,
+      "display_motion_yaw_rad": 2.2407158199356827,
       "forward_speed_mps": 1.2907109924449214,
       "yaw_rate_radps": 0.10572761413138644,
       "xy_covariance_m2": [
@@ -6726,6 +7012,7 @@
       "map_x_m": -23.33106393635284,
       "map_y_m": -6.4196424933574665,
       "yaw_rad": 2.394779419635679,
+      "display_motion_yaw_rad": 2.283963337817475,
       "forward_speed_mps": 1.308418853192011,
       "yaw_rate_radps": 0.27128472061523046,
       "xy_covariance_m2": [
@@ -6749,6 +7036,7 @@
       "map_x_m": -24.238741300739047,
       "map_y_m": -5.457223595961331,
       "yaw_rad": 2.546115842616004,
+      "display_motion_yaw_rad": 2.420103109786568,
       "forward_speed_mps": 1.3085172204760156,
       "yaw_rate_radps": 0.20046190240327813,
       "xy_covariance_m2": [
@@ -6772,6 +7060,7 @@
       "map_x_m": -25.32601722387946,
       "map_y_m": -4.691301040121586,
       "yaw_rad": 2.7263466870845043,
+      "display_motion_yaw_rad": 2.632180993717923,
       "forward_speed_mps": 1.3244298592643582,
       "yaw_rate_radps": 0.24422337017812082,
       "xy_covariance_m2": [
@@ -6795,6 +7084,7 @@
       "map_x_m": -26.542655235609153,
       "map_y_m": -4.118197316380648,
       "yaw_rad": 2.9275737067422547,
+      "display_motion_yaw_rad": 2.80214985900577,
       "forward_speed_mps": 1.3352304338574064,
       "yaw_rate_radps": 0.2528378948953251,
       "xy_covariance_m2": [
@@ -6818,6 +7108,7 @@
       "map_x_m": -27.849189893614138,
       "map_y_m": -3.7852084273033886,
       "yaw_rad": 3.0721315964603715,
+      "display_motion_yaw_rad": 2.9912952667481703,
       "forward_speed_mps": 1.3490427227293462,
       "yaw_rate_radps": 0.08241690739164281,
       "xy_covariance_m2": [
@@ -6841,6 +7132,7 @@
       "map_x_m": -29.04602345314948,
       "map_y_m": -3.6895664264285726,
       "yaw_rad": 3.0737446081870203,
+      "display_motion_yaw_rad": 3.0851347973337693,
       "forward_speed_mps": 0.8131309559151865,
       "yaw_rate_radps": 0.09263951854426872,
       "xy_covariance_m2": [
@@ -6864,6 +7156,7 @@
       "map_x_m": -29.808302421493185,
       "map_y_m": -3.6494047751329215,
       "yaw_rad": 3.1036004473305008,
+      "display_motion_yaw_rad": -3.1267483800173888,
       "forward_speed_mps": 0.7354228126035064,
       "yaw_rate_radps": 0.007737637857645918,
       "xy_covariance_m2": [
@@ -6887,6 +7180,7 @@
       "map_x_m": -30.64133480402513,
       "map_y_m": -3.6703409903459385,
       "yaw_rad": 3.0680241517834057,
+      "display_motion_yaw_rad": 3.1092257569885335,
       "forward_speed_mps": 0.8795238596077871,
       "yaw_rate_radps": -0.0054895941392181895,
       "xy_covariance_m2": [
@@ -6910,6 +7204,7 @@
       "map_x_m": -31.586867306187077,
       "map_y_m": -3.6148186460715164,
       "yaw_rad": 3.0761104810725346,
+      "display_motion_yaw_rad": 3.0954900121777813,
       "forward_speed_mps": 0.9616230850858923,
       "yaw_rate_radps": 0.03228788960515041,
       "xy_covariance_m2": [
@@ -6933,6 +7228,7 @@
       "map_x_m": -32.6305216468977,
       "map_y_m": -3.584125260769212,
       "yaw_rad": 3.046960688999544,
+      "display_motion_yaw_rad": 3.0989147566477118,
       "forward_speed_mps": 1.0546785797182066,
       "yaw_rate_radps": -0.02096483073997606,
       "xy_covariance_m2": [
@@ -6956,6 +7252,7 @@
       "map_x_m": -33.639831144604784,
       "map_y_m": -3.5330963423860373,
       "yaw_rad": 3.012280637544851,
+      "display_motion_yaw_rad": 3.083269878662106,
       "forward_speed_mps": 0.9733672532437184,
       "yaw_rate_radps": -0.06078382809952689,
       "xy_covariance_m2": [
@@ -6979,6 +7276,7 @@
       "map_x_m": -34.617811772770416,
       "map_y_m": -3.4683014384038104,
       "yaw_rad": 3.0129610061860888,
+      "display_motion_yaw_rad": 3.0791272464995525,
       "forward_speed_mps": 0.9437441924344219,
       "yaw_rate_radps": 0.031695369998404326,
       "xy_covariance_m2": [
@@ -7002,6 +7300,7 @@
       "map_x_m": -35.59977809778898,
       "map_y_m": -3.448463471869855,
       "yaw_rad": 2.915296786513908,
+      "display_motion_yaw_rad": 3.0893471644609973,
       "forward_speed_mps": 0.9951840262416978,
       "yaw_rate_radps": -0.19235445937946816,
       "xy_covariance_m2": [
@@ -7025,6 +7324,7 @@
       "map_x_m": -36.557357719411606,
       "map_y_m": -3.3168733618559076,
       "yaw_rad": 2.8062617288643548,
+      "display_motion_yaw_rad": 2.9906573197080935,
       "forward_speed_mps": 0.9439741451904086,
       "yaw_rate_radps": -0.035902162491340074,
       "xy_covariance_m2": [
@@ -7048,6 +7348,7 @@
       "map_x_m": -37.476307984592275,
       "map_y_m": -3.165008554513226,
       "yaw_rad": 2.666999939382139,
+      "display_motion_yaw_rad": 2.91874959963261,
       "forward_speed_mps": 0.8958247743135671,
       "yaw_rate_radps": -0.06791057398743676,
       "xy_covariance_m2": [
@@ -7071,6 +7372,7 @@
       "map_x_m": -38.359108555689396,
       "map_y_m": -2.8659166024522764,
       "yaw_rad": 2.541348142924047,
+      "display_motion_yaw_rad": 2.7513910951675875,
       "forward_speed_mps": 0.9559072353839023,
       "yaw_rate_radps": -0.15852968074073667,
       "xy_covariance_m2": [
@@ -7094,6 +7396,7 @@
       "map_x_m": -39.265457569462136,
       "map_y_m": -2.425671197911371,
       "yaw_rad": 2.2391216777218563,
+      "display_motion_yaw_rad": 2.528741908629173,
       "forward_speed_mps": 0.9887111769135672,
       "yaw_rate_radps": -0.2122336677568011,
       "xy_covariance_m2": [
@@ -7117,6 +7420,7 @@
       "map_x_m": -40.05128389603313,
       "map_y_m": -1.6722721684876671,
       "yaw_rad": 2.172520390245962,
+      "display_motion_yaw_rad": 2.3600247660202553,
       "forward_speed_mps": 1.0980360583117237,
       "yaw_rate_radps": -0.11256555727686848,
       "xy_covariance_m2": [
@@ -7140,6 +7444,7 @@
       "map_x_m": -40.790955928472734,
       "map_y_m": -0.900618678357534,
       "yaw_rad": 1.9960556626025436,
+      "display_motion_yaw_rad": 2.223196017564999,
       "forward_speed_mps": 1.0643954307588925,
       "yaw_rate_radps": 0.016475454049727552,
       "xy_covariance_m2": [
@@ -7163,6 +7468,7 @@
       "map_x_m": -41.42557157774893,
       "map_y_m": 0.016287700882126038,
       "yaw_rad": 1.819465874084056,
+      "display_motion_yaw_rad": 2.1291657449219015,
       "forward_speed_mps": 1.1417817332011284,
       "yaw_rate_radps": -0.3371540904810797,
       "xy_covariance_m2": [
@@ -7186,6 +7492,7 @@
       "map_x_m": -41.87296517866654,
       "map_y_m": 1.0958473034943277,
       "yaw_rad": 1.7058869629270594,
+      "display_motion_yaw_rad": 1.8882021462287493,
       "forward_speed_mps": 1.175356389479755,
       "yaw_rate_radps": -0.03815033877556429,
       "xy_covariance_m2": [
@@ -7209,6 +7516,7 @@
       "map_x_m": -42.28248871642958,
       "map_y_m": 2.2170061606469726,
       "yaw_rad": 1.5934019706427407,
+      "display_motion_yaw_rad": 1.8538836831107945,
       "forward_speed_mps": 1.18197677223242,
       "yaw_rate_radps": -0.10667577991771073,
       "xy_covariance_m2": [
@@ -7232,6 +7540,7 @@
       "map_x_m": -42.49638234306603,
       "map_y_m": 3.3597803206787753,
       "yaw_rad": 1.4684874795692675,
+      "display_motion_yaw_rad": 1.7029337788282557,
       "forward_speed_mps": 1.1429975318823933,
       "yaw_rate_radps": 0.07278144494512233,
       "xy_covariance_m2": [
@@ -7255,6 +7564,7 @@
       "map_x_m": -42.6068934031458,
       "map_y_m": 4.569670856500216,
       "yaw_rad": 1.3449870959302446,
+      "display_motion_yaw_rad": 1.6159231799984193,
       "forward_speed_mps": 1.1864115717285566,
       "yaw_rate_radps": -0.2878989457993605,
       "xy_covariance_m2": [
@@ -7278,6 +7588,7 @@
       "map_x_m": -42.55963108106092,
       "map_y_m": 5.73827504009733,
       "yaw_rad": 1.201684802038029,
+      "display_motion_yaw_rad": 1.4595770962170809,
       "forward_speed_mps": 1.156865072461064,
       "yaw_rate_radps": -0.3501868936599265,
       "xy_covariance_m2": [
@@ -7301,6 +7612,7 @@
       "map_x_m": -42.30170308302144,
       "map_y_m": 6.916829968451277,
       "yaw_rad": 1.131934762310867,
+      "display_motion_yaw_rad": 1.29797375417149,
       "forward_speed_mps": 1.190439828490879,
       "yaw_rate_radps": 0.12199830142600336,
       "xy_covariance_m2": [
@@ -7324,6 +7636,7 @@
       "map_x_m": -41.95803483448762,
       "map_y_m": 8.098458146114144,
       "yaw_rad": 0.9681673598676444,
+      "display_motion_yaw_rad": 1.2557254029465938,
       "forward_speed_mps": 1.1854159094887748,
       "yaw_rate_radps": -0.4463887191577391,
       "xy_covariance_m2": [
@@ -7347,6 +7660,7 @@
       "map_x_m": -41.4367521427882,
       "map_y_m": 9.183198932849612,
       "yaw_rad": 0.478025092314355,
+      "display_motion_yaw_rad": 0.8083236987212102,
       "forward_speed_mps": 1.1825038678320017,
       "yaw_rate_radps": -0.5286556320088048,
       "xy_covariance_m2": [
@@ -7370,6 +7684,7 @@
       "map_x_m": -40.38479901544753,
       "map_y_m": 9.808031690892928,
       "yaw_rad": 0.23428719347843738,
+      "display_motion_yaw_rad": 0.4091282685246567,
       "forward_speed_mps": 1.185110563516306,
       "yaw_rate_radps": -0.2715802594298798,
       "xy_covariance_m2": [
@@ -7393,6 +7708,7 @@
       "map_x_m": -39.20544921222183,
       "map_y_m": 10.163332931131938,
       "yaw_rad": 0.03021977615125726,
+      "display_motion_yaw_rad": 0.17332439510921505,
       "forward_speed_mps": 1.2018267486201115,
       "yaw_rate_radps": -0.08545049907861024,
       "xy_covariance_m2": [
@@ -7416,6 +7732,7 @@
       "map_x_m": -37.993176160093434,
       "map_y_m": 10.28034687339175,
       "yaw_rad": 0.019939668890854637,
+      "display_motion_yaw_rad": 0.09270931274005095,
       "forward_speed_mps": 1.205104962620992,
       "yaw_rate_radps": -0.033798718998290206,
       "xy_covariance_m2": [
@@ -7439,6 +7756,7 @@
       "map_x_m": -36.76556803913139,
       "map_y_m": 10.373120265834471,
       "yaw_rad": -0.019051074273736642,
+      "display_motion_yaw_rad": 0.05245259938732841,
       "forward_speed_mps": 1.2036012654701933,
       "yaw_rate_radps": -0.03760723146814262,
       "xy_covariance_m2": [
@@ -7462,6 +7780,7 @@
       "map_x_m": -35.537736340385194,
       "map_y_m": 10.401079298582976,
       "yaw_rad": -0.22472518904737668,
+      "display_motion_yaw_rad": -0.0759681694965983,
       "forward_speed_mps": 1.1876299214083035,
       "yaw_rate_radps": -0.25050187012163294,
       "xy_covariance_m2": [
@@ -7485,6 +7804,7 @@
       "map_x_m": -34.34708361043059,
       "map_y_m": 10.141159162720252,
       "yaw_rad": -0.37338637082056675,
+      "display_motion_yaw_rad": -0.3222615069398474,
       "forward_speed_mps": 1.1750828379129092,
       "yaw_rate_radps": 0.07386954530795412,
       "xy_covariance_m2": [
@@ -7508,6 +7828,7 @@
       "map_x_m": -33.217132958668614,
       "map_y_m": 9.722397761512603,
       "yaw_rad": -0.35642494136903835,
+      "display_motion_yaw_rad": -0.3316774578487267,
       "forward_speed_mps": 1.191204546327525,
       "yaw_rate_radps": -0.05436764818125485,
       "xy_covariance_m2": [
@@ -7531,6 +7852,7 @@
       "map_x_m": -32.07818978572737,
       "map_y_m": 9.332594935931768,
       "yaw_rad": -0.3770393362111917,
+      "display_motion_yaw_rad": -0.3552340517418641,
       "forward_speed_mps": 1.1655236760413932,
       "yaw_rate_radps": 0.046210954038844634,
       "xy_covariance_m2": [
@@ -7554,6 +7876,7 @@
       "map_x_m": -31.021057120917135,
       "map_y_m": 8.934146285304964,
       "yaw_rad": -0.35568952837348927,
+      "display_motion_yaw_rad": -0.3517739007997909,
       "forward_speed_mps": 0.9431153005417172,
       "yaw_rate_radps": -0.029126537924623906,
       "xy_covariance_m2": [
@@ -7577,6 +7900,7 @@
       "map_x_m": -30.127456812446937,
       "map_y_m": 8.596273772398439,
       "yaw_rad": -0.3513667334641375,
+      "display_motion_yaw_rad": -0.3648418715796115,
       "forward_speed_mps": 0.9378245391396236,
       "yaw_rate_radps": 0.01302975552049265,
       "xy_covariance_m2": [
@@ -7600,6 +7924,7 @@
       "map_x_m": -29.199716335175623,
       "map_y_m": 8.250890876404918,
       "yaw_rad": -0.32875050126201444,
+      "display_motion_yaw_rad": -0.3490121053705315,
       "forward_speed_mps": 1.0084002636508098,
       "yaw_rate_radps": 0.012664766465606265,
       "xy_covariance_m2": [
@@ -7623,6 +7948,7 @@
       "map_x_m": -28.192735100677403,
       "map_y_m": 7.889177446218473,
       "yaw_rad": -0.31243019669308086,
+      "display_motion_yaw_rad": -0.33291358589471304,
       "forward_speed_mps": 1.1391062257648488,
       "yaw_rate_radps": 0.007258709695329975,
       "xy_covariance_m2": [
@@ -7646,6 +7972,7 @@
       "map_x_m": -27.030931799873326,
       "map_y_m": 7.4842526933378,
       "yaw_rad": -0.2379839974092941,
+      "display_motion_yaw_rad": -0.29984400100511266,
       "forward_speed_mps": 1.338883520103857,
       "yaw_rate_radps": 0.05708073497596672,
       "xy_covariance_m2": [
@@ -7669,6 +7996,7 @@
       "map_x_m": -25.719539336850463,
       "map_y_m": 7.167291770185989,
       "yaw_rad": -0.1245357643194498,
+      "display_motion_yaw_rad": -0.18464089426548919,
       "forward_speed_mps": 1.3359677970819472,
       "yaw_rate_radps": 0.0151312171681445,
       "xy_covariance_m2": [
@@ -7692,6 +8020,7 @@
       "map_x_m": -24.39739289088781,
       "map_y_m": 6.962953190426433,
       "yaw_rad": -0.1056854633254578,
+      "display_motion_yaw_rad": -0.14895868586690697,
       "forward_speed_mps": 1.3045412961474494,
       "yaw_rate_radps": 0.021092429608986565,
       "xy_covariance_m2": [
@@ -7715,6 +8044,7 @@
       "map_x_m": -23.108251602726867,
       "map_y_m": 6.771768123226363,
       "yaw_rad": -0.06199298748791415,
+      "display_motion_yaw_rad": -0.1259970939336943,
       "forward_speed_mps": 1.2907603231843277,
       "yaw_rate_radps": 0.01754015615599784,
       "xy_covariance_m2": [
@@ -7738,6 +8068,7 @@
       "map_x_m": -21.73016317772116,
       "map_y_m": 6.644575399544188,
       "yaw_rad": -0.30211504590838034,
+      "display_motion_yaw_rad": -0.19000684419992278,
       "forward_speed_mps": 1.340376182167125,
       "yaw_rate_radps": -0.3496199353323651,
       "xy_covariance_m2": [
@@ -7761,6 +8092,7 @@
       "map_x_m": -20.45198341279693,
       "map_y_m": 6.197569860004588,
       "yaw_rad": -0.29416190027166816,
+      "display_motion_yaw_rad": -0.38457717121435375,
       "forward_speed_mps": 1.341221430420396,
       "yaw_rate_radps": 0.05072942386124345,
       "xy_covariance_m2": [
@@ -7784,6 +8116,7 @@
       "map_x_m": -19.1627590980426,
       "map_y_m": 5.715260320230286,
       "yaw_rad": -0.2868327167620163,
+      "display_motion_yaw_rad": -0.34818880685217113,
       "forward_speed_mps": 1.3567637451781231,
       "yaw_rate_radps": -0.001988044122976844,
       "xy_covariance_m2": [
@@ -7807,6 +8140,7 @@
       "map_x_m": -17.875071166245643,
       "map_y_m": 5.252072000663842,
       "yaw_rad": -0.2616084320101728,
+      "display_motion_yaw_rad": -0.33248596475902825,
       "forward_speed_mps": 1.3483007538741114,
       "yaw_rate_radps": 0.008692670434907098,
       "xy_covariance_m2": [
@@ -7830,6 +8164,7 @@
       "map_x_m": -16.585341842700515,
       "map_y_m": 4.782887360212711,
       "yaw_rad": -0.3012510963012729,
+      "display_motion_yaw_rad": -0.3663364069773155,
       "forward_speed_mps": 1.3414023146498941,
       "yaw_rate_radps": 0.05463564187326859,
       "xy_covariance_m2": [
@@ -7853,6 +8188,7 @@
       "map_x_m": -15.310107218177391,
       "map_y_m": 4.278245340757026,
       "yaw_rad": -0.38282113380241345,
+      "display_motion_yaw_rad": -0.42299186980128417,
       "forward_speed_mps": 1.34263859066767,
       "yaw_rate_radps": -0.05981599500511791,
       "xy_covariance_m2": [
@@ -7876,6 +8212,7 @@
       "map_x_m": -14.084441690458121,
       "map_y_m": 3.677945716011909,
       "yaw_rad": -0.3356323445542375,
+      "display_motion_yaw_rad": -0.45150452903910926,
       "forward_speed_mps": 1.3414353299736417,
       "yaw_rate_radps": -0.013427419926908107,
       "xy_covariance_m2": [
@@ -7899,6 +8236,7 @@
       "map_x_m": -12.824085186403142,
       "map_y_m": 3.054377621703735,
       "yaw_rad": -0.3245586459789753,
+      "display_motion_yaw_rad": -0.4545103997274431,
       "forward_speed_mps": 1.3542791077819651,
       "yaw_rate_radps": 0.02420798320786025,
       "xy_covariance_m2": [
@@ -7922,6 +8260,7 @@
       "map_x_m": -11.548806230996115,
       "map_y_m": 2.473899305148555,
       "yaw_rad": -0.3184164043417552,
+      "display_motion_yaw_rad": -0.4232635052799111,
       "forward_speed_mps": 1.3492023341418116,
       "yaw_rate_radps": 0.013524060439290322,
       "xy_covariance_m2": [
@@ -7945,6 +8284,7 @@
       "map_x_m": -10.298364589215305,
       "map_y_m": 1.9261996813622115,
       "yaw_rad": -0.2725631433174942,
+      "display_motion_yaw_rad": -0.39054779147904745,
       "forward_speed_mps": 1.3446959623010615,
       "yaw_rate_radps": -0.011096282240651298,
       "xy_covariance_m2": [
@@ -7968,6 +8308,7 @@
       "map_x_m": -9.013984812163319,
       "map_y_m": 1.4398664842892444,
       "yaw_rad": -0.25129839088248884,
+      "display_motion_yaw_rad": -0.35358870055754416,
       "forward_speed_mps": 1.34610795867502,
       "yaw_rate_radps": 0.016802489841912256,
       "xy_covariance_m2": [
@@ -7991,6 +8332,7 @@
       "map_x_m": -7.74428936651393,
       "map_y_m": 0.9813997083870902,
       "yaw_rad": -0.2388472060808402,
+      "display_motion_yaw_rad": -0.3313281161068833,
       "forward_speed_mps": 1.3194402956508633,
       "yaw_rate_radps": 0.0015843678151016242,
       "xy_covariance_m2": [
@@ -8014,6 +8356,7 @@
       "map_x_m": -6.4584796261037525,
       "map_y_m": 0.5534319132159118,
       "yaw_rad": -0.22343986423956297,
+      "display_motion_yaw_rad": -0.3235970982585672,
       "forward_speed_mps": 1.345725202633364,
       "yaw_rate_radps": 0.03297925380132599,
       "xy_covariance_m2": [
@@ -8037,6 +8380,7 @@
       "map_x_m": -5.149468268137548,
       "map_y_m": 0.11315174650815785,
       "yaw_rad": -0.2255579999881161,
+      "display_motion_yaw_rad": -0.3225222939383009,
       "forward_speed_mps": 1.346745763125904,
       "yaw_rate_radps": 0.023667753979604942,
       "xy_covariance_m2": [
@@ -8060,6 +8404,7 @@
       "map_x_m": -3.876351291021112,
       "map_y_m": -0.31904632931407306,
       "yaw_rad": -0.28020793257455695,
+      "display_motion_yaw_rad": -0.3374488684390453,
       "forward_speed_mps": 1.318047398073868,
       "yaw_rate_radps": -0.25103368315060337,
       "xy_covariance_m2": [
@@ -8083,6 +8428,7 @@
       "map_x_m": -2.6388713518537106,
       "map_y_m": -0.8701236139675145,
       "yaw_rad": -0.32849045184212233,
+      "display_motion_yaw_rad": -0.45449051432653864,
       "forward_speed_mps": 1.3413030212039323,
       "yaw_rate_radps": 0.033092181933909545,
       "xy_covariance_m2": [
@@ -8106,6 +8452,7 @@
       "map_x_m": -1.4491460941679197,
       "map_y_m": -1.4130277269000728,
       "yaw_rad": -0.40408979380881727,
+      "display_motion_yaw_rad": -0.46664691043727274,
       "forward_speed_mps": 1.0858798289051192,
       "yaw_rate_radps": -0.18675019679841742,
       "xy_covariance_m2": [
@@ -8129,6 +8476,7 @@
       "map_x_m": -0.5331888026837348,
       "map_y_m": -1.932555863309867,
       "yaw_rad": -0.40019687796347814,
+      "display_motion_yaw_rad": -0.5557276752811992,
       "forward_speed_mps": 0.6165195045692867,
       "yaw_rate_radps": -0.002767147506704532,
       "xy_covariance_m2": [
@@ -8152,6 +8500,7 @@
       "map_x_m": -0.08648694903443417,
       "map_y_m": -2.2080080432095373,
       "yaw_rad": -0.3977636981090024,
+      "display_motion_yaw_rad": -0.5664260326784599,
       "forward_speed_mps": 0.25451502613867316,
       "yaw_rate_radps": -0.0019994984584521766,
       "xy_covariance_m2": [
@@ -8175,6 +8524,7 @@
       "map_x_m": 0.1492199525224853,
       "map_y_m": -2.348323322850387,
       "yaw_rad": -0.3950661159755784,
+      "display_motion_yaw_rad": -0.547491621598155,
       "forward_speed_mps": 0.12373604181554741,
       "yaw_rate_radps": -0.004976000042723247,
       "xy_covariance_m2": [
@@ -8198,6 +8548,7 @@
       "map_x_m": 0.3185123790724296,
       "map_y_m": -2.4301326686075018,
       "yaw_rad": -0.42505021656534975,
+      "display_motion_yaw_rad": -0.5544456472214365,
       "forward_speed_mps": 0.30597968276273324,
       "yaw_rate_radps": 0.00044605357728836963,
       "xy_covariance_m2": [
@@ -8221,6 +8572,7 @@
       "map_x_m": 0.6073213198888116,
       "map_y_m": -2.6119525088042903,
       "yaw_rad": -0.43628724353754755,
+      "display_motion_yaw_rad": -0.5380175327442444,
       "forward_speed_mps": 0.4119750367114756,
       "yaw_rate_radps": -0.015987910950457495,
       "xy_covariance_m2": [
@@ -8244,6 +8596,7 @@
       "map_x_m": 1.0589205270280717,
       "map_y_m": -2.8908870943950307,
       "yaw_rad": -0.45343977370430194,
+      "display_motion_yaw_rad": -0.5776330339267991,
       "forward_speed_mps": 0.6487396130109806,
       "yaw_rate_radps": 0.0006549570567748597,
       "xy_covariance_m2": [
@@ -8267,6 +8620,7 @@
       "map_x_m": 1.5597614559648707,
       "map_y_m": -3.234775401817144,
       "yaw_rad": -0.4381362204057133,
+      "display_motion_yaw_rad": -0.5984988083504281,
       "forward_speed_mps": 0.5767122917761843,
       "yaw_rate_radps": 0.010976013017588635,
       "xy_covariance_m2": [
@@ -8290,6 +8644,7 @@
       "map_x_m": 2.01162268950166,
       "map_y_m": -3.5367293593434916,
       "yaw_rad": -0.4388496127725876,
+      "display_motion_yaw_rad": -0.5681360582767121,
       "forward_speed_mps": 0.48956837845400375,
       "yaw_rate_radps": -0.007012970815434866,
       "xy_covariance_m2": [
@@ -8313,6 +8668,7 @@
       "map_x_m": 2.447485420561224,
       "map_y_m": -3.811708538967004,
       "yaw_rad": -0.46678237303773296,
+      "display_motion_yaw_rad": -0.5916191904438156,
       "forward_speed_mps": 0.5063148594672366,
       "yaw_rate_radps": -0.015556083641473591,
       "xy_covariance_m2": [
@@ -8336,6 +8692,7 @@
       "map_x_m": 2.891277685978244,
       "map_y_m": -4.139677656097646,
       "yaw_rad": -0.4672484087609128,
+      "display_motion_yaw_rad": -0.620343096374204,
       "forward_speed_mps": 0.584724759142984,
       "yaw_rate_radps": 0.007093081457491669,
       "xy_covariance_m2": [
@@ -8359,6 +8716,7 @@
       "map_x_m": 3.3823514859360824,
       "map_y_m": -4.468804912966367,
       "yaw_rad": -0.5521918171042057,
+      "display_motion_yaw_rad": -0.6230268029199167,
       "forward_speed_mps": 0.5824277747490734,
       "yaw_rate_radps": -0.16649149340259264,
       "xy_covariance_m2": [
@@ -8382,6 +8740,7 @@
       "map_x_m": 3.8330082232710825,
       "map_y_m": -4.852168734091024,
       "yaw_rad": -0.7295982570005637,
+      "display_motion_yaw_rad": -0.8680158161793968,
       "forward_speed_mps": 0.6210925423016593,
       "yaw_rate_radps": -0.02122620533019497,
       "xy_covariance_m2": [
@@ -8405,6 +8764,7 @@
       "map_x_m": 4.210246480963495,
       "map_y_m": -5.326114039217682,
       "yaw_rad": -0.8551456796461051,
+      "display_motion_yaw_rad": -0.9199751453957313,
       "forward_speed_mps": 0.6296639872882088,
       "yaw_rate_radps": -0.2122307924991797,
       "xy_covariance_m2": [
@@ -8428,6 +8788,7 @@
       "map_x_m": 4.4877676995003055,
       "map_y_m": -5.858068916400145,
       "yaw_rad": -1.0449255009993985,
+      "display_motion_yaw_rad": -1.1942088633067456,
       "forward_speed_mps": 0.6526873330226282,
       "yaw_rate_radps": -0.17383583458173024,
       "xy_covariance_m2": [
@@ -8451,6 +8812,7 @@
       "map_x_m": 4.704140309357569,
       "map_y_m": -6.509082716637179,
       "yaw_rad": -1.050407553007389,
+      "display_motion_yaw_rad": -1.230994075951066,
       "forward_speed_mps": 0.7084925948063687,
       "yaw_rate_radps": -0.06108062083004335,
       "xy_covariance_m2": [
@@ -8474,6 +8836,7 @@
       "map_x_m": 4.956161279476229,
       "map_y_m": -7.222465067730093,
       "yaw_rad": -1.1145180967400343,
+      "display_motion_yaw_rad": -1.2760842354446185,
       "forward_speed_mps": 0.8476555947823106,
       "yaw_rate_radps": -0.020921682379505,
       "xy_covariance_m2": [
@@ -8497,6 +8860,7 @@
       "map_x_m": 5.183868534559933,
       "map_y_m": -8.009243778337426,
       "yaw_rad": -1.2449814183673633,
+      "display_motion_yaw_rad": -1.3531509403626232,
       "forward_speed_mps": 0.8357497509177635,
       "yaw_rate_radps": -0.2522332655594593,
       "xy_covariance_m2": [
@@ -8520,6 +8884,7 @@
       "map_x_m": 5.323452935795843,
       "map_y_m": -8.800664797027752,
       "yaw_rad": -1.3459953082537375,
+      "display_motion_yaw_rad": -1.4473234287091261,
       "forward_speed_mps": 0.7776553591059225,
       "yaw_rate_radps": -0.30006950490998224,
       "xy_covariance_m2": [
@@ -8543,6 +8908,7 @@
       "map_x_m": 5.332104456864449,
       "map_y_m": -9.491476268883341,
       "yaw_rad": -1.5267057938801343,
+      "display_motion_yaw_rad": -1.7205336430368763,
       "forward_speed_mps": 0.7343297926676013,
       "yaw_rate_radps": 0.14547109874539943,
       "xy_covariance_m2": [
@@ -8566,6 +8932,7 @@
       "map_x_m": 5.217184491630421,
       "map_y_m": -10.211667542150629,
       "yaw_rad": -1.6448094417828378,
+      "display_motion_yaw_rad": -1.7694417774564632,
       "forward_speed_mps": 0.783569281159229,
       "yaw_rate_radps": -0.034482188464764,
       "xy_covariance_m2": [
@@ -8589,6 +8956,7 @@
       "map_x_m": 4.990301803454241,
       "map_y_m": -11.005863245741049,
       "yaw_rad": -1.6671889563235416,
+      "display_motion_yaw_rad": -1.8483714709495849,
       "forward_speed_mps": 0.8061725743815925,
       "yaw_rate_radps": -0.1316136903108182,
       "xy_covariance_m2": [
@@ -8612,6 +8980,7 @@
       "map_x_m": 4.736176083188552,
       "map_y_m": -11.786114877714791,
       "yaw_rad": -1.6978757905282977,
+      "display_motion_yaw_rad": -1.9269994555934264,
       "forward_speed_mps": 0.8169757856298645,
       "yaw_rate_radps": 0.008630261054855171,
       "xy_covariance_m2": [
@@ -8635,6 +9004,7 @@
       "map_x_m": 4.432002028090503,
       "map_y_m": -12.569963335659489,
       "yaw_rad": -1.690191171096243,
+      "display_motion_yaw_rad": -1.9175364273025493,
       "forward_speed_mps": 0.8095925203231598,
       "yaw_rate_radps": -0.022629553488228257,
       "xy_covariance_m2": [
@@ -8658,6 +9028,7 @@
       "map_x_m": 4.172314539591953,
       "map_y_m": -13.332855793867468,
       "yaw_rad": -1.6821367471739639,
+      "display_motion_yaw_rad": -1.9300655934368198,
       "forward_speed_mps": 0.8088847580572336,
       "yaw_rate_radps": 0.047443763301745344,
       "xy_covariance_m2": [
@@ -8681,6 +9052,7 @@
       "map_x_m": 3.8596607307985398,
       "map_y_m": -14.104556037449617,
       "yaw_rad": -1.6625720101442023,
+      "display_motion_yaw_rad": -1.9103045209329745,
       "forward_speed_mps": 0.8238509842212138,
       "yaw_rate_radps": 0.021596449716299513,
       "xy_covariance_m2": [
@@ -8704,6 +9076,7 @@
       "map_x_m": 3.60352051387261,
       "map_y_m": -14.910956529874372,
       "yaw_rad": -1.6471138441631146,
+      "display_motion_yaw_rad": -1.8987196981458565,
       "forward_speed_mps": 0.8250667670887882,
       "yaw_rate_radps": 0.02357801665190288,
       "xy_covariance_m2": [
@@ -8727,6 +9100,7 @@
       "map_x_m": 3.344449766553044,
       "map_y_m": -15.702414730479063,
       "yaw_rad": -1.6311242123754515,
+      "display_motion_yaw_rad": -1.9022189921456638,
       "forward_speed_mps": 0.8425931516347318,
       "yaw_rate_radps": 0.001261404634481259,
       "xy_covariance_m2": [
@@ -8750,6 +9124,7 @@
       "map_x_m": 3.0809362242226386,
       "map_y_m": -16.5168220069865,
       "yaw_rad": -1.5892241377304201,
+      "display_motion_yaw_rad": -1.8765984961753845,
       "forward_speed_mps": 0.870369276453153,
       "yaw_rate_radps": 0.07051510687407617,
       "xy_covariance_m2": [
@@ -8773,6 +9148,7 @@
       "map_x_m": 2.8304827141078195,
       "map_y_m": -17.387619268388068,
       "yaw_rad": -1.4082053378121961,
+      "display_motion_yaw_rad": -1.7782021391954026,
       "forward_speed_mps": 0.9400324146893674,
       "yaw_rate_radps": 0.2776887432605173,
       "xy_covariance_m2": [
@@ -8796,6 +9172,7 @@
       "map_x_m": 2.75599842600541,
       "map_y_m": -18.32024866787947,
       "yaw_rad": -1.30942956664943,
+      "display_motion_yaw_rad": -1.5842582082486587,
       "forward_speed_mps": 1.0029876691486108,
       "yaw_rate_radps": 0.016343034173210057,
       "xy_covariance_m2": [
@@ -8819,6 +9196,7 @@
       "map_x_m": 2.7657380819001647,
       "map_y_m": -19.35830815544163,
       "yaw_rad": -1.3343380583195716,
+      "display_motion_yaw_rad": -1.588816551403907,
       "forward_speed_mps": 1.0535023752998547,
       "yaw_rate_radps": -0.13077499980792026,
       "xy_covariance_m2": [
@@ -8842,6 +9220,7 @@
       "map_x_m": 2.709003303879535,
       "map_y_m": -20.39569466879231,
       "yaw_rad": -1.4524828118655948,
+      "display_motion_yaw_rad": -1.6442981416151192,
       "forward_speed_mps": 1.0331890446639012,
       "yaw_rate_radps": -0.23143082857228975,
       "xy_covariance_m2": [
@@ -8865,6 +9244,7 @@
       "map_x_m": 2.550329059177342,
       "map_y_m": -21.433669757924328,
       "yaw_rad": -1.8227636860437446,
+      "display_motion_yaw_rad": -1.9246126294388597,
       "forward_speed_mps": 1.13230792636002,
       "yaw_rate_radps": -0.49189089793148427,
       "xy_covariance_m2": [
@@ -8888,6 +9268,7 @@
       "map_x_m": 1.9296262814668053,
       "map_y_m": -22.33622505324187,
       "yaw_rad": -2.339770967442586,
+      "display_motion_yaw_rad": -2.4879781711923017,
       "forward_speed_mps": 1.1465153084049453,
       "yaw_rate_radps": -0.5096460558459649,
       "xy_covariance_m2": [
@@ -8911,6 +9292,7 @@
       "map_x_m": 1.3097414925794029,
       "map_y_m": -22.5012519639568,
       "yaw_rad": -2.3791177347532093,
+      "display_motion_yaw_rad": 2.5637116732390073,
       "forward_speed_mps": -0.42314663978566747,
       "yaw_rate_radps": -0.021691881947170047,
       "xy_covariance_m2": [
@@ -8934,6 +9316,7 @@
       "map_x_m": 1.6253887732091623,
       "map_y_m": -22.2478652487679,
       "yaw_rad": -2.3989717643398683,
+      "display_motion_yaw_rad": 0.5225865331195386,
       "forward_speed_mps": -0.7707970701388863,
       "yaw_rate_radps": -0.04966551413525579,
       "xy_covariance_m2": [
@@ -8957,6 +9340,7 @@
       "map_x_m": 2.176975904528535,
       "map_y_m": -21.98458566514725,
       "yaw_rad": -2.4311072719915803,
+      "display_motion_yaw_rad": 0.4116507135159421,
       "forward_speed_mps": -0.6886468203765317,
       "yaw_rate_radps": -0.07924157505849934,
       "xy_covariance_m2": [
@@ -8980,6 +9364,7 @@
       "map_x_m": 2.7614537012361207,
       "map_y_m": -21.758436986116486,
       "yaw_rad": -2.5587673653923257,
+      "display_motion_yaw_rad": 0.29603823286645153,
       "forward_speed_mps": -0.6455413933094345,
       "yaw_rate_radps": -0.20465432354633656,
       "xy_covariance_m2": [
@@ -9003,6 +9388,7 @@
       "map_x_m": 3.3908255775278993,
       "map_y_m": -21.609606832889156,
       "yaw_rad": -2.830080823889269,
+      "display_motion_yaw_rad": 0.19667024142088102,
       "forward_speed_mps": -0.6202559612100984,
       "yaw_rate_radps": -0.2911839785781742,
       "xy_covariance_m2": [
@@ -9026,6 +9412,7 @@
       "map_x_m": 3.980845664961088,
       "map_y_m": -21.50554298136236,
       "yaw_rad": -2.8644885036872125,
+      "display_motion_yaw_rad": 0.12315291810929939,
       "forward_speed_mps": -0.5927628361550985,
       "yaw_rate_radps": -0.012187125520282213,
       "xy_covariance_m2": [
@@ -9049,6 +9436,7 @@
       "map_x_m": 4.559182290955919,
       "map_y_m": -21.494412887218342,
       "yaw_rad": -2.8934711045258985,
+      "display_motion_yaw_rad": -0.04615964677855324,
       "forward_speed_mps": -0.5724923048645099,
       "yaw_rate_radps": -0.056810673068856336,
       "xy_covariance_m2": [
@@ -9072,6 +9460,7 @@
       "map_x_m": 5.155715701440215,
       "map_y_m": -21.554250475987345,
       "yaw_rad": -3.0045516204473786,
+      "display_motion_yaw_rad": -0.15349479275933214,
       "forward_speed_mps": -0.5685537420021998,
       "yaw_rate_radps": -0.15167400769396266,
       "xy_covariance_m2": [
@@ -9095,6 +9484,7 @@
       "map_x_m": 5.757667139716371,
       "map_y_m": -21.696750702384488,
       "yaw_rad": 3.04967852591997,
+      "display_motion_yaw_rad": -0.22487368363103083,
       "forward_speed_mps": -0.582032966381338,
       "yaw_rate_radps": -0.13507235338899198,
       "xy_covariance_m2": [
@@ -9118,6 +9508,7 @@
       "map_x_m": 6.33065585330346,
       "map_y_m": -21.824697807011,
       "yaw_rad": 3.059114507757158,
+      "display_motion_yaw_rad": -0.290356465214019,
       "forward_speed_mps": -0.5901739565927221,
       "yaw_rate_radps": 0.006833244178392597,
       "xy_covariance_m2": [
@@ -9141,6 +9532,7 @@
       "map_x_m": 6.872410040600179,
       "map_y_m": -22.04751324677652,
       "yaw_rad": 3.083889569057474,
+      "display_motion_yaw_rad": -0.388848043649431,
       "forward_speed_mps": -0.5845988988334436,
       "yaw_rate_radps": 0.0363300621677263,
       "xy_covariance_m2": [
@@ -9164,6 +9556,7 @@
       "map_x_m": 7.4247575624320366,
       "map_y_m": -22.245221685413277,
       "yaw_rad": 3.110378248516195,
+      "display_motion_yaw_rad": -0.3614651678893518,
       "forward_speed_mps": -0.5877499432978984,
       "yaw_rate_radps": 0.040562453028493574,
       "xy_covariance_m2": [
@@ -9187,6 +9580,7 @@
       "map_x_m": 7.961560521241856,
       "map_y_m": -22.439276495083273,
       "yaw_rad": 3.134006926596383,
+      "display_motion_yaw_rad": -0.34689343955909224,
       "forward_speed_mps": -0.5808499962458066,
       "yaw_rate_radps": 0.03148553900072022,
       "xy_covariance_m2": [
@@ -9210,6 +9604,7 @@
       "map_x_m": 8.499457235150711,
       "map_y_m": -22.63008258996214,
       "yaw_rad": -3.1247391858769746,
+      "display_motion_yaw_rad": -0.32564830112977766,
       "forward_speed_mps": -0.5595338948629174,
       "yaw_rate_radps": 0.009110539014170211,
       "xy_covariance_m2": [
@@ -9233,6 +9628,7 @@
       "map_x_m": 9.02957480020975,
       "map_y_m": -22.807325257989262,
       "yaw_rad": -3.1011228556737813,
+      "display_motion_yaw_rad": -0.30020120356924257,
       "forward_speed_mps": -0.5651483181357997,
       "yaw_rate_radps": 0.01996259458162851,
       "xy_covariance_m2": [
@@ -9256,6 +9652,7 @@
       "map_x_m": 9.579711689950937,
       "map_y_m": -22.96975732348309,
       "yaw_rad": -3.076609773095906,
+      "display_motion_yaw_rad": -0.3015350095913031,
       "forward_speed_mps": -0.5702711130196999,
       "yaw_rate_radps": 0.03626474014209195,
       "xy_covariance_m2": [
@@ -9279,6 +9676,7 @@
       "map_x_m": 10.123309706739212,
       "map_y_m": -23.13613254893958,
       "yaw_rad": -3.0538369220410546,
+      "display_motion_yaw_rad": -0.28818616171069084,
       "forward_speed_mps": -0.5657890899563031,
       "yaw_rate_radps": 0.021864520454330457,
       "xy_covariance_m2": [
@@ -9302,6 +9700,7 @@
       "map_x_m": 10.647551549308384,
       "map_y_m": -23.301824101901687,
       "yaw_rad": -3.0266600613043133,
+      "display_motion_yaw_rad": -0.36835585438469703,
       "forward_speed_mps": -0.4126251624529176,
       "yaw_rate_radps": 0.023929446509624624,
       "xy_covariance_m2": [
@@ -9325,6 +9724,7 @@
       "map_x_m": 10.946498294721428,
       "map_y_m": -23.445504217060254,
       "yaw_rad": -3.020431536241772,
+      "display_motion_yaw_rad": -0.44539414708188657,
       "forward_speed_mps": 0.0453174070853458,
       "yaw_rate_radps": 5.0665154413454316e-17,
       "xy_covariance_m2": [
@@ -9348,6 +9748,7 @@
       "map_x_m": 10.935539342160292,
       "map_y_m": -23.454673506929872,
       "yaw_rad": -3.020426248658897,
+      "display_motion_yaw_rad": -0.44539414708188657,
       "forward_speed_mps": 0.03905556214047437,
       "yaw_rate_radps": 8.508048486269066e-19,
       "xy_covariance_m2": [
@@ -9371,6 +9772,7 @@
       "map_x_m": 10.929233925770982,
       "map_y_m": -23.460287264135797,
       "yaw_rad": -3.020426760105568,
+      "display_motion_yaw_rad": -0.44539414708188657,
       "forward_speed_mps": 0.015786736709095518,
       "yaw_rate_radps": -1.627835597191706e-19,
       "xy_covariance_m2": [
@@ -9394,6 +9796,7 @@
       "map_x_m": 10.75710246821371,
       "map_y_m": -23.482619504283242,
       "yaw_rad": -3.028858078303864,
+      "display_motion_yaw_rad": 3.118221936544009,
       "forward_speed_mps": 0.6837819405533598,
       "yaw_rate_radps": -0.03906682736881194,
       "xy_covariance_m2": [
@@ -9417,6 +9820,7 @@
       "map_x_m": 9.926061716369695,
       "map_y_m": -23.346053603314118,
       "yaw_rad": -3.010765886141363,
+      "display_motion_yaw_rad": 2.9061052530457756,
       "forward_speed_mps": 1.2698548082358245,
       "yaw_rate_radps": -0.016127103557907477,
       "xy_covariance_m2": [
@@ -9440,6 +9844,7 @@
       "map_x_m": 8.795238436237778,
       "map_y_m": -23.0605078232191,
       "yaw_rad": -2.9698116946509012,
+      "display_motion_yaw_rad": 2.9073233425904443,
       "forward_speed_mps": 1.201009717848665,
       "yaw_rate_radps": 0.02854674218267435,
       "xy_covariance_m2": [
@@ -9463,6 +9868,7 @@
       "map_x_m": 7.674327897464198,
       "map_y_m": -22.81581406646792,
       "yaw_rad": -2.9886997396264277,
+      "display_motion_yaw_rad": 2.933773173466111,
       "forward_speed_mps": 1.1695137646360405,
       "yaw_rate_radps": -0.11687021528557257,
       "xy_covariance_m2": [
@@ -9486,6 +9892,7 @@
       "map_x_m": 6.570456893905527,
       "map_y_m": -22.5299096501159,
       "yaw_rad": -3.0968336741614975,
+      "display_motion_yaw_rad": 2.8371099648225604,
       "forward_speed_mps": 1.1541047843922576,
       "yaw_rate_radps": -0.08860333573271828,
       "xy_covariance_m2": [
@@ -9509,6 +9916,7 @@
       "map_x_m": 5.48599835825519,
       "map_y_m": -22.155700226544422,
       "yaw_rad": 2.8136739366092094,
+      "display_motion_yaw_rad": 2.6209422509472358,
       "forward_speed_mps": 1.2704139838129316,
       "yaw_rate_radps": -0.625915440968887,
       "xy_covariance_m2": [
@@ -9532,6 +9940,7 @@
       "map_x_m": 4.603076822014141,
       "map_y_m": -21.27330795101876,
       "yaw_rad": 2.282881424842257,
+      "display_motion_yaw_rad": 2.1021305760164544,
       "forward_speed_mps": 1.2748368822412113,
       "yaw_rate_radps": -0.48200243749526533,
       "xy_covariance_m2": [
@@ -9555,6 +9964,7 @@
       "map_x_m": 4.252098000909837,
       "map_y_m": -20.084209279104652,
       "yaw_rad": 1.8997260234574762,
+      "display_motion_yaw_rad": 1.637002314139276,
       "forward_speed_mps": 1.2885840583463157,
       "yaw_rate_radps": -0.01385669497778392,
       "xy_covariance_m2": [
@@ -9578,6 +9988,7 @@
       "map_x_m": 4.357529603061248,
       "map_y_m": -18.787305955825857,
       "yaw_rad": 1.8112917156201407,
+      "display_motion_yaw_rad": 1.4363090816971944,
       "forward_speed_mps": 1.3299539933320543,
       "yaw_rate_radps": 0.04401616661310298,
       "xy_covariance_m2": [
@@ -9601,6 +10012,7 @@
       "map_x_m": 4.594316942666082,
       "map_y_m": -17.432062508174482,
       "yaw_rad": 1.6636319378589297,
+      "display_motion_yaw_rad": 1.3481896999754661,
       "forward_speed_mps": 1.3482352241558773,
       "yaw_rate_radps": -0.18570540618780298,
       "xy_covariance_m2": [
@@ -9624,6 +10036,7 @@
       "map_x_m": 4.987150395191799,
       "map_y_m": -16.11742331166654,
       "yaw_rad": 1.6884418378993349,
+      "display_motion_yaw_rad": 1.2575969595563044,
       "forward_speed_mps": 1.3471937833180487,
       "yaw_rate_radps": -0.013333780084359027,
       "xy_covariance_m2": [
@@ -9647,6 +10060,7 @@
       "map_x_m": 5.404707863156935,
       "map_y_m": -14.813333684937604,
       "yaw_rad": 1.6814657055409903,
+      "display_motion_yaw_rad": 1.2520265668944337,
       "forward_speed_mps": 1.3485363591486264,
       "yaw_rate_radps": 0.029860442958120136,
       "xy_covariance_m2": [
@@ -9670,6 +10084,7 @@
       "map_x_m": 5.853802886891511,
       "map_y_m": -13.514864162101665,
       "yaw_rad": 1.6789563566014065,
+      "display_motion_yaw_rad": 1.2237024692942085,
       "forward_speed_mps": 1.2077782042352818,
       "yaw_rate_radps": -0.030130632240806834,
       "xy_covariance_m2": [
@@ -9693,6 +10108,7 @@
       "map_x_m": 6.338295147894775,
       "map_y_m": -12.392307663977977,
       "yaw_rad": 1.6885044968066725,
+      "display_motion_yaw_rad": 1.1859502411542746,
       "forward_speed_mps": 0.7744754564502264,
       "yaw_rate_radps": -0.020473993017499706,
       "xy_covariance_m2": [
@@ -9716,6 +10132,7 @@
       "map_x_m": 6.592067731081783,
       "map_y_m": -11.653354876743936,
       "yaw_rad": 1.6834675488823028,
+      "display_motion_yaw_rad": 1.2049218812756892,
       "forward_speed_mps": 0.5457657039117944,
       "yaw_rate_radps": -0.06759180634718968,
       "xy_covariance_m2": [
@@ -9739,6 +10156,7 @@
       "map_x_m": 6.802437719517422,
       "map_y_m": -11.111434971966373,
       "yaw_rad": 1.7029020586109131,
+      "display_motion_yaw_rad": 1.1846515760264105,
       "forward_speed_mps": 0.5570994244975841,
       "yaw_rate_radps": -0.005783104049628053,
       "xy_covariance_m2": [
@@ -9762,6 +10180,7 @@
       "map_x_m": 6.998650144997418,
       "map_y_m": -10.528529022764088,
       "yaw_rad": 1.7190379431473266,
+      "display_motion_yaw_rad": 1.2643573385512532,
       "forward_speed_mps": 0.5941187764543907,
       "yaw_rate_radps": 0.010122384435931841,
       "xy_covariance_m2": [
@@ -9785,6 +10204,7 @@
       "map_x_m": 7.1800092715169495,
       "map_y_m": -9.94066404799092,
       "yaw_rad": 1.7264944652031389,
+      "display_motion_yaw_rad": 1.3081778281649208,
       "forward_speed_mps": 0.6503715171389034,
       "yaw_rate_radps": -0.01525685568719288,
       "xy_covariance_m2": [
@@ -9808,6 +10228,7 @@
       "map_x_m": 7.362776793148667,
       "map_y_m": -9.22290371108012,
       "yaw_rad": 1.7308708587523558,
+      "display_motion_yaw_rad": 1.351826078135342,
       "forward_speed_mps": 0.8937117404797721,
       "yaw_rate_radps": -0.11859419313430082,
       "xy_covariance_m2": [
@@ -9831,6 +10252,7 @@
       "map_x_m": 7.6117473664943205,
       "map_y_m": -8.399301764754538,
       "yaw_rad": 1.6153607950509814,
+      "display_motion_yaw_rad": 1.2027250804352627,
       "forward_speed_mps": 0.8643275294673375,
       "yaw_rate_radps": -0.18350294094720915,
       "xy_covariance_m2": [
@@ -9854,6 +10276,7 @@
       "map_x_m": 7.986137820309265,
       "map_y_m": -7.613735887667927,
       "yaw_rad": 1.4464208278252606,
+      "display_motion_yaw_rad": 1.03266525787937,
       "forward_speed_mps": 0.8994289270210434,
       "yaw_rate_radps": -0.17572469637820812,
       "xy_covariance_m2": [
@@ -9877,6 +10300,7 @@
       "map_x_m": 8.517988547806612,
       "map_y_m": -6.919509805248508,
       "yaw_rad": 1.3182901944738192,
+      "display_motion_yaw_rad": 0.8575153746330215,
       "forward_speed_mps": 0.9060322547569432,
       "yaw_rate_radps": -0.1959803101495628,
       "xy_covariance_m2": [
@@ -9900,6 +10324,7 @@
       "map_x_m": 9.159335406317009,
       "map_y_m": -6.283545478227205,
       "yaw_rad": 0.9556428804601476,
+      "display_motion_yaw_rad": 0.5953300979911116,
       "forward_speed_mps": 0.963869355448588,
       "yaw_rate_radps": -0.38443240537274215,
       "xy_covariance_m2": [
@@ -9923,6 +10348,7 @@
       "map_x_m": 9.739227242957867,
       "map_y_m": -6.140724769201474,
       "yaw_rad": 0.8568403304663404,
+      "display_motion_yaw_rad": 0.08778943979944885,
       "forward_speed_mps": -0.03724348021031841,
       "yaw_rate_radps": 6.550684518682799e-16,
       "xy_covariance_m2": [
@@ -9946,6 +10372,7 @@
       "map_x_m": 9.80437386432754,
       "map_y_m": -6.171707312855548,
       "yaw_rad": 0.8572928172316789,
+      "display_motion_yaw_rad": 0.08778943979944885,
       "forward_speed_mps": -0.08645697055746034,
       "yaw_rate_radps": 9.450889546553111e-19,
       "xy_covariance_m2": [
@@ -9969,6 +10396,7 @@
       "map_x_m": 9.811746632774252,
       "map_y_m": -6.168035873636306,
       "yaw_rad": 0.857293548066437,
+      "display_motion_yaw_rad": 0.08778943979944885,
       "forward_speed_mps": -0.034868715546422464,
       "yaw_rate_radps": -1.6568901782379368e-19,
       "xy_covariance_m2": [
@@ -9992,6 +10420,7 @@
       "map_x_m": 10.043008412825273,
       "map_y_m": -5.927115730168809,
       "yaw_rad": 0.7677555355665441,
+      "display_motion_yaw_rad": 0.5446263362116405,
       "forward_speed_mps": 1.03926851190508,
       "yaw_rate_radps": -0.44921042542721007,
       "xy_covariance_m2": [
@@ -10015,6 +10444,7 @@
       "map_x_m": 10.99910034455008,
       "map_y_m": -5.6316554839042725,
       "yaw_rad": 0.27275792035554636,
+      "display_motion_yaw_rad": -0.04170144538017141,
       "forward_speed_mps": 1.3744585752499536,
       "yaw_rate_radps": -0.2391627157809564,
       "xy_covariance_m2": [
@@ -10038,6 +10468,7 @@
       "map_x_m": 11.973843359567628,
       "map_y_m": -5.97167036133664,
       "yaw_rad": 0.23152979238590543,
+      "display_motion_yaw_rad": -0.5212866817461291,
       "forward_speed_mps": 0.36749189617632555,
       "yaw_rate_radps": -0.011495773468585678,
       "xy_covariance_m2": [
@@ -10061,6 +10492,7 @@
       "map_x_m": 12.222016006626179,
       "map_y_m": -6.1537162798753915,
       "yaw_rad": 0.23288952903844917,
+      "display_motion_yaw_rad": -0.5101358957141258,
       "forward_speed_mps": -0.09524337232057792,
       "yaw_rate_radps": 3.7262481626143456e-18,
       "xy_covariance_m2": [
@@ -10084,6 +10516,7 @@
       "map_x_m": 12.314222282991464,
       "map_y_m": -6.12850959581336,
       "yaw_rad": 0.23503252037058298,
+      "display_motion_yaw_rad": 0.19621621762772537,
       "forward_speed_mps": 0.3344308550733302,
       "yaw_rate_radps": 0.008785485824193617,
       "xy_covariance_m2": [
@@ -10107,6 +10540,7 @@
       "map_x_m": 12.983856265671148,
       "map_y_m": -6.121430091301895,
       "yaw_rad": 0.08168358257673437,
+      "display_motion_yaw_rad": -0.2138179492716668,
       "forward_speed_mps": 1.3641421140231966,
       "yaw_rate_radps": -0.48578935791207606,
       "xy_covariance_m2": [
@@ -10130,6 +10564,7 @@
       "map_x_m": 14.116268933297354,
       "map_y_m": -6.617143906317186,
       "yaw_rad": -0.02966557210919829,
+      "display_motion_yaw_rad": -0.4998231314450816,
       "forward_speed_mps": 1.4366412924074545,
       "yaw_rate_radps": 0.03627876326350472,
       "xy_covariance_m2": [
@@ -10153,6 +10588,7 @@
       "map_x_m": 15.294454738013979,
       "map_y_m": -7.308412640732196,
       "yaw_rad": -0.03363273290373181,
+      "display_motion_yaw_rad": -0.524523423205154,
       "forward_speed_mps": 1.4038288475286191,
       "yaw_rate_radps": -0.03657320607862853,
       "xy_covariance_m2": [
@@ -10176,6 +10612,7 @@
       "map_x_m": 16.375304726982264,
       "map_y_m": -7.994967963207953,
       "yaw_rad": -0.42813345968362654,
+      "display_motion_yaw_rad": -0.8353065577362649,
       "forward_speed_mps": 0.9333230607140041,
       "yaw_rate_radps": -0.21142444346726214,
       "xy_covariance_m2": [
@@ -10199,6 +10636,7 @@
       "map_x_m": 16.637056933298897,
       "map_y_m": -8.638570191556193,
       "yaw_rad": -0.4365278571132638,
+      "display_motion_yaw_rad": -1.1177842528934003,
       "forward_speed_mps": -0.13112869759075232,
       "yaw_rate_radps": 2.4371552021482927e-16,
       "xy_covariance_m2": [
@@ -10222,6 +10660,7 @@
       "map_x_m": 16.640503811452522,
       "map_y_m": -8.703422659132322,
       "yaw_rad": -0.43642410383509445,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.09863792815159292,
       "yaw_rate_radps": -2.594848789444042e-17,
       "xy_covariance_m2": [
@@ -10245,6 +10684,7 @@
       "map_x_m": 16.650489158838056,
       "map_y_m": -8.724079294813015,
       "yaw_rad": -0.4364260073527481,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.03930793271538704,
       "yaw_rate_radps": -2.8305245375312147e-18,
       "xy_covariance_m2": [
@@ -10268,6 +10708,7 @@
       "map_x_m": 16.662482665815983,
       "map_y_m": -8.740843932203646,
       "yaw_rad": -0.43642668755799,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.013072956071059934,
       "yaw_rate_radps": -2.4035009518716285e-17,
       "xy_covariance_m2": [
@@ -10291,6 +10732,7 @@
       "map_x_m": 16.665997101138693,
       "map_y_m": -8.752573336209318,
       "yaw_rad": -0.43642712004516376,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.003038274616232998,
       "yaw_rate_radps": -3.1077269227158725e-18,
       "xy_covariance_m2": [
@@ -10314,6 +10756,7 @@
       "map_x_m": 16.666835306740097,
       "map_y_m": -8.774909595652693,
       "yaw_rad": -0.4364271847708192,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.0008658811051724812,
       "yaw_rate_radps": -6.485192139907817e-20,
       "xy_covariance_m2": [
@@ -10337,6 +10780,7 @@
       "map_x_m": 16.667010086867027,
       "map_y_m": -8.796057874273956,
       "yaw_rad": -0.4364272217586169,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00014065355148405934,
       "yaw_rate_radps": 1.4759948039484062e-17,
       "xy_covariance_m2": [
@@ -10360,6 +10804,7 @@
       "map_x_m": 16.66701431581792,
       "map_y_m": -8.810665681377271,
       "yaw_rad": -0.4364272397462212,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 7.75251804479217e-05,
       "yaw_rate_radps": 2.1941206363365634e-20,
       "xy_covariance_m2": [
@@ -10383,6 +10828,7 @@
       "map_x_m": 16.6670538096929,
       "map_y_m": -8.829167209687355,
       "yaw_rad": -0.4364272444609015,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0002458353420222435,
       "yaw_rate_radps": 1.9962264916453498e-20,
       "xy_covariance_m2": [
@@ -10406,6 +10852,7 @@
       "map_x_m": 16.667102788151812,
       "map_y_m": -8.848113195797643,
       "yaw_rad": -0.43642725239884633,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0004343200722751067,
       "yaw_rate_radps": 5.2632753560047935e-20,
       "xy_covariance_m2": [
@@ -10429,6 +10876,7 @@
       "map_x_m": 16.667072762914202,
       "map_y_m": -8.865883063696431,
       "yaw_rad": -0.4364272480891205,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0003113130190904697,
       "yaw_rate_radps": 1.0138844307524224e-20,
       "xy_covariance_m2": [
@@ -10452,6 +10900,7 @@
       "map_x_m": 16.667077935371125,
       "map_y_m": -8.887018512404335,
       "yaw_rad": -0.4364272582055704,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0006148133623585218,
       "yaw_rate_radps": 5.496730395447053e-21,
       "xy_covariance_m2": [
@@ -10475,6 +10924,7 @@
       "map_x_m": 16.667146793451792,
       "map_y_m": -8.908253937880271,
       "yaw_rad": -0.43642725541766186,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0005384539996779388,
       "yaw_rate_radps": 4.5567639097407404e-20,
       "xy_covariance_m2": [
@@ -10498,6 +10948,7 @@
       "map_x_m": 16.667032466298405,
       "map_y_m": -8.923395746861761,
       "yaw_rad": -0.43642724323713505,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00019429831031340778,
       "yaw_rate_radps": 3.149524029935419e-20,
       "xy_covariance_m2": [
@@ -10521,6 +10972,7 @@
       "map_x_m": 16.66705422060163,
       "map_y_m": -8.944187746065145,
       "yaw_rad": -0.4364272548767931,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0005007757316806134,
       "yaw_rate_radps": -1.4958368893971475e-16,
       "xy_covariance_m2": [
@@ -10544,6 +10996,7 @@
       "map_x_m": 16.666937634671985,
       "map_y_m": -8.952482538124283,
       "yaw_rad": -0.43642723790484306,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -5.4608407055259226e-05,
       "yaw_rate_radps": -4.409822153019711e-21,
       "xy_covariance_m2": [
@@ -10567,6 +11020,7 @@
       "map_x_m": 16.66701650146237,
       "map_y_m": -8.967901278296367,
       "yaw_rad": -0.4364272433534189,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00017726376402751783,
       "yaw_rate_radps": 1.4555066868736283e-20,
       "xy_covariance_m2": [
@@ -10590,6 +11044,7 @@
       "map_x_m": 16.663615387776975,
       "map_y_m": -8.97905406631653,
       "yaw_rad": -0.43642723688262347,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.000342282735961805,
       "yaw_rate_radps": -6.985016518798515e-21,
       "xy_covariance_m2": [
@@ -10613,6 +11068,7 @@
       "map_x_m": 16.65848905437622,
       "map_y_m": -8.991315871665924,
       "yaw_rad": -0.43642723844382436,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -4.4910847118752006e-05,
       "yaw_rate_radps": 5.179006081791631e-22,
       "xy_covariance_m2": [
@@ -10636,6 +11092,7 @@
       "map_x_m": 16.65813844635433,
       "map_y_m": -9.000809231885404,
       "yaw_rad": -0.43642724588058757,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0003528110399641463,
       "yaw_rate_radps": -4.1153529048105883e-17,
       "xy_covariance_m2": [
@@ -10659,6 +11116,7 @@
       "map_x_m": 16.65814780238922,
       "map_y_m": -9.009317989996061,
       "yaw_rad": -0.43642724262888594,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00028036749598121433,
       "yaw_rate_radps": 5.562532322037721e-20,
       "xy_covariance_m2": [
@@ -10682,6 +11140,7 @@
       "map_x_m": 16.658072560171078,
       "map_y_m": -9.013766810769509,
       "yaw_rad": -0.43642723907839276,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 6.351359692642895e-05,
       "yaw_rate_radps": 1.9484364242254315e-20,
       "xy_covariance_m2": [
@@ -10705,6 +11164,7 @@
       "map_x_m": 16.65810768632751,
       "map_y_m": -9.023348808099872,
       "yaw_rad": -0.43642724186559967,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00030329583369930813,
       "yaw_rate_radps": 3.23454598515609e-20,
       "xy_covariance_m2": [
@@ -10728,6 +11188,7 @@
       "map_x_m": 16.658052141564085,
       "map_y_m": -9.027020569306112,
       "yaw_rad": -0.43642723777814396,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 9.055239978893328e-06,
       "yaw_rate_radps": -2.5123418368012983e-21,
       "xy_covariance_m2": [
@@ -10751,6 +11212,7 @@
       "map_x_m": 16.664032929315695,
       "map_y_m": -9.034103115935137,
       "yaw_rad": -0.4364272369363782,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.0002577324060312199,
       "yaw_rate_radps": -3.389378616656041e-21,
       "xy_covariance_m2": [
@@ -10774,6 +11236,7 @@
       "map_x_m": 16.664347773943675,
       "map_y_m": -9.03383359818545,
       "yaw_rad": -0.43642723706176767,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -8.326046099275166e-05,
       "yaw_rate_radps": -3.667823176062827e-21,
       "xy_covariance_m2": [
@@ -10797,6 +11260,7 @@
       "map_x_m": 16.666258726714382,
       "map_y_m": -9.036621961613617,
       "yaw_rad": -0.4364272378867096,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00018250470859035268,
       "yaw_rate_radps": -3.1435316318422006e-22,
       "xy_covariance_m2": [
@@ -10820,6 +11284,7 @@
       "map_x_m": 16.662803170382105,
       "map_y_m": -9.040826567523185,
       "yaw_rad": -0.43642723766416675,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 7.825925767498577e-05,
       "yaw_rate_radps": -4.040641380868622e-21,
       "xy_covariance_m2": [
@@ -10843,6 +11308,7 @@
       "map_x_m": 16.665938093085025,
       "map_y_m": -9.044710838423326,
       "yaw_rad": -0.4364272316206521,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 3.400365624392964e-05,
       "yaw_rate_radps": -6.069975115193586e-21,
       "xy_covariance_m2": [
@@ -10866,6 +11332,7 @@
       "map_x_m": 16.66686176964206,
       "map_y_m": -9.047431670809615,
       "yaw_rad": -0.4364272384815524,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 3.134550308731908e-05,
       "yaw_rate_radps": 1.9923312455214138e-21,
       "xy_covariance_m2": [
@@ -10889,6 +11356,7 @@
       "map_x_m": 16.665740240371928,
       "map_y_m": -9.046392314024612,
       "yaw_rad": -0.4364272361030297,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -1.1883039686355694e-05,
       "yaw_rate_radps": -5.958073350376763e-21,
       "xy_covariance_m2": [
@@ -10912,6 +11380,7 @@
       "map_x_m": 16.666413727640375,
       "map_y_m": -9.044333703358765,
       "yaw_rad": -0.43642723749938295,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.00011253232098663846,
       "yaw_rate_radps": -1.6085460487406772e-21,
       "xy_covariance_m2": [
@@ -10935,6 +11404,7 @@
       "map_x_m": 16.66673146039979,
       "map_y_m": -9.04117788533497,
       "yaw_rad": -0.4364272343533662,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.0001739519608251476,
       "yaw_rate_radps": -3.4829574852930685e-21,
       "xy_covariance_m2": [
@@ -10958,6 +11428,7 @@
       "map_x_m": 16.661429966078295,
       "map_y_m": -9.034491806675524,
       "yaw_rad": -0.43642725685044015,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.00048316780852082126,
       "yaw_rate_radps": 3.146680226940708e-19,
       "xy_covariance_m2": [
@@ -10981,6 +11452,7 @@
       "map_x_m": 16.65827798919759,
       "map_y_m": -9.028160830497653,
       "yaw_rad": -0.436427244880015,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.0003593224674919695,
       "yaw_rate_radps": 1.457425671390115e-20,
       "xy_covariance_m2": [
@@ -11004,6 +11476,7 @@
       "map_x_m": 16.657960035903628,
       "map_y_m": -9.022380516963135,
       "yaw_rad": -0.43642723786293036,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.00013675489318969145,
       "yaw_rate_radps": -5.25481751977246e-22,
       "xy_covariance_m2": [
@@ -11027,6 +11500,7 @@
       "map_x_m": 16.657948963735734,
       "map_y_m": -9.013437833705797,
       "yaw_rad": -0.43642723861231053,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -4.0501818647383956e-05,
       "yaw_rate_radps": 2.8715832649383026e-22,
       "xy_covariance_m2": [
@@ -11050,6 +11524,7 @@
       "map_x_m": 16.657886627653035,
       "map_y_m": -9.001313024178486,
       "yaw_rad": -0.43642724141454003,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.0002640779037353937,
       "yaw_rate_radps": 2.635827902021622e-21,
       "xy_covariance_m2": [
@@ -11073,6 +11548,7 @@
       "map_x_m": 16.65797039084842,
       "map_y_m": -8.992738364509085,
       "yaw_rad": -0.43642723929039967,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -1.9507424387178108e-05,
       "yaw_rate_radps": -1.528125005864599e-19,
       "xy_covariance_m2": [
@@ -11096,6 +11572,7 @@
       "map_x_m": 16.657868355148096,
       "map_y_m": -8.979726689962309,
       "yaw_rad": -0.4364272448296172,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.0002516820487111311,
       "yaw_rate_radps": 1.1975937109700496e-19,
       "xy_covariance_m2": [
@@ -11119,6 +11596,7 @@
       "map_x_m": 16.65794116863357,
       "map_y_m": -8.970931482912585,
       "yaw_rad": -0.43642723983324455,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -3.865475127437628e-05,
       "yaw_rate_radps": 6.3819412279353084e-21,
       "xy_covariance_m2": [
@@ -11142,6 +11620,7 @@
       "map_x_m": 16.657901627498642,
       "map_y_m": -8.961150387575167,
       "yaw_rad": -0.436427242574819,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.00016766967809767755,
       "yaw_rate_radps": 7.449356389308224e-21,
       "xy_covariance_m2": [
@@ -11165,6 +11644,7 @@
       "map_x_m": 16.657883371687653,
       "map_y_m": -8.952858098834627,
       "yaw_rad": -0.43642724220431045,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.00026120073114062765,
       "yaw_rate_radps": 6.5439000094928854e-21,
       "xy_covariance_m2": [
@@ -11188,6 +11668,7 @@
       "map_x_m": 16.66635833341855,
       "map_y_m": -8.948212482021251,
       "yaw_rad": -0.43642723570440856,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00023138730006750258,
       "yaw_rate_radps": -1.4019825567081994e-21,
       "xy_covariance_m2": [
@@ -11211,6 +11692,7 @@
       "map_x_m": 16.666790325482594,
       "map_y_m": -8.943474185655642,
       "yaw_rad": -0.4364272370645481,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -9.302502156456063e-05,
       "yaw_rate_radps": -1.648248808684117e-21,
       "xy_covariance_m2": [
@@ -11234,6 +11716,7 @@
       "map_x_m": 16.66661524329345,
       "map_y_m": -8.939473411938119,
       "yaw_rad": -0.43642723797479244,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -3.495619673090035e-05,
       "yaw_rate_radps": -1.3719532844691989e-21,
       "xy_covariance_m2": [
@@ -11257,6 +11740,7 @@
       "map_x_m": 16.666859133256498,
       "map_y_m": -8.938171148905734,
       "yaw_rad": -0.43642723741925327,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -1.556836389985889e-05,
       "yaw_rate_radps": -3.2373029956957335e-21,
       "xy_covariance_m2": [
@@ -11280,6 +11764,7 @@
       "map_x_m": 16.67402828515786,
       "map_y_m": -8.936957999467223,
       "yaw_rad": -0.43642723799487415,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0001024995775779231,
       "yaw_rate_radps": -1.9255805334388336e-22,
       "xy_covariance_m2": [
@@ -11303,6 +11788,7 @@
       "map_x_m": 16.67566790186618,
       "map_y_m": -8.936468390988727,
       "yaw_rad": -0.4364272382650971,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 2.6609724534856802e-05,
       "yaw_rate_radps": 2.8380163703164635e-22,
       "xy_covariance_m2": [
@@ -11326,6 +11812,7 @@
       "map_x_m": 16.68333189801083,
       "map_y_m": -8.926848966700843,
       "yaw_rad": -0.4364272360863368,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00010538362576614316,
       "yaw_rate_radps": -4.9193764191237105e-21,
       "xy_covariance_m2": [
@@ -11349,6 +11836,7 @@
       "map_x_m": 16.69135468442455,
       "map_y_m": -8.925906794578179,
       "yaw_rad": -0.4364272337282249,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0003795832527620931,
       "yaw_rate_radps": -4.5557844521743944e-20,
       "xy_covariance_m2": [
@@ -11372,6 +11860,7 @@
       "map_x_m": 16.700084386609724,
       "map_y_m": -8.93475729314843,
       "yaw_rad": -0.4364272430777607,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0005306126730430159,
       "yaw_rate_radps": 1.2530453048325086e-19,
       "xy_covariance_m2": [
@@ -11395,6 +11884,7 @@
       "map_x_m": 16.70815090221248,
       "map_y_m": -8.939479823892587,
       "yaw_rad": -0.4364272446389021,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0005645368648131465,
       "yaw_rate_radps": 6.020312457863685e-20,
       "xy_covariance_m2": [
@@ -11418,6 +11908,7 @@
       "map_x_m": 16.721054410114576,
       "map_y_m": -8.953124533975334,
       "yaw_rad": -0.43642725359961876,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0009197226033449818,
       "yaw_rate_radps": 1.1884849087487792e-20,
       "xy_covariance_m2": [
@@ -11441,6 +11932,7 @@
       "map_x_m": 16.728596484122523,
       "map_y_m": -8.960269898520423,
       "yaw_rad": -0.4364272378858898,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0002497486379412526,
       "yaw_rate_radps": -3.230043936934075e-22,
       "xy_covariance_m2": [
@@ -11464,6 +11956,7 @@
       "map_x_m": 16.741155998605517,
       "map_y_m": -8.96794420861899,
       "yaw_rad": -0.43642724078780937,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0007828427592201055,
       "yaw_rate_radps": 5.5116146232793285e-21,
       "xy_covariance_m2": [
@@ -11487,6 +11980,7 @@
       "map_x_m": 16.753204379772914,
       "map_y_m": -8.970121732448263,
       "yaw_rad": -0.436427232215463,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0004420992501502438,
       "yaw_rate_radps": -1.6621651738091112e-20,
       "xy_covariance_m2": [
@@ -11510,6 +12004,7 @@
       "map_x_m": 16.76324485147445,
       "map_y_m": -8.978543984525695,
       "yaw_rad": -0.4364272456816396,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0004538741854341494,
       "yaw_rate_radps": 4.262846821523659e-20,
       "xy_covariance_m2": [
@@ -11533,6 +12028,7 @@
       "map_x_m": 16.771699860718652,
       "map_y_m": -8.981156316702062,
       "yaw_rad": -0.4364272355858056,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00032280131048825566,
       "yaw_rate_radps": -1.5330655086612786e-20,
       "xy_covariance_m2": [
@@ -11556,6 +12052,7 @@
       "map_x_m": 16.7766590287238,
       "map_y_m": -8.981289111232522,
       "yaw_rad": -0.4364272374929343,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00022196932457066516,
       "yaw_rate_radps": -1.5935997724139953e-21,
       "xy_covariance_m2": [
@@ -11579,6 +12076,7 @@
       "map_x_m": 16.790893370102655,
       "map_y_m": -9.008992176872844,
       "yaw_rad": -0.3438636282185561,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.023513551119488864,
       "yaw_rate_radps": 0.22304534929165132,
       "xy_covariance_m2": [
@@ -11602,6 +12100,7 @@
       "map_x_m": 16.793095642308216,
       "map_y_m": -9.066419078252931,
       "yaw_rad": -0.3551834103550777,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0008342389644096147,
       "yaw_rate_radps": -5.040855317752367e-16,
       "xy_covariance_m2": [
@@ -11625,6 +12124,7 @@
       "map_x_m": 16.796750489599095,
       "map_y_m": -9.075322121861069,
       "yaw_rad": -0.3552358310177306,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.0009220877306321816,
       "yaw_rate_radps": -9.343045442142507e-19,
       "xy_covariance_m2": [
@@ -11648,6 +12148,7 @@
       "map_x_m": 16.80500329775553,
       "map_y_m": -9.084781285069498,
       "yaw_rad": -0.3552361988328592,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": -0.00020574700767042971,
       "yaw_rate_radps": -1.3698036433908291e-17,
       "xy_covariance_m2": [
@@ -11671,6 +12172,7 @@
       "map_x_m": 16.813878254460292,
       "map_y_m": -9.091631404215237,
       "yaw_rad": -0.3552362156451938,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0003243475713230601,
       "yaw_rate_radps": 4.379295029273051e-20,
       "xy_covariance_m2": [
@@ -11694,6 +12196,7 @@
       "map_x_m": 16.822920967151738,
       "map_y_m": -9.096019851456749,
       "yaw_rad": -0.355236204194811,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00016959391959263563,
       "yaw_rate_radps": 8.53435253843772e-22,
       "xy_covariance_m2": [
@@ -11717,6 +12220,7 @@
       "map_x_m": 16.832334763343383,
       "map_y_m": -9.103912741949042,
       "yaw_rad": -0.35523621612331047,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00027468165266188144,
       "yaw_rate_radps": 1.4494287042209e-19,
       "xy_covariance_m2": [
@@ -11740,6 +12244,7 @@
       "map_x_m": 16.8385186483612,
       "map_y_m": -9.106905757856792,
       "yaw_rad": -0.35523620439920656,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.00029428942520011854,
       "yaw_rate_radps": 6.4725874307899055e-21,
       "xy_covariance_m2": [
@@ -11763,6 +12268,7 @@
       "map_x_m": 16.84757553945369,
       "map_y_m": -9.108825126883406,
       "yaw_rad": -0.3552361938690072,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0005432706344181329,
       "yaw_rate_radps": -1.1309492288987191e-19,
       "xy_covariance_m2": [
@@ -11786,6 +12292,7 @@
       "map_x_m": 16.85551216321783,
       "map_y_m": -9.112252071057371,
       "yaw_rad": -0.35523620761136115,
+      "display_motion_yaw_rad": -1.4428609243097712,
       "forward_speed_mps": 0.0004953163518659146,
       "yaw_rate_radps": 4.2922586807711287e-20,
       "xy_covariance_m2": [
