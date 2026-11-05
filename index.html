@@ -20,10 +20,6 @@
 <button type="button" onclick="window.print()">Print / Save as PDF</button>
 </div>
 </div>
-<figure class="featured-work">
-<a href="#hl-fma-localization" aria-label="View localization project details"><img src="./hl-fma-localization-poster.jpg?v=e3726a2591" alt="Recorded vehicle trajectory and EKF localization data" fetchpriority="high" width="1280" height="1040"></a>
-<figcaption><span>HL-FMA 2026</span> Sensor fusion &amp; vehicle localization <a href="#hl-fma-localization">View localization project</a></figcaption>
-</figure>
 <nav aria-label="CV sections">
 <a href="#education">Education</a>
 <a href="#projects">Projects</a>
@@ -45,13 +41,13 @@
 <a href="#wing-analysis">Wing dynamics</a>
 </nav>
 <article><p class="period">Jul – Oct 2026</p><h3><strong class="role-label">Team Leader</strong> · 2026 KATRI AI/SW Mobility Competition</h3>
-<div class="project-overview"><a class="project-visual" href="#katri-pidnet-fusion" aria-label="View 2026 KATRI AI/SW Mobility Competition details"><img src="./katri-pidnet-fusion-poster.jpg" alt="Four views of camera and LiDAR fusion" loading="lazy" decoding="async" width="1280" height="1000"></a><div class="project-description">
+<div class="project-description">
 <ul>
 <li>Led a modular ROS 1 autonomous driving project and integrated node interfaces, TF frames, and timestamp conventions.</li>
 <li>Developed LiDAR ground filtering and roll and pitch correction using IMU orientation, and fused LiDAR and camera data with PIDNet and PointPainting.</li>
 <li>Converted MGeo maps to Lanelet2 and implemented Frenet path generation and smoothing for RDDF routes.</li>
 </ul>
-</div></div>
+</div>
 <details class="project-details">
 <summary aria-label="View methods and demonstrations for 2026 KATRI AI/SW Mobility Competition">View methods &amp; demonstrations</summary>
 <ul>
@@ -146,12 +142,12 @@
 </details>
 </article>
 <article id="drone-control"><p class="period">Aug 2026</p><h3>Embedded Drone Control</h3>
-<div class="project-overview"><div class="project-visual"><video controls playsinline preload="metadata" aria-label="Embedded drone control demo"><source src="./drone-demo.mp4" type="video/mp4"></video></div><div class="project-description">
+<div class="project-description">
 <ul>
 <li>Implemented ESP32/Arduino motor PWM, MPU6050 attitude estimation, and P, PD, and PID control.</li>
 <li>Developed FreeRTOS throttle sequences and sensor and PID logging. Ran inference with a trained 6–16–16–3 neural network to estimate motor corrections.</li>
 </ul>
-</div></div>
+</div>
 <details class="project-details">
 <summary aria-label="View methods and demonstrations for Embedded Drone Control">View methods &amp; demonstrations</summary>
 <ul>
@@ -184,12 +180,12 @@
 </details>
 </article>
 <article id="wing-analysis"><p class="period">Apr – Jun 2026</p><h3>Flexible Wing Aeroelasticity and Flutter Analysis</h3>
-<div class="project-overview"><a class="project-visual" href="#wing-analysis" aria-label="View Flexible Wing Aeroelasticity and Flutter Analysis details"><img src="./flutter-speed-comparison.png" alt="Growth-rate curves used to estimate the flutter threshold" loading="lazy" decoding="async" width="901" height="601"></a><div class="project-description">
+<div class="project-description">
 <ul>
 <li>Estimated wing bending parameters from ground vibration test data and modeled the response of a 0.8 m RC-scale wing to resonance and gusts.</li>
 <li>Identified a center-of-gravity and elastic-axis configuration that raised the predicted flutter speed above the modeled maximum flight speed.</li>
 </ul>
-</div></div>
+</div>
 <details class="project-details">
 <summary aria-label="View methods and demonstrations for Flexible Wing Aeroelasticity and Flutter Analysis">View methods &amp; demonstrations</summary>
 <ul>
@@ -214,12 +210,12 @@
 </details>
 </article>
 <article><p class="period">Jan – Mar 2026</p><h3><strong class="role-label">Team Leader</strong> · 5th International EV Autonomous Driving Competition</h3>
-<div class="project-overview"><a class="project-visual" href="#jeju-lane-perception" aria-label="View 5th International EV Autonomous Driving Competition details"><img src="./jeju-vision-final-local-path.jpg" alt="Detected lane boundaries and a generated center path" loading="lazy" decoding="async" width="644" height="487"></a><div class="project-description">
+<div class="project-description">
 <ul>
 <li>Built a ROS 1 and OpenCV lane-perception pipeline with lens distortion correction, Canny edge detection, inverse perspective mapping, and sliding-window tracking.</li>
 <li>Generated center paths from one or two lane boundaries, converted pixels to vehicle-frame metric coordinates, and published nav_msgs/Path for control.</li>
 </ul>
-</div></div>
+</div>
 <details class="project-details">
 <summary aria-label="View methods and demonstrations for 5th International EV Autonomous Driving Competition">View methods &amp; demonstrations</summary>
 <ul>

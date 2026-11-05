@@ -129,3 +129,6 @@ header>.wrap{display:block}
 .featured-work,.project-jumps{display:none!important}
 h1{font-size:29pt}
 }
+
+/* Media is disclosed inside project details; keep the introduction in one column. */
+header>.wrap{grid-template-columns:minmax(0,1fr)}
