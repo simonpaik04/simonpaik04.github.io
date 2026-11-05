@@ -39,6 +39,13 @@ footer{padding:1.5rem 0;color:var(--muted)}
 .project-demo{margin:.9rem 0 .25rem}
 .project-demo img,.project-demo video{display:block;width:100%;height:auto;border-radius:.35rem}
 .project-demo figcaption{margin-top:.35rem;color:var(--muted);font-size:.85rem}
+
+.fusion-detail{margin:1.2rem 0;padding:1rem;border:1px solid var(--line);border-radius:.45rem;background:white}
+.fusion-detail h4{font-size:1.1rem;margin:0 0 .5rem}
+.fusion-detail .method{font-size:.9rem;color:var(--muted)}
+.fusion-examples{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.fusion-examples figure{min-width:0;margin:0}
+@media(max-width:650px){.fusion-examples{grid-template-columns:1fr}}
 @media print{
 .project-details{display:none}
 @page{margin:15mm}
@@ -86,6 +93,35 @@ article{break-inside:avoid}article+article{margin-top:.55rem;padding-top:.55rem}
 <li>Extracted and connected RDDF routes, and managed active and pending paths during replanning.</li>
 <li>Used RViz, rosbag analysis, and regression tests to verify system integration.</li>
 </ul>
+<div class="fusion-detail" id="katri-pidnet-fusion">
+<h4>PIDNet + LiDAR: from pixels to 3D semantics</h4>
+<p>RGB identifies what a surface may be; LiDAR supplies its measured 3D position. I integrated PIDNet class probabilities with LiDAR returns through camera projection and PointPainting.</p>
+<figure class="project-demo">
+<video controls playsinline preload="none" poster="./katri-pidnet-fusion-poster.jpg" aria-label="Four synchronized views of PIDNet and LiDAR fusion around roadside barrels">
+<source src="./katri-pidnet-fusion.mp4" type="video/mp4">
+</video>
+<figcaption>Read left to right: original RGB, semantic overlay, LiDAR projected into the image, and a 3D semantic point cloud. Orange marks predicted barrels; blue marks other projected returns; gray marks returns outside the camera view. <a href="./katri-pidnet-fusion.mp4">Open video</a>.</figcaption>
+</figure>
+<ol>
+<li><strong>RGB → class probabilities.</strong> The current model uses two PIDNet-S networks: global predictions propose regions for local refinement. The output is a full-resolution probability vector for 12 classes at each pixel.</li>
+<li><strong>LiDAR → image coordinates.</strong> Transform each return into the camera optical frame, apply the camera intrinsics, and sample the projected pixel's class probabilities.</li>
+<li><strong>Pixels → measured 3D points.</strong> Attach the probabilities to the original LiDAR coordinates. The visualization highlights foreground predictions above 0.70; returns outside the image remain unobserved.</li>
+</ol>
+<p class="method"><strong>How this demonstration was made.</strong> Six seconds from an existing MORAI RGB/LiDAR rosbag were processed offline with the current model. It shows score decoration before the runtime foreground and surface filters. Sensor pairs use their recorded measurement timestamps; maximum camera–LiDAR difference is <span id="fusion-delta">61.5</span> ms across 48 pairs. The grid spacing is 5 m. The video is sampled at 8 sensor pairs/s and encoded at 24 fps with repeated frames, preserving the original playback speed.</p>
+<p class="method">The clip uses the development camera calibration without scan motion compensation and shows predictions before runtime surface filtering. <a href="./katri-fusion-evidence.json">Source, processing scope, and verification record</a>.</p>
+<h4>People and vehicles: 2D perception examples</h4>
+<p class="method">Separate recorded validation images processed by the same model. These illustrate image segmentation only; they have no paired LiDAR and are not part of the fusion sequence. Examples were selected for visibility, not as an accuracy benchmark.</p>
+<div class="fusion-examples">
+<figure class="project-demo">
+<a href="./katri-person-segmentation.jpg"><img loading="lazy" decoding="async" src="./katri-person-segmentation.jpg" alt="Original recorded pedestrian image and current PIDNet prediction, including a detail crop"></a>
+<figcaption>Person (red) and kick scooter (magenta): RGB and predicted mask. Open for the detail crop.</figcaption>
+</figure>
+<figure class="project-demo">
+<a href="./katri-vehicle-segmentation.jpg"><img loading="lazy" decoding="async" src="./katri-vehicle-segmentation.jpg" alt="Original recorded vehicle image and current PIDNet prediction, including a detail crop"></a>
+<figcaption>Vehicle: RGB and predicted semantic mask. Open for the detail crop.</figcaption>
+</figure>
+</div>
+</div>
 <figure class="project-demo">
 <img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Team-Stier/.github/main/assets/MORAI2026.gif" alt="MORAI simulation driving through the K-City roundabout and tunnel alongside RViz">
 <figcaption>Competition footage from Team-Stier</figcaption>
