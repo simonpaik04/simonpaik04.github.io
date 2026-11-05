@@ -1,0 +1,20 @@
+{
+  "source_repository": "Team-Stier/JEJU-ROS-autonomous-vehicle",
+  "source_commit": "937e52a259ab9afc6d87b8f7e3f2ffc9aa0cd21c",
+  "source_document": "STier Intermediate autonomous mobility competition 1/5 technical report, reproduced in team README",
+  "scope": "Original archived lane-perception result screens, copied without editing. No Jeju camera rosbag found in the inspected local files or repository trees.",
+  "images": [
+    {
+      "filename": "jeju-vision-sliding-window.jpg",
+      "report_figure": 19,
+      "source_url": "https://raw.githubusercontent.com/Team-Stier/JEJU-ROS-autonomous-vehicle/937e52a259ab9afc6d87b8f7e3f2ffc9aa0cd21c/assets/vision-sliding-window.jpg",
+      "sha256": "680dc1012c19110ba6db50277ebf070f2241c926e0fdc48ad035cab2688e2609"
+    },
+    {
+      "filename": "jeju-vision-final-local-path.jpg",
+      "report_figure": 22,
+      "source_url": "https://raw.githubusercontent.com/Team-Stier/JEJU-ROS-autonomous-vehicle/937e52a259ab9afc6d87b8f7e3f2ffc9aa0cd21c/assets/vision-final-local-path.jpg",
+      "sha256": "81f693e6962927ab2b1836636503b42dffe0057f954ddb9da6efcf11c7fdcf47"
+    }
+  ]
+}
