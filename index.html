@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" href="./fonts/public-sans-variable.ttf" as="font" type="font/ttf" crossorigin>
 <meta name="description" content="CV of Seungmin Paik, covering mechanical engineering, autonomous driving, and embedded control.">
 <title>Seungmin Paik | CV</title>
 <link rel="stylesheet" href="./cv-design.css">
@@ -11,9 +12,8 @@
 <a class="skip-link" href="#projects">Skip to projects</a>
 <header id="top"><div class="wrap">
 <div class="identity">
-<p class="kicker">Seungmin Paik / Curriculum vitae</p>
 <h1>Seungmin Paik<span class="name-ko" lang="ko">백승민</span></h1>
-<p class="lead">Mechanical engineering,<br>autonomous driving &amp; embedded control.</p>
+<p class="lead">Mechanical engineering,<br> autonomous driving &amp; embedded control.</p>
 <div class="actions">
 <a href="mailto:simonpaik04@gmail.com">simonpaik04@gmail.com</a>
 <a href="https://github.com/simonpaik04">GitHub</a>
@@ -21,8 +21,8 @@
 </div>
 </div>
 <figure class="featured-work">
-<a href="#hl-fma-localization" aria-label="View localization project details"><img src="./hl-fma-localization-poster.jpg?v=e3726a2591" alt="Recorded vehicle trajectory and EKF localization data" width="1280" height="720" fetchpriority="high"></a>
-<figcaption><span>HL-FMA 2026</span> Sensor fusion &amp; vehicle localization <a href="#hl-fma-localization">View project</a></figcaption>
+<a href="#hl-fma-localization" aria-label="View localization project details"><img src="./hl-fma-localization-poster.jpg?v=e3726a2591" alt="Recorded vehicle trajectory and EKF localization data" fetchpriority="high" width="1280" height="1040"></a>
+<figcaption><span>HL-FMA 2026</span> Sensor fusion &amp; vehicle localization <a href="#hl-fma-localization">View localization project</a></figcaption>
 </figure>
 <nav aria-label="CV sections">
 <a href="#education">Education</a>
@@ -38,8 +38,14 @@
 <article><p class="period">Mar – Sep 2025</p><h3>RWTH Aachen University</h3><p>Exchange student in Mechanical Engineering · Germany</p></article>
 </div></section>
 <section id="projects"><h2>Project experience</h2><div>
+<nav class="project-jumps" aria-label="Find a project">
+<a href="#katri-pidnet-fusion">Perception</a>
+<a href="#hl-fma-localization">Localization</a>
+<a href="#drone-control">Drone control</a>
+<a href="#wing-analysis">Wing dynamics</a>
+</nav>
 <article><p class="period">Jul – Oct 2026</p><h3><strong class="role-label">Team Leader</strong> · 2026 KATRI AI/SW Mobility Competition</h3>
-<div class="project-overview"><a class="project-visual" href="#katri-pidnet-fusion" aria-label="View 2026 KATRI AI/SW Mobility Competition details"><img src="./katri-pidnet-fusion-poster.jpg" alt="Four views of camera and LiDAR fusion" loading="lazy" decoding="async"></a><div class="project-description">
+<div class="project-overview"><a class="project-visual" href="#katri-pidnet-fusion" aria-label="View 2026 KATRI AI/SW Mobility Competition details"><img src="./katri-pidnet-fusion-poster.jpg" alt="Four views of camera and LiDAR fusion" loading="lazy" decoding="async" width="1280" height="1000"></a><div class="project-description">
 <ul>
 <li>Led a modular ROS 1 autonomous driving project and integrated node interfaces, TF frames, and timestamp conventions.</li>
 <li>Developed LiDAR ground filtering and roll and pitch correction using IMU orientation, and fused LiDAR and camera data with PIDNet and PointPainting.</li>
@@ -47,7 +53,7 @@
 </ul>
 </div></div>
 <details class="project-details">
-<summary aria-label="Technical details for 2026 KATRI AI/SW Mobility Competition">Technical details</summary>
+<summary aria-label="View methods and demonstrations for 2026 KATRI AI/SW Mobility Competition">View methods &amp; demonstrations</summary>
 <ul>
 <li>Extracted and connected RDDF routes, and managed active and pending paths during replanning.</li>
 <li>Used RViz, rosbag analysis, and regression tests to verify system integration.</li>
@@ -72,11 +78,11 @@
 <p class="method">Separate recorded validation images processed by the same model. These illustrate image segmentation only; they have no paired LiDAR and are not part of the fusion sequence. Examples were selected for visibility, not as an accuracy benchmark.</p>
 <div class="fusion-examples">
 <figure class="project-demo">
-<a href="./katri-person-segmentation.jpg"><img loading="lazy" decoding="async" src="./katri-person-segmentation.jpg" alt="Original recorded pedestrian image and current PIDNet prediction, including a detail crop"></a>
+<a href="./katri-person-segmentation.jpg"><img loading="lazy" decoding="async" src="./katri-person-segmentation.jpg" alt="Original recorded pedestrian image and current PIDNet prediction, including a detail crop" width="1280" height="820"></a>
 <figcaption>Person (red) and kick scooter (magenta): RGB and predicted mask. Open for the detail crop.</figcaption>
 </figure>
 <figure class="project-demo">
-<a href="./katri-vehicle-segmentation.jpg"><img loading="lazy" decoding="async" src="./katri-vehicle-segmentation.jpg" alt="Original recorded vehicle image and current PIDNet prediction, including a detail crop"></a>
+<a href="./katri-vehicle-segmentation.jpg"><img loading="lazy" decoding="async" src="./katri-vehicle-segmentation.jpg" alt="Original recorded vehicle image and current PIDNet prediction, including a detail crop" width="1280" height="820"></a>
 <figcaption>Vehicle: RGB and predicted semantic mask. Open for the detail crop.</figcaption>
 </figure>
 </div>
@@ -99,7 +105,7 @@
 <li>Implemented timestamp-aware GNSS quality checks and recovery after prolonged signal outages.</li>
 </ul>
 <details class="project-details">
-<summary aria-label="Technical details for HL-FMA 2026 Competition">Technical details</summary>
+<summary aria-label="View methods and demonstrations for HL-FMA 2026 Competition">View methods &amp; demonstrations</summary>
 <div class="fusion-detail" id="hl-fma-localization">
 <h4>My localization work: sensor processing and dual EKF integration</h4>
 <p>I implemented the vehicle-specific sensor preprocessing, GNSS approval and recovery logic, initialization, and output validity checks around <code>robot_localization</code>'s Local and Global EKFs.</p>
@@ -117,7 +123,7 @@
 </ol>
 <p class="method">This visualization was generated by rebuilding and running <a href="https://github.com/Team-Stier/HL-FMA-1-5-2026/tree/fba9a5c12382a61a2711fe5685fe839e20c804c3/src/localization">Team-Stier/HL-FMA-1-5-2026 at fba9a5c</a> on the original 2026-09-06 sensor recording at 1× speed. The localization source and fusion policies were unchanged. The old encoder message definition was adapted only to include the current gear constants; all recorded values and timestamps were preserved and its serialized data stream was checked for equality. The arrow and displayed direction follow the trajectory for visualization only; recorded EKF yaw, yaw rate, and position data remain unchanged. Direction is held while stationary. The initialization jump is excluded. The orange ellipse is the filter's 95% Gaussian XY covariance contour, not a measured position-error bound.</p>
 <figure class="project-demo">
-<a href="./hl-fma-localization-summary.png?v=e3726a2591"><img loading="lazy" decoding="async" src="./hl-fma-localization-summary.png?v=e3726a2591" alt="Full recorded ENU trajectory colored by time and the EKF East and North position standard deviations"></a>
+<a href="./hl-fma-localization-summary.png?v=e3726a2591"><img loading="lazy" decoding="async" src="./hl-fma-localization-summary.png?v=e3726a2591" alt="Full recorded ENU trajectory colored by time and the EKF East and North position standard deviations" width="2000" height="848"></a>
 <figcaption>Full trajectory and reported position uncertainty. No surveyed ground-truth trajectory is available for this replay.</figcaption>
 </figure>
 <p class="method"><a href="https://github.com/Team-Stier/HL-FMA-1-5-2026/tree/fba9a5c12382a61a2711fe5685fe839e20c804c3/src/localization">Executed localization source and configuration</a> · <a href="./hl-fma-localization-evidence.json?v=e3726a2591">Replay source and visualization verification</a></p>
@@ -129,7 +135,7 @@
 <li>Aligned LiDAR odometry with the RDDF map in ROS 2 and published the corrected vehicle pose for path planning and RViz visualization.</li>
 </ul>
 <details class="project-details">
-<summary aria-label="Technical details for AMET 2026 Autonomous Hackathon">Technical details</summary>
+<summary aria-label="View methods and demonstrations for AMET 2026 Autonomous Hackathon">View methods &amp; demonstrations</summary>
 <ul>
 <li>Applied a 90° yaw correction and an offset from the RDDF route origin. Published the aligned pose and matching map-to-LiDAR transform.</li>
 </ul>
@@ -147,7 +153,7 @@
 </ul>
 </div></div>
 <details class="project-details">
-<summary aria-label="Technical details for Embedded Drone Control">Technical details</summary>
+<summary aria-label="View methods and demonstrations for Embedded Drone Control">View methods &amp; demonstrations</summary>
 <ul>
 <li>Built the controller in stages, starting with motor PWM and attitude estimation before comparing P, PD, and PID control.</li>
 <li>The 6–16–16–3 network used six inputs and two hidden layers to estimate three correction values.</li>
@@ -166,7 +172,7 @@
 <li>Integrated a fine-tuned YOLO11n traffic-light detector with color classification and published signal states, stop-line distance, and school-zone status through ROS 2.</li>
 </ul>
 <details class="project-details">
-<summary aria-label="Technical details for AI-Edge Challenge Autonomous Competition">Technical details</summary>
+<summary aria-label="View methods and demonstrations for AI-Edge Challenge Autonomous Competition">View methods &amp; demonstrations</summary>
 <ul>
 <li>Used a bird’s-eye-view image to convert road markings into vehicle-frame detections.</li>
 <li>Classified the color within detected traffic-light regions and published signal state, stop-line distance, and school-zone status on ROS 2 topics.</li>
@@ -178,25 +184,25 @@
 </details>
 </article>
 <article id="wing-analysis"><p class="period">Apr – Jun 2026</p><h3>Flexible Wing Aeroelasticity and Flutter Analysis</h3>
-<div class="project-overview"><a class="project-visual" href="#wing-analysis" aria-label="View Flexible Wing Aeroelasticity and Flutter Analysis details"><img src="./flutter-speed-comparison.png" alt="Growth-rate curves used to estimate the flutter threshold" loading="lazy" decoding="async"></a><div class="project-description">
+<div class="project-overview"><a class="project-visual" href="#wing-analysis" aria-label="View Flexible Wing Aeroelasticity and Flutter Analysis details"><img src="./flutter-speed-comparison.png" alt="Growth-rate curves used to estimate the flutter threshold" loading="lazy" decoding="async" width="901" height="601"></a><div class="project-description">
 <ul>
 <li>Estimated wing bending parameters from ground vibration test data and modeled the response of a 0.8 m RC-scale wing to resonance and gusts.</li>
 <li>Identified a center-of-gravity and elastic-axis configuration that raised the predicted flutter speed above the modeled maximum flight speed.</li>
 </ul>
 </div></div>
 <details class="project-details">
-<summary aria-label="Technical details for Flexible Wing Aeroelasticity and Flutter Analysis">Technical details</summary>
+<summary aria-label="View methods and demonstrations for Flexible Wing Aeroelasticity and Flutter Analysis">View methods &amp; demonstrations</summary>
 <ul>
 <li>Filtered ground vibration data with a Butterworth low-pass filter and fit modal parameters with nonlinear least squares.</li>
 <li>Compared linear and nonlinear gust responses and used eigenvalue analysis of a coupled bending–torsion model to estimate flutter speed.</li>
 </ul>
 <p>The design study varied the center of gravity (CG) and elastic axis (EA) as fractions of the wing chord. The selected configuration shifted the CG from 40% to 44% chord and the EA from 35% to 45% chord.</p>
 <figure class="project-demo">
-<img loading="lazy" decoding="async" src="./flutter-design-map.png" alt="Design map comparing flutter safety factors across center-of-gravity and elastic-axis positions">
+<img loading="lazy" decoding="async" src="./flutter-design-map.png" alt="Design map comparing flutter safety factors across center-of-gravity and elastic-axis positions" width="901" height="682">
 <figcaption>The white circle marks the baseline. The red star marks the selected design. The white contour marks where predicted flutter speed equals the modeled maximum flight speed.</figcaption>
 </figure>
 <figure class="project-demo">
-<img loading="lazy" decoding="async" src="./flutter-speed-comparison.png" alt="Growth-rate curves cross zero at 19.32 m/s for the baseline and 31.76 m/s for the optimized design">
+<img loading="lazy" decoding="async" src="./flutter-speed-comparison.png" alt="Growth-rate curves cross zero at 19.32 m/s for the baseline and 31.76 m/s for the optimized design" width="901" height="601">
 <figcaption>The zero-growth crossings show the predicted flutter threshold rising from 19.32 to 31.76 m/s, above the modeled maximum of 25 m/s.</figcaption>
 </figure>
 <figure class="project-demo">
@@ -208,14 +214,14 @@
 </details>
 </article>
 <article><p class="period">Jan – Mar 2026</p><h3><strong class="role-label">Team Leader</strong> · 5th International EV Autonomous Driving Competition</h3>
-<div class="project-overview"><a class="project-visual" href="#jeju-lane-perception" aria-label="View 5th International EV Autonomous Driving Competition details"><img src="./jeju-vision-final-local-path.jpg" alt="Detected lane boundaries and a generated center path" loading="lazy" decoding="async"></a><div class="project-description">
+<div class="project-overview"><a class="project-visual" href="#jeju-lane-perception" aria-label="View 5th International EV Autonomous Driving Competition details"><img src="./jeju-vision-final-local-path.jpg" alt="Detected lane boundaries and a generated center path" loading="lazy" decoding="async" width="644" height="487"></a><div class="project-description">
 <ul>
 <li>Built a ROS 1 and OpenCV lane-perception pipeline with lens distortion correction, Canny edge detection, inverse perspective mapping, and sliding-window tracking.</li>
 <li>Generated center paths from one or two lane boundaries, converted pixels to vehicle-frame metric coordinates, and published nav_msgs/Path for control.</li>
 </ul>
 </div></div>
 <details class="project-details">
-<summary aria-label="Technical details for 5th International EV Autonomous Driving Competition">Technical details</summary>
+<summary aria-label="View methods and demonstrations for 5th International EV Autonomous Driving Competition">View methods &amp; demonstrations</summary>
 <ul>
 <li>Corrected lens distortion and used Canny edges, inverse perspective mapping, and sliding-window tracking to detect lane boundaries.</li>
 <li>Converted center paths from image pixels to metric vehicle coordinates and published them as nav_msgs/Path.</li>
@@ -224,11 +230,11 @@
 <h4>Lane detection and center-path generation</h4>
 <p>I built the ROS 1/OpenCV vision pipeline: camera distortion correction, Canny edges, inverse perspective mapping, Sliding Window detection, and tracking around the previous lane fit. The detected boundaries produce a center path that is converted into vehicle-frame metres and published as <code>nav_msgs/Path</code>.</p>
 <figure class="project-demo">
-<a href="./jeju-vision-sliding-window.jpg"><img loading="lazy" decoding="async" src="./jeju-vision-sliding-window.jpg" alt="Recorded lane detection screen with green Sliding Windows, blue and red lane fits, and a green center path"></a>
+<a href="./jeju-vision-sliding-window.jpg"><img loading="lazy" decoding="async" src="./jeju-vision-sliding-window.jpg" alt="Recorded lane detection screen with green Sliding Windows, blue and red lane fits, and a green center path" width="643" height="622"></a>
 <figcaption>Sliding Window lane detection: green rectangles show the search windows; blue and red lines show the fitted lane boundaries; the green center points form the candidate path. Original technical-report figure 19, preserved in the <a href="https://github.com/Team-Stier/JEJU-ROS-autonomous-vehicle/blob/937e52a259ab9afc6d87b8f7e3f2ffc9aa0cd21c/README.md#vision-차선에서-주행-경로까지">team repository</a>.</figcaption>
 </figure>
 <figure class="project-demo">
-<a href="./jeju-vision-final-local-path.jpg"><img loading="lazy" decoding="async" src="./jeju-vision-final-local-path.jpg" alt="Camera image of a curved lane with detected left and right boundaries and the generated center path overlaid"></a>
+<a href="./jeju-vision-final-local-path.jpg"><img loading="lazy" decoding="async" src="./jeju-vision-final-local-path.jpg" alt="Camera image of a curved lane with detected left and right boundaries and the generated center path overlaid" width="644" height="487"></a>
 <figcaption>Lane boundaries and generated center path overlaid on the camera image. Original technical-report figure 22. These are archived result screens, not a new replay or a continuous video.</figcaption>
 </figure>
 <p class="method">The implementation also supports a center-path offset from a single visible boundary, lane-width and left/right checks, temporal smoothing, and re-detection when tracking fails. <a href="https://github.com/simonpaik04/jejudo-vision_pkg">Vision implementation</a> · <a href="./jeju-vision-evidence.json">Image source record</a>.</p>
@@ -263,7 +269,11 @@ function revealTarget() {
   if (!target) return;
   let parent = target.parentElement;
   while (parent) { if (parent.tagName === 'DETAILS') parent.open = true; parent = parent.parentElement; }
-  requestAnimationFrame(() => target.scrollIntoView({block: 'start'}));
+  requestAnimationFrame(() => {
+    target.setAttribute('tabindex', '-1');
+    target.focus({preventScroll: true});
+    target.scrollIntoView({block: 'start'});
+  });
 }
 window.addEventListener('hashchange', revealTarget);
 window.addEventListener('DOMContentLoaded', revealTarget);
