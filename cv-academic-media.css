@@ -1,0 +1,8 @@
+/* A restrained technical-document treatment for the existing CV content. */
+.fusion-detail { background: #fff; border: 0; border-top: 1px solid #d6d6d6; border-radius: 0; padding: 1.3rem 0 0; }
+.project-demo img, .project-demo video { border-radius: 0; background: #fff; }
+.project-demo figcaption { color: #4c4c4c; }
+.fusion-examples { gap: 1.5rem; }
+.fusion-examples img { border: 1px solid #e5e5e5; }
+.project-details h4 { color: #222; }
+@media print { .fusion-detail { background: white; } }

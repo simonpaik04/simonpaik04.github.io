@@ -7,6 +7,7 @@
 <meta name="description" content="CV of Seungmin Paik, covering mechanical engineering, autonomous driving, and embedded control.">
 <title>Seungmin Paik | CV</title>
 <link rel="stylesheet" href="./cv-design.css">
+<link rel="stylesheet" href="./cv-academic-media.css">
 </head>
 <body>
 <a class="skip-link" href="#projects">Skip to projects</a>
@@ -58,10 +59,10 @@
 <h4>PIDNet + LiDAR: from pixels to 3D semantics</h4>
 <p>RGB identifies what a surface may be; LiDAR supplies its measured 3D position. I integrated PIDNet class probabilities with LiDAR returns through camera projection and PointPainting.</p>
 <figure class="project-demo">
-<video controls playsinline preload="none" poster="./katri-pidnet-fusion-poster.jpg" aria-label="Four synchronized views of PIDNet and LiDAR fusion around roadside barrels">
-<source src="./katri-pidnet-fusion.mp4" type="video/mp4">
+<video controls playsinline preload="none" poster="./katri-pidnet-fusion-academic-poster.jpg" aria-label="Four synchronized views of PIDNet and LiDAR fusion around roadside barrels">
+<source src="./katri-pidnet-fusion-academic.mp4" type="video/mp4">
 </video>
-<figcaption>Read left to right: original RGB, semantic overlay, LiDAR projected into the image, and a 3D semantic point cloud. Orange marks predicted barrels; blue marks other projected returns; gray marks returns outside the camera view. <a href="./katri-pidnet-fusion.mp4">Open video</a>.</figcaption>
+<figcaption>Read left to right: original RGB, semantic overlay, LiDAR projected into the image, and a 3D semantic point cloud. Orange marks predicted barrels; blue marks other projected returns; gray marks returns outside the camera view. <a href="./katri-pidnet-fusion-academic.mp4">Open video</a>.</figcaption>
 </figure>
 <ol>
 <li><strong>RGB → class probabilities.</strong> The current model uses two PIDNet-S networks: global predictions propose regions for local refinement. The output is a full-resolution probability vector for 12 classes at each pixel.</li>
@@ -69,22 +70,22 @@
 <li><strong>Pixels → measured 3D points.</strong> Attach the probabilities to the original LiDAR coordinates. The visualization highlights foreground predictions above 0.70; returns outside the image remain unobserved.</li>
 </ol>
 <p class="method"><strong>How this demonstration was made.</strong> Six seconds from an existing MORAI RGB/LiDAR rosbag were processed offline with the current model. It shows score decoration before the runtime foreground and surface filters. Sensor pairs use their recorded measurement timestamps; maximum camera–LiDAR difference is <span id="fusion-delta">61.5</span> ms across 48 pairs. The grid spacing is 5 m. The video is sampled at 8 sensor pairs/s and encoded at 24 fps with repeated frames, preserving the original playback speed.</p>
-<p class="method">The clip uses the development camera calibration without scan motion compensation and shows predictions before runtime surface filtering. <a href="./katri-fusion-evidence.json">Source, processing scope, and verification record</a>.</p>
+<p class="method">The clip uses the development camera calibration without scan motion compensation and shows predictions before runtime surface filtering. <a href="./katri-fusion-academic-evidence.json">Source, processing scope, and verification record</a>.</p>
 <h4>People and vehicles: 2D perception examples</h4>
 <p class="method">Separate recorded validation images processed by the same model. These illustrate image segmentation only; they have no paired LiDAR and are not part of the fusion sequence. Examples were selected for visibility, not as an accuracy benchmark.</p>
 <div class="fusion-examples">
 <figure class="project-demo">
-<a href="./katri-person-segmentation.jpg"><img loading="lazy" decoding="async" src="./katri-person-segmentation.jpg" alt="Original recorded pedestrian image and current PIDNet prediction, including a detail crop" width="1280" height="820"></a>
+<a href="./katri-person-segmentation-academic.png"><img loading="lazy" decoding="async" src="./katri-person-segmentation-academic.png" alt="Original recorded pedestrian image and current PIDNet prediction, including a detail crop" width="1280" height="830"></a>
 <figcaption>Person (red) and kick scooter (magenta): RGB and predicted mask. Open for the detail crop.</figcaption>
 </figure>
 <figure class="project-demo">
-<a href="./katri-vehicle-segmentation.jpg"><img loading="lazy" decoding="async" src="./katri-vehicle-segmentation.jpg" alt="Original recorded vehicle image and current PIDNet prediction, including a detail crop" width="1280" height="820"></a>
+<a href="./katri-vehicle-segmentation-academic.png"><img loading="lazy" decoding="async" src="./katri-vehicle-segmentation-academic.png" alt="Original recorded vehicle image and current PIDNet prediction, including a detail crop" width="1280" height="830"></a>
 <figcaption>Vehicle: RGB and predicted semantic mask. Open for the detail crop.</figcaption>
 </figure>
 </div>
 </div>
 <figure class="project-demo">
-<img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Team-Stier/.github/main/assets/MORAI2026.gif" alt="MORAI simulation driving through the K-City roundabout and tunnel alongside RViz">
+<img loading="lazy" decoding="async" src="./media/MORAI2026.gif" alt="MORAI simulation driving through the K-City roundabout and tunnel alongside RViz">
 <figcaption>Competition footage from Team-Stier</figcaption>
 </figure>
 <figure class="project-demo">
@@ -106,10 +107,10 @@
 <h4>My localization work: sensor processing and dual EKF integration</h4>
 <p>I implemented the vehicle-specific sensor preprocessing, GNSS approval and recovery logic, initialization, and output validity checks around <code>robot_localization</code>'s Local and Global EKFs.</p>
 <figure class="project-demo">
-<video controls playsinline preload="none" poster="./hl-fma-localization-poster.jpg?v=e3726a2591" aria-label="HL-FMA localization replay showing ENU trajectory, pose covariance, speed, yaw rate and sensor health">
-<source src="./hl-fma-localization.mp4?v=e3726a2591" type="video/mp4">
+<video controls playsinline preload="none" poster="./hl-fma-localization-academic-poster.jpg" aria-label="HL-FMA localization replay showing ENU trajectory, pose covariance, speed, yaw rate and sensor health">
+<source src="./hl-fma-localization-academic.mp4" type="video/mp4">
 </video>
-<figcaption>Recorded Global EKF trajectory, trajectory-aligned direction and covariance close-up, sensor health, estimated speed, and yaw rate. About 8 minutes 30 seconds of sensor replay are shown in 21 seconds at 24× speed. <a href="./hl-fma-localization.mp4?v=e3726a2591">Open video</a>.</figcaption>
+<figcaption>Recorded Global EKF trajectory, trajectory-aligned direction and covariance close-up, sensor health, estimated speed, and yaw rate. About 8 minutes 30 seconds of sensor replay are shown in 21 seconds at 24× speed. <a href="./hl-fma-localization-academic.mp4">Open video</a>.</figcaption>
 </figure>
 <ol>
 <li><strong>Normalize vehicle measurements.</strong> Convert wheel feedback to forward velocity and normalize IMU axes, covariance, yaw, and yaw rate for the filters.</li>
@@ -119,10 +120,10 @@
 </ol>
 <p class="method">This visualization was generated by rebuilding and running <a href="https://github.com/Team-Stier/HL-FMA-1-5-2026/tree/fba9a5c12382a61a2711fe5685fe839e20c804c3/src/localization">Team-Stier/HL-FMA-1-5-2026 at fba9a5c</a> on the original 2026-09-06 sensor recording at 1× speed. The localization source and fusion policies were unchanged. The old encoder message definition was adapted only to include the current gear constants; all recorded values and timestamps were preserved and its serialized data stream was checked for equality. The arrow and displayed direction follow the trajectory for visualization only; recorded EKF yaw, yaw rate, and position data remain unchanged. Direction is held while stationary. The initialization jump is excluded. The orange ellipse is the filter's 95% Gaussian XY covariance contour, not a measured position-error bound.</p>
 <figure class="project-demo">
-<a href="./hl-fma-localization-summary.png?v=e3726a2591"><img loading="lazy" decoding="async" src="./hl-fma-localization-summary.png?v=e3726a2591" alt="Full recorded ENU trajectory colored by time and the EKF East and North position standard deviations" width="2000" height="848"></a>
+<a href="./hl-fma-localization-summary-academic.png"><img loading="lazy" decoding="async" src="./hl-fma-localization-summary-academic.png" alt="Recorded Global EKF trajectory with start and end markers and reported East and North position standard deviations, sampled at 1 Hz" width="2160" height="846"></a>
 <figcaption>Full trajectory and reported position uncertainty. No surveyed ground-truth trajectory is available for this replay.</figcaption>
 </figure>
-<p class="method"><a href="https://github.com/Team-Stier/HL-FMA-1-5-2026/tree/fba9a5c12382a61a2711fe5685fe839e20c804c3/src/localization">Executed localization source and configuration</a> · <a href="./hl-fma-localization-evidence.json?v=e3726a2591">Replay source and visualization verification</a></p>
+<p class="method"><a href="https://github.com/Team-Stier/HL-FMA-1-5-2026/tree/fba9a5c12382a61a2711fe5685fe839e20c804c3/src/localization">Executed localization source and configuration</a> · <a href="./hl-fma-localization-academic-evidence.json">Replay source and visualization verification</a></p>
 </div>
 </details>
 </article>
@@ -136,7 +137,7 @@
 <li>Applied a 90° yaw correction and an offset from the RDDF route origin. Published the aligned pose and matching map-to-LiDAR transform.</li>
 </ul>
 <figure class="project-demo">
-<img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Team-Stier/.github/main/assets/AMET2026.gif" alt="Small autonomous vehicle driving on the COEX track">
+<img loading="lazy" decoding="async" src="./media/AMET2026.gif" alt="Small autonomous vehicle driving on the COEX track">
 <figcaption>Competition footage from Team-Stier</figcaption>
 </figure>
 </details>
@@ -156,7 +157,7 @@
 </ul>
 <figure class="project-demo">
 <video controls playsinline preload="none" aria-label="Embedded drone control demo">
-<source src="./drone-demo.mp4" type="video/mp4">
+<source src="./drone-demo-browser.mp4" type="video/mp4">
 </video>
 <figcaption>Embedded drone control demonstration</figcaption>
 </figure>
@@ -174,7 +175,7 @@
 <li>Classified the color within detected traffic-light regions and published signal state, stop-line distance, and school-zone status on ROS 2 topics.</li>
 </ul>
 <figure class="project-demo">
-<img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Team-Stier/.github/main/assets/kookmin2026.gif" alt="Vehicle stopping and restarting at a traffic light in Kookmin SIM">
+<img loading="lazy" decoding="async" src="./media/kookmin2026.gif" alt="Vehicle stopping and restarting at a traffic light in Kookmin SIM">
 <figcaption>Competition footage from Team-Stier</figcaption>
 </figure>
 </details>
@@ -236,7 +237,7 @@
 <p class="method">The implementation also supports a center-path offset from a single visible boundary, lane-width and left/right checks, temporal smoothing, and re-detection when tracking fails. <a href="https://github.com/simonpaik04/jejudo-vision_pkg">Vision implementation</a> · <a href="./jeju-vision-evidence.json">Image source record</a>.</p>
 </div>
 <figure class="project-demo">
-<img loading="lazy" decoding="async" src="https://raw.githubusercontent.com/Team-Stier/.github/main/assets/JEJU2026.gif" alt="Autonomous vehicle driving between traffic cones at the Jeju competition">
+<img loading="lazy" decoding="async" src="./media/JEJU2026.gif" alt="Autonomous vehicle driving between traffic cones at the Jeju competition">
 <figcaption>Competition footage from Team-Stier</figcaption>
 </figure>
 </details>
